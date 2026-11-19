@@ -68,7 +68,7 @@
 
     <h2 id="how">How it works</h2>
     <div class="steps">
-      <div class="step"><b>1. Get in touch</b>Email us with your show, its dates and what you'd like to promote.</div>
+      <div class="step"><b>1. Get in touch</b>Send us a message with your show, its dates and what you'd like to promote.</div>
       <div class="step"><b>2. We agree the details</b>We'll suggest the right placement and timing, then confirm everything with you.</div>
       <div class="step"><b>3. Send your content</b>Send an image, your logo and a short description, and we'll put it live.</div>
     </div>
@@ -76,20 +76,31 @@
     <section class="contact" id="contact">
       <div>
         <h2>Talk to us about your show</h2>
-        <p>Tell us which show you'd like to promote and when it runs. The busiest season is late May to early July, so it's worth getting in touch in spring.</p>
+        <p>Tell us which show you'd like to promote and when it runs, and we'll get back to you. The busiest season is late May to early July, so it's worth getting in touch in spring.</p>
+        <p class="note">You can use this form to add a missing show or correct a date too.</p>
       </div>
-      <div>
-        <div class="mail">hello@posterday.com</div>
-        <div class="btns">
-          <a class="btn solid" href="mailto:hello@posterday.com?subject=Advertising%20our%20show%20on%20Posterday">Email us</a>
-          <button class="btn" id="copy" type="button">Copy email address</button>
+      <form id="enquiry" novalidate>
+        <input type="hidden" name="access_key" value="8aa5b675-4991-498a-a646-5b1167b2f08a">
+        <input type="hidden" name="from_name" value="Posterday website">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+        <div class="frow">
+          <label>Your name<input name="name" required autocomplete="name"></label>
+          <label>Your email<input name="email" type="email" required autocomplete="email"></label>
         </div>
-        <div class="note" id="copied" aria-live="polite"></div>
-      </div>
+        <label>University or organisation<input name="organisation" required autocomplete="organization"></label>
+        <label>What's it about?
+          <select name="topic">
+            <option>Advertising our show</option>
+            <option>Adding or correcting a listing</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required placeholder="Which show, its dates, and what you'd like to do"></textarea></label>
+        <div class="btns"><button class="btn solid" type="submit" id="send">Send message</button></div>
+        <div class="note" id="status" aria-live="polite"></div>
+      </form>
     </section>
 
-    <h2>Not advertising?</h2>
-    <p class="section-lede">If your show is missing or a date is wrong, email the same address and we'll update your free listing.</p>
   </section>
 
   <footer class="wrap">
@@ -97,10 +108,22 @@
   </footer>
 </main>
 <script>
-document.getElementById("copy").addEventListener("click", async () => {
-  const note = document.getElementById("copied");
-  try { await navigator.clipboard.writeText("hello@posterday.com"); note.textContent = "Copied to your clipboard."; }
-  catch (e) { note.textContent = "Couldn't copy. The address is hello@posterday.com"; }
+const form = document.getElementById("enquiry"), status = document.getElementById("status"), send = document.getElementById("send");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!form.checkValidity()) { status.textContent = "Please fill in your name, email, organisation and a message."; form.reportValidity(); return; }
+  const data = Object.fromEntries(new FormData(form));
+  if (data.botcheck) return;
+  delete data.botcheck;
+  data.subject = "Posterday enquiry: " + data.topic + " (" + data.organisation + ")";
+  send.disabled = true; status.textContent = "Sending…";
+  try {
+    const r = await fetch("https://api.web3forms.com/submit", {method:"POST", headers:{"Content-Type":"application/json", "Accept":"application/json"}, body: JSON.stringify(data)});
+    const j = await r.json();
+    if (j.success) { form.reset(); status.textContent = "Thanks, your message has been sent. We'll be in touch soon."; }
+    else { status.textContent = "Sorry, that didn't send. Please try again in a moment."; }
+  } catch (err) { status.textContent = "Sorry, that didn't send. Please check your connection and try again."; }
+  send.disabled = false;
 });
 </script>
 </body>
