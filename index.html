@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UK Design Poster Days &amp; Degree Shows</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f4ef; --card:#ffffff; --ink:#1b1b1b; --muted:#6b6b6b; --line:#e3dfd6;
+    --accent:#d9480f; --accent-soft:#fde9df;
+    --t-degree:#2f6fdb; --t-project:#2b8a3e; --t-national:#9c36b5; --t-london:#c2410c;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141414; --card:#1f1f1f; --ink:#eee; --muted:#a3a3a3; --line:#333; --accent:#ff7a45; --accent-soft:#3a2418;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+  header{padding:48px 24px 24px;max-width:1100px;margin:0 auto}
+  h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(2rem,5vw,3.2rem);margin:0 0 8px;letter-spacing:-.02em}
+  h1 span{color:var(--accent)}
+  .lede{max-width:720px;color:var(--muted);margin:0}
+  .notice{max-width:1100px;margin:16px auto 0;padding:14px 18px;background:var(--accent-soft);border-radius:10px;font-size:.92rem}
+  .notice b{color:var(--accent)}
+  .controls{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+  .controls-inner{max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  input[type=search],select{font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+  input[type=search]{flex:1 1 220px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{font:inherit;font-size:.85rem;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+  .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .count{color:var(--muted);font-size:.85rem;margin-left:auto}
+  main{max-width:1100px;margin:0 auto;padding:12px 24px 60px}
+  .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:18px 0 8px}
+  .tl-month{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;cursor:pointer;text-align:left;font:inherit;color:var(--ink)}
+  .tl-month[aria-pressed=true]{outline:2px solid var(--accent)}
+  .tl-month h3{margin:0;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .tl-month .n{font-family:"Space Grotesk";font-size:1.6rem;font-weight:700}
+  .bar{height:6px;border-radius:3px;background:var(--accent);margin-top:6px}
+  .month-group h2{font-family:"Space Grotesk";font-size:1.4rem;margin:34px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
+  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .card h4{margin:0;font-size:1.05rem}
+  .inst{color:var(--muted);font-size:.88rem}
+  .tag{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:6px;white-space:nowrap;color:#fff}
+  .tag.degree{background:var(--t-degree)} .tag.project{background:var(--t-project)} .tag.national{background:var(--t-national)} .tag.london{background:var(--t-london)}
+  .dates{font-family:"Space Grotesk";font-weight:700;font-size:1.15rem}
+  .meta{font-size:.88rem;display:grid;gap:3px}
+  .meta div{display:grid;grid-template-columns:70px 1fr}
+  .meta div::before{content:attr(data-k);color:var(--muted)}
+  .next{font-size:.84rem;background:var(--bg);border-radius:8px;padding:8px 10px}
+  .next b{color:var(--accent)}
+  .card a{color:var(--accent);font-weight:600;font-size:.9rem;text-decoration:none;margin-top:auto}
+  .card a:hover{text-decoration:underline}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+  footer{max-width:1100px;margin:0 auto;padding:0 24px 50px;color:var(--muted);font-size:.85rem}
+  @media (max-width:640px){.timeline{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>UK Design <span>Poster Days</span></h1>
+  <p class="lede">Degree shows and final-year project exhibitions for product, furniture, industrial, interior and design-engineering courses across the UK, all on one page. Use it to plan graduate scouting, find new talent or catch the best student work of the year.</p>
+  <div class="notice"><b>Read this first:</b> most universities announce their dates in spring, so the dates below are from the <b>2026</b> shows (last updated 19 Nov 2026). Each card has a <b>2027 guide</b> based on when the show usually runs. Always check the official link before you travel.</div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <input type="search" id="q" placeholder="Search university, city, course…" aria-label="Search">
+    <div class="chips" id="typeChips"></div>
+    <select id="region" aria-label="Region"></select>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<main>
+  <div class="timeline" id="timeline"></div>
+  <div id="list"></div>
+</main>
+
+<footer>
+  Dates come from each university's or organiser's own pages and from event listings published in 2026. "Project show" means a final-year design or engineering project exhibition, usually with an industry night. Shows such as Cardiff Met's hadn't published dates when this page was compiled, so they're marked TBC.
+</footer>
+
+<script>
+const SHOWS = [
+  {name:"New Designers", inst:"National graduate showcase (200+ courses)", type:"national", region:"London", city:"Business Design Centre, Islington, London N1",
+   start:"2026-07-01", end:"2026-07-04", courses:"Furniture, product, interiors, textiles, ceramics, and more",
+   next:"Listings report 30 Jun – 3 Jul 2027. Confirm on newdesigners.com", url:"https://www.newdesigners.com/"},
+  {name:"Free Range", inst:"Graduate art & design shows, Truman Brewery", type:"national", region:"London", city:"Truman Brewery, Brick Lane, London E1",
+   start:"2026-07-01", end:"2026-07-31", datesText:"Weekly cohorts through July 2026", courses:"Mixed art & design. Different universities each week",
+   next:"Usually runs in weekly blocks through late June and July", url:null},
+  {name:"SDCA Degree Show", inst:"Loughborough University", type:"degree", region:"Midlands", city:"Design School, Loughborough",
+   start:"2026-06-06", end:"2026-06-10", courses:"Industrial Design, Product Design & Technology, Graphics, Textiles",
+   next:"Early June. Free, no booking needed", url:"https://www.lboro.ac.uk/news-events/events/sdca-degree-show-2026.html"},
+  {name:"Made in Brunel: Through Glass", inst:"Brunel University of London", type:"project", region:"London", city:"Michael Sterling Building, Uxbridge",
+   start:"2026-06-11", end:"2026-06-13", courses:"Product Design Engineering, Industrial Design, Design",
+   next:"Mid June. Watch madeinbrunel.com for the 2027 theme", url:"https://madeinbrunel.com/"},
+  {name:"ADBE Student Showcase", inst:"Nottingham Trent University", type:"degree", region:"Midlands", city:"City Campus, Nottingham",
+   start:"2026-05-29", end:null, datesText:"Launched 29 May 2026", courses:"Product Design, Furniture & Product Design, Architecture",
+   next:"Late May to early June. NTU also shows at New Designers", url:"https://www.ntu.ac.uk/about-us/news/news-articles/2026/06/showcase-2026-celebrates-creativity,-skill-and-commitment-of-ntu-students"},
+  {name:"Kingston School of Art Degree Show", inst:"Kingston University", type:"degree", region:"London", city:"Knights Park, Kingston upon Thames",
+   start:"2026-06-06", end:"2026-06-12", courses:"Product & Furniture Design, Interior Design, Architecture",
+   next:"Early to mid June", url:"https://www.kingston.ac.uk/about/events/kingston-school-of-art-degree-show-2026"},
+  {name:"Cross Section (LDF)", inst:"Kingston Product & Furniture Design graduates", type:"london", region:"London", city:"Indra Gallery, 20 East Road, London N1",
+   start:"2026-09-14", end:"2026-09-20", courses:"Product & Furniture Design",
+   next:"Runs during London Design Festival each September", url:"https://www.dezeen.com/?p=2364258"},
+  {name:"CSM Shows", inst:"Central Saint Martins, UAL", type:"degree", region:"London", city:"1 Granary Square, King's Cross, London N1C",
+   start:"2026-06-18", end:"2026-06-21", courses:"Product, Ceramic & Industrial Design, Spatial Practices, Jewellery",
+   next:"Mid to late June", url:"https://www.arts.ac.uk/whats-on/csm-shows-2026"},
+  {name:"Chelsea Undergraduate Show", inst:"Chelsea College of Arts, UAL", type:"degree", region:"London", city:"16 John Islip Street, London SW1P",
+   start:"2026-06-12", end:"2026-06-19", courses:"Interior Design, Product & Furniture Design, Textiles",
+   next:"Mid June", url:"https://www.arts.ac.uk/students/stories/ual-shows-2026"},
+  {name:"RCA2026: School of Design EXPO", inst:"Royal College of Art", type:"degree", region:"London", city:"Battersea campus, 1 Hester Road, London SW11",
+   start:"2026-07-16", end:"2026-07-19", courses:"Design Products, Innovation Design Engineering, Intelligent Mobility, Service Design",
+   next:"Mid July (postgraduate). RCA's wider season runs from June to July", url:"https://www.rca.ac.uk/news-and-events/news/royal-college-of-art-announces-rca2026/"},
+  {name:"IDE Summer Show", inst:"Imperial College London × RCA", type:"project", region:"London", city:"Main Entrance, South Kensington Campus",
+   start:"2026-07-07", end:"2026-07-11", courses:"Innovation Design Engineering (MA/MSc)",
+   next:"Early July", url:"https://www.imperial.ac.uk/events/209677/ide-summer-show-2026/"},
+  {name:"Design Engineering MSc Show", inst:"Imperial Dyson School of Design Engineering", type:"project", region:"London", city:"Main Entrance, South Kensington Campus",
+   start:"2026-07-13", end:"2026-07-17", courses:"Contextual Design Engineering MSc, Cleantech Innovation MSc",
+   next:"Mid July", url:"https://www.imperial.ac.uk/engineering/departments/design-engineering/news-events/previous-events/"},
+  {name:"Dyson School @ Park Royal Design District", inst:"Imperial Dyson School of Design Engineering", type:"london", region:"London", city:"Base One, 1 Portal Way, London",
+   start:"2026-09-11", end:"2026-09-12", courses:"Design Engineering tour and exhibition",
+   next:"September (London Design Festival period)", url:"https://www.imperial.ac.uk/engineering/departments/design-engineering/news-events/previous-events/"},
+  {name:"GSA Degree Show", inst:"The Glasgow School of Art", type:"degree", region:"Scotland", city:"Reid & Stow Buildings, Glasgow",
+   start:"2026-05-29", end:"2026-06-07", courses:"Product Design, Interior Design, Innovation & Technology, Architecture",
+   next:"Late May to early June", url:"https://gsamediacentre.co.uk/the-glasgow-school-of-art-degree-show-2026-opens-launching-a-new-generation-of-creative-talent-to-boost-glasgows-creative-community-and-economy/"},
+  {name:"DJCAD Undergraduate Degree Show", inst:"University of Dundee", type:"degree", region:"Scotland", city:"Perth Road, Dundee",
+   start:"2026-05-23", end:"2026-05-31", courses:"Product Design, Interior & Environmental Design, Jewellery",
+   next:"Late May", url:"https://www.craftscotland.org/journal/article/degree-shows-2026"},
+  {name:"ECA Graduate Show", inst:"Edinburgh College of Art", type:"degree", region:"Scotland", city:"Lauriston Place, Edinburgh",
+   start:"2026-05-29", end:"2026-06-05", courses:"Product Design, Interior Design, Jewellery & Silversmithing",
+   next:"Late May to early June", url:"https://www.eca.ed.ac.uk/event/eca-graduate-show-2026"},
+  {name:"Gray's Degree Show", inst:"Gray's School of Art, Robert Gordon University", type:"degree", region:"Scotland", city:"Garthdee, Aberdeen",
+   start:"2026-06-05", end:"2026-06-14", courses:"Three Dimensional Design, Communication Design",
+   next:"Early to mid June", url:"https://www.craftscotland.org/journal/article/degree-shows-2026"},
+  {name:"Manchester School of Art Degree Show", inst:"Manchester Metropolitan University", type:"degree", region:"North", city:"Oxford Road, Manchester",
+   start:"2026-06-06", end:"2026-06-19", courses:"Product Design & Craft, Interior Design, Architecture",
+   next:"Early to mid June. Private view the evening before it opens", url:"https://degreeshow.mmu.ac.uk/"},
+  {name:"Future Now Festival of Creativity", inst:"Sheffield Hallam University", type:"degree", region:"North", city:"Venues across Sheffield city centre",
+   start:"2026-04-01", end:"2026-07-31", datesText:"April – July 2026 (shows vary)", courses:"Product Design, Interior Architecture & Design",
+   next:"Spring–summer festival. Product Design also shows at New Designers", url:"https://gallery.shu.ac.uk/event/future-now-2026/"},
+  {name:"REVEAL: 3D Design (Furniture & Product)", inst:"Northumbria University", type:"degree", region:"North", city:"City Campus East, Newcastle",
+   start:"2026-06-19", end:"2026-07-02", datesText:"Late June 2026 (part of REVEAL, Apr–Jun)", courses:"3D Design (Furniture & Product), Design for Industry, Interior Design",
+   next:"Mid June to early July. Registration required", url:"https://corp.northumbria.ac.uk/about-us/news-events/events/2026/06/reveal-3d-design---furniture-and-product/"},
+  {name:"Art & Design Summer Show", inst:"Buckinghamshire New University", type:"degree", region:"South East", city:"Brunel Engine Shed, High Wycombe",
+   start:"2026-06-26", end:"2026-07-01", courses:"Furniture Design, Product & Furniture Design",
+   next:"Late June to early July", url:"https://www.bucks.ac.uk/news/emerging-creative-talent-showcased-buckinghamshire-new-university-summer-show"},
+  {name:"DOT DOT DOT Graduate Festival", inst:"Coventry University", type:"degree", region:"Midlands", city:"Delia Derbyshire Building, Coventry",
+   start:"2026-06-01", end:null, datesText:"April – June 2026 (main show week-long)", courses:"Product Design, Automotive & Transport Design",
+   next:"Spring to early summer. Check the calendar for the design week", url:"https://www.coventry.ac.uk/covshowcase/"},
+  {name:"DMU Degree Show", inst:"De Montfort University", type:"degree", region:"Midlands", city:"Bede Island, Leicester",
+   start:"2026-06-24", end:"2026-06-27", courses:"Product Design, Furniture Design, Design Engineering, Interior Design",
+   next:"Late June. Clashes with an open day", url:"https://www.dmu.ac.uk/arts-design-humanities/foc/degree-show.aspx"},
+  {name:"Architecture, Design & Interiors Degree Show", inst:"Falmouth University", type:"degree", region:"South West", city:"Penryn Campus, Cornwall",
+   start:"2026-05-23", end:"2026-05-30", courses:"Sustainable Product Design, Interior Design, Architecture",
+   next:"Late May. Some courses also show in London in July", url:"https://www.falmouth.ac.uk/degree-shows"},
+  {name:"Annual Student Showcase", inst:"Ravensbourne University London", type:"degree", region:"London", city:"Greenwich Peninsula, London SE10",
+   start:"2026-06-04", end:"2026-06-06", courses:"Product Design, Interior Design, Architecture",
+   next:"Early June", url:"https://www.ravensbourne.ac.uk/people-and-stories/degree-show"},
+  {name:"CSAD Degree Show", inst:"Cardiff Metropolitan University", type:"degree", region:"Wales", city:"Llandaff Campus, Cardiff",
+   start:null, end:null, datesText:"Dates TBC", courses:"Product Design, Interior Design, Architecture",
+   next:"Not published yet. Check the CSAD page", url:"https://www.cardiffmet.ac.uk/school-of-art-and-design/csad-degree-show/"}
+];
+
+const TYPES = {degree:"Degree show", project:"Project show", national:"National showcase", london:"London / LDF show"};
+const MONTHS = ["Apr","May","Jun","Jul","Sep"];
+const MONTH_NAMES = {Apr:"April",May:"May",Jun:"June",Jul:"July",Sep:"September",TBC:"Dates to be confirmed"};
+const fmt = d => new Date(d+"T12:00").toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+const MK = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const monthKey = s => s.start ? MK[parseInt(s.start.slice(5,7),10)-1] : "TBC";
+
+let state = {q:"", type:"all", region:"all", month:"all"};
+
+function dateText(s){
+  if(s.datesText) return s.datesText;
+  if(!s.end || s.end===s.start) return fmt(s.start)+" 2026";
+  return fmt(s.start)+" – "+fmt(s.end)+" 2026";
+}
+
+function build(){
+  const tc = document.getElementById("typeChips");
+  [["all","All"],...Object.entries(TYPES)].forEach(([k,v])=>{
+    const b=document.createElement("button");b.className="chip";b.textContent=v;b.dataset.k=k;
+    b.setAttribute("aria-pressed",k==="all");
+    b.onclick=()=>{state.type=k;tc.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===k));render();};
+    tc.appendChild(b);
+  });
+  const rs=document.getElementById("region");
+  const regions=["all",...[...new Set(SHOWS.map(s=>s.region))].sort()];
+  rs.innerHTML=regions.map(r=>`<option value="${r}">${r==="all"?"All regions":r}</option>`).join("");
+  rs.onchange=e=>{state.region=e.target.value;render();};
+  document.getElementById("q").oninput=e=>{state.q=e.target.value.toLowerCase();render();};
+}
+
+function filtered(ignoreMonth){
+  return SHOWS.filter(s=>{
+    if(state.type!=="all" && s.type!==state.type) return false;
+    if(state.region!=="all" && s.region!==state.region) return false;
+    if(!ignoreMonth && state.month!=="all" && monthKey(s)!==state.month) return false;
+    if(state.q){const hay=(s.name+" "+s.inst+" "+s.city+" "+s.courses+" "+s.region).toLowerCase(); if(!hay.includes(state.q)) return false;}
+    return true;
+  });
+}
+
+function render(){
+  const base=filtered(true);
+  const tl=document.getElementById("timeline");
+  const max=Math.max(1,...MONTHS.map(m=>base.filter(s=>monthKey(s)===m).length));
+  tl.innerHTML=MONTHS.map(m=>{
+    const n=base.filter(s=>monthKey(s)===m).length;
+    return `<button class="tl-month" data-m="${m}" aria-pressed="${state.month===m}"><h3>${MONTH_NAMES[m]}</h3><div class="n">${n}</div><div class="bar" style="width:${n/max*100}%"></div></button>`;
+  }).join("");
+  tl.querySelectorAll(".tl-month").forEach(b=>b.onclick=()=>{state.month = state.month===b.dataset.m ? "all" : b.dataset.m; render();});
+
+  const items=filtered(false).sort((a,b)=>(a.start||"9999").localeCompare(b.start||"9999"));
+  document.getElementById("count").textContent=`${items.length} show${items.length===1?"":"s"}`;
+  const list=document.getElementById("list");
+  if(!items.length){list.innerHTML=`<div class="empty">No shows match. Try clearing a filter.</div>`;return;}
+  const groups={};
+  items.forEach(s=>{(groups[monthKey(s)] ||= []).push(s);});
+  const order=[...MONTHS,"TBC"].filter(m=>groups[m]);
+  list.innerHTML=order.map(m=>`<section class="month-group"><h2>${MONTH_NAMES[m]}</h2><div class="grid">${groups[m].map(card).join("")}</div></section>`).join("");
+}
+
+function esc(t){return String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function card(s){
+  return `<article class="card">
+    <div class="top"><div><h4>${esc(s.name)}</h4><div class="inst">${esc(s.inst)}</div></div><span class="tag ${s.type}">${TYPES[s.type]}</span></div>
+    <div class="dates">${esc(dateText(s))}</div>
+    <div class="meta"><div data-k="Where">${esc(s.city)}</div><div data-k="Courses">${esc(s.courses)}</div></div>
+    <div class="next"><b>2027 guide:</b> ${esc(s.next)}</div>
+    ${s.url?`<a href="${s.url}" target="_blank" rel="noopener">Official page →</a>`:`<span class="inst">Search "Free Range Truman Brewery" for this year's line-up</span>`}
+  </article>`;
+}
+
+build(); render();
+</script>
+</body>
+</html>
