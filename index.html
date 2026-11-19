@@ -8,121 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#f4f3f0; --surface:#fbfaf8; --ink:#2d2c2c; --muted:#58595b; --faint:#8a8a8c;
-    --line:rgba(45,44,44,.16); --line-soft:rgba(45,44,44,.08);
-    --accent:#3c5956;
-    --c1:#2f7bd8; --c2:#ec6a3a; --c3:#1fae7a; --c4:#f0a20a; --c5:#b9b6b0;
-    --font:"Univers LT Std", Univers, "Neue Montreal", "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/21px var(--font);-webkit-font-smoothing:antialiased}
-  a{color:inherit}
-  .wrap{max-width:1110px;margin:0 auto;padding:0 24px}
-
-  /* Header bar */
-  .topbar{position:sticky;top:0;z-index:10;background:rgba(244,243,240,.86);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px)}
-  .topbar .wrap{display:flex;align-items:center;gap:14px;height:58px}
-  .brand{font-size:17px;font-weight:500;letter-spacing:-.01em;text-decoration:none}
-  .divider{width:1px;height:16px;background:var(--line)}
-  .tagline{font-size:13px;color:var(--muted)}
-  .topbar .right{margin-left:auto;font-size:13px;color:var(--muted);text-decoration:none}
-  .topbar .right:hover{color:var(--ink)}
-
-  /* Intro */
-  .intro{padding-top:34px;padding-bottom:8px}
-  .meta{font-size:12.5px;color:var(--muted);margin:0 0 10px}
-  h1{font-weight:300;font-size:33.7px;line-height:1.06;letter-spacing:-.022em;margin:0 0 12px}
-  .lede{max-width:520px;color:var(--muted);margin:0 0 18px}
-  .jump{display:flex;flex-wrap:wrap;gap:16px;margin:0 0 22px}
-  .jump a{font-size:13px;color:var(--muted);text-decoration:none;border-bottom:.6px solid var(--line);padding-bottom:1px}
-  .jump a:hover{color:var(--ink);border-color:var(--ink)}
-
-  /* Stat tiles */
-  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:.6px solid var(--line);border-radius:4px;overflow:hidden}
-  .tile{background:var(--surface);padding:16px 18px 18px}
-  .tile .n{font-size:29.2px;font-weight:300;line-height:1.1;letter-spacing:-.02em}
-  .tile .l{font-size:12.5px;color:var(--muted);margin-top:4px}
-
-  h2{font-weight:300;font-size:22.5px;letter-spacing:-.015em;margin:44px 0 12px}
-  .section-lede{margin:-4px 0 14px;max-width:760px}
-
-  /* Insight cards */
-  .insights{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-  .insight{background:var(--surface);border:.6px solid var(--line-soft);border-left:2.9px solid var(--accent);border-radius:3px;padding:12px 14px;font-size:14px;line-height:20px}
-  .insight b{font-weight:600}
-  .insight small{display:block;color:var(--faint);font-size:12.5px;line-height:18px;margin-top:6px}
-
-  /* Panels */
-  .panels{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .panel.wide{grid-column:1 / -1}
-  .bars.cols{grid-template-columns:210px 1fr 28px}
-  .panel{background:var(--surface);border:.6px solid var(--line);border-radius:4px;padding:16px 18px 18px}
-  .panel h3{font-size:14px;font-weight:500;margin:0}
-  .panel .sub{font-size:12.5px;color:var(--faint);margin:2px 0 14px}
-  .bars{display:grid;grid-template-columns:96px 1fr 28px;gap:8px 12px;align-items:center;font-size:13px}
-  .bars button{all:unset;cursor:pointer;display:contents}
-  .bar{height:10px;border-radius:1px;background:var(--c2);transition:opacity .15s}
-  .bars .v{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
-  .bars .row-on .bar{background:var(--accent)}
-  .legend{display:grid;grid-template-columns:auto 1fr auto auto;gap:7px 10px;align-items:center;font-size:13px}
-  .sw{width:10px;height:10px;border-radius:2px}
-  .legend .v{color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
-  .legend .p{color:var(--faint);text-align:right;font-size:12.5px;min-width:44px}
-  .donut-row{display:flex;gap:22px;align-items:center}
-
-  /* Controls */
-  .controls{position:sticky;top:58px;z-index:5;background:rgba(244,243,240,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:10px 0;margin-top:44px;border-bottom:.6px solid var(--line)}
-  .controls .wrap{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-  input[type=search],select{font:inherit;font-size:13px;padding:7px 10px;border:.6px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);outline:none}
-  input[type=search]:focus,select:focus{border-color:var(--accent)}
-  input[type=search]{flex:1 1 220px;max-width:320px}
-  .seg{display:flex;border:.6px solid var(--line);border-radius:3px;overflow:hidden;background:var(--line);gap:1px}
-  .seg button{font:inherit;font-size:13px;padding:7px 11px;border:0;background:var(--surface);color:var(--muted);cursor:pointer}
-  .seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
-  .count{margin-left:auto;font-size:12.5px;color:var(--muted)}
-  .clear{font:inherit;font-size:12.5px;background:none;border:0;color:var(--muted);border-bottom:.6px solid var(--line);cursor:pointer;padding:0}
-
-  /* Show cards */
-  .month h2{display:flex;align-items:baseline;gap:10px}
-  .month h2 span{font-size:13px;color:var(--faint);letter-spacing:0}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-  .card{background:var(--surface);border:.6px solid var(--line);border-radius:4px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
-  .card .head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-  .card h4{margin:0;font-size:15px;font-weight:500;line-height:20px}
-  .inst{font-size:12.5px;color:var(--muted);margin-top:2px}
-  .tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);white-space:nowrap}
-  .tag i{width:8px;height:8px;border-radius:2px;display:inline-block}
-  .dates{font-size:20px;font-weight:300;letter-spacing:-.015em;line-height:1.2}
-  dl{margin:0;display:grid;grid-template-columns:62px 1fr;gap:3px 10px;font-size:13px}
-  dt{color:var(--faint)} dd{margin:0}
-  .next{font-size:13px;line-height:18px;border-left:2.9px solid var(--accent);padding:2px 0 2px 10px;color:var(--muted)}
-  .next b{color:var(--ink);font-weight:500}
-  .card a.link{margin-top:auto;font-size:13px;text-decoration:none;border-bottom:.6px solid var(--line);align-self:flex-start;padding-bottom:1px}
-  .card a.link:hover{border-color:var(--ink)}
-  .card .none{margin-top:auto;font-size:12.5px;color:var(--faint)}
-  .subj{display:flex;flex-wrap:wrap;gap:4px}
-  .subj span{font-size:11.5px;color:var(--muted);background:var(--bg);border:.6px solid var(--line-soft);border-radius:2px;padding:1px 6px}
-  .subj span.on{color:var(--ink);border-color:var(--accent)}
-  .now{display:inline-block;font-size:11.5px;font-weight:500;color:#fff;background:var(--accent);border-radius:2px;padding:1px 6px;margin-left:6px;vertical-align:2px}
-  .empty{padding:48px;text-align:center;color:var(--muted)}
-
-  footer{margin:64px 0 0;padding:22px 0 40px;border-top:.6px solid var(--line);font-size:12.5px;color:var(--muted)}
-  footer p{max-width:760px;margin:0 0 6px}
-
-  @media (max-width:900px){
-    .tiles{grid-template-columns:repeat(2,1fr)}
-    .insights,.grid{grid-template-columns:1fr 1fr}
-    .panels{grid-template-columns:1fr}
-    .tagline{display:none}
-  }
-  @media (max-width:600px){
-    .insights,.grid{grid-template-columns:1fr}
-    .controls{top:58px}
-  }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 <header class="topbar">
@@ -130,7 +16,7 @@
     <a class="brand" href="#top">Posterday</a>
     <span class="divider"></span>
     <span class="tagline">UK art and design degree shows and project shows</span>
-    <a class="right" href="#shows">All shows</a>
+    <nav><a href="#shows">All shows</a><a href="advertise.html">Advertise</a></nav>
   </div>
 </header>
 
@@ -141,6 +27,8 @@
     <p class="lede">When and where the UK's art and design students show their final-year work, from product and furniture to graphics, fashion, fine art, film and craft. Use it to plan graduate scouting, find new talent or catch the best student work of the year.</p>
     <nav class="jump" id="jump"></nav>
     <div class="tiles" id="tiles"></div>
+
+    <section class="featured-strip"><h2>Featured shows <span class="spons">Sponsored</span></h2><div class="fgrid" id="featured"></div></section>
 
     <h2>What to know</h2>
     <div class="insights" id="insights"></div>
@@ -181,6 +69,7 @@
 
   <footer class="wrap">
     <p>Dates come from each university's or organiser's own pages and from event listings published in 2026. Most 2027 dates are announced in spring, so each show carries a 2027 guide based on when it usually runs. Always check the official link before you travel.</p>
+    <p>Want more visitors at your show? <a href="advertise.html">Advertise with Posterday</a>.</p>
     <p>"Project show" means a final-year design or engineering project exhibition, usually with an industry night. Big multi-subject shows are tagged with every subject they include, so a filter shows any show where that subject is on display.</p>
   </footer>
 </main>
@@ -210,6 +99,17 @@ function dateText(s){
   return fmt(s.start)+" – "+fmt(s.end)+" "+s.end.slice(0,4);
 }
 
+const mono = s => s.inst.replace(/^(The|University of|University for the)\s+/,"").split(/[\s,]+/).filter(w=>/^[A-Z]/.test(w)).slice(0,3).map(w=>w[0]).join("");
+const heroBg = c => `linear-gradient(135deg, ${c}, color-mix(in srgb, ${c} 55%, #000))`;
+function featured(){
+  const f = SHOWS.filter(s=>s.tier==="featured");
+  const promo = `<article class="fcard promo"><div class="fbody"><span class="spons">Featured spot</span><h4>Your show could be here</h4><div class="blurb">Put your degree show in front of the people planning their summer of graduate shows: employers, recruiters, press and future students.</div><a class="cta" href="advertise.html">Advertise your show →</a></div></article>`;
+  document.getElementById("featured").innerHTML = f.slice(0,3).map(s=>`<article class="fcard">
+    <div class="hero" style="background:${heroBg(s.hue)}"><span class="pill">Featured</span><span class="mono">${esc(mono(s))}</span><span class="ph">Hero image</span></div>
+    <div class="fbody"><div class="inst">${esc(s.inst)}</div><h4>${esc(s.name)}</h4><div class="dates">${esc(dateText(s))}</div>
+    <div class="blurb">${esc(s.blurb)}</div>
+    <a class="cta" href="${s.url}" target="_blank" rel="noopener">${esc(s.cta||"Find out more")} →</a></div></article>`).join("") + (f.length===0 ? promo.replace('fcard promo','fcard promo wide') : f.length<3 ? promo : "");
+}
 function intro(){
   document.getElementById("meta").textContent = `${SHOWS.length} shows, updated ${UPDATED}`;
   document.getElementById("jump").innerHTML = MONTHS.map(m=>`<a href="#m-${m}">${MONTH_NAMES[m]}</a>`).join("") + `<a href="#shows">All shows</a>`;
@@ -273,7 +173,8 @@ function filtered(){
 }
 
 function card(s){
-  return `<article class="card">
+  if(s.tier==="enhanced") return enhCard(s);
+  return `<article class="card${s.tier==="featured"?" feat-pin":""}">${s.tier==="featured"?'<span class="spons">Featured · Sponsored</span>':""}
     <div class="head"><div><h4>${esc(s.name)}${isOn(s)?'<span class="now">On now</span>':""}</h4><div class="inst">${esc(s.inst)}</div></div>
       <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span></div>
     <div class="dates">${esc(dateText(s))}</div>
@@ -284,6 +185,20 @@ function card(s){
   </article>`;
 }
 
+function enhCard(s){
+  return `<article class="card enh">
+    <div class="ehero" style="background:${heroBg(s.hue)}"><span class="mono">${esc(mono(s))}</span><span class="pill">Sponsored</span></div>
+    <div class="inner">
+    <div class="head"><div><h4>${esc(s.name)}${isOn(s)?'<span class="now">On now</span>':""}</h4><div class="inst">${esc(s.inst)}</div></div>
+      <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span></div>
+    <div class="dates">${esc(dateText(s))}</div>
+    <div class="blurb">${esc(s.blurb)}</div>
+    <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
+    <div class="subj">${s.subjects.map(k=>`<span class="${state.subject===k?"on":""}">${SUBJECTS[k]}</span>`).join("")}</div>
+    <a class="link" href="${s.url}" target="_blank" rel="noopener">Official page →</a></div>
+  </article>`;
+}
+const rank = s => s.tier==="featured"?0:s.tier==="enhanced"?1:2;
 function render(){
   const base = SHOWS;
   bars(document.getElementById("subjectBars"), Object.entries(SUBJECTS).map(([k,v])=>[k,base.filter(s=>s.subjects.includes(k)).length,v]).sort((a,b)=>b[1]-a[1]), "subject");
@@ -291,7 +206,8 @@ function render(){
   const regions=[...new Set(base.map(s=>s.region))].map(r=>[r,base.filter(s=>s.region===r).length,r]).sort((a,b)=>b[1]-a[1]);
   bars(document.getElementById("regionBars"), regions, "region");
 
-  const items = filtered().sort((a,b)=>(a.start||"9999").localeCompare(b.start||"9999"));
+  const mi = s => s.start ? MK.indexOf(monthKey(s)) : 99;
+  const items = filtered().sort((a,b)=> mi(a)-mi(b) || rank(a)-rank(b) || (a.start||"9999").localeCompare(b.start||"9999"));
   const active = state.q||state.type!=="all"||state.region!=="all"||state.month!=="all"||state.subject!=="all";
   document.getElementById("clear").hidden = !active;
   document.getElementById("count").textContent = `${items.length} of ${SHOWS.length} shows`;
@@ -304,7 +220,7 @@ function render(){
   ).join("");
 }
 
-intro(); build(); render();
+intro(); featured(); build(); render();
 </script>
 </body>
 </html>

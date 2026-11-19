@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advertise your show · Posterday</title>
+<meta name="description" content="Promote your university's degree show or graduate showcase on Posterday, the UK guide to art and design degree shows.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Posterday</a>
+    <span class="divider"></span>
+    <span class="tagline">UK art and design degree shows and project shows</span>
+    <nav><a href="index.html#shows">All shows</a><a href="advertise.html" aria-current="page">Advertise</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap intro">
+    <p class="meta">For universities, art schools and graduate showcases</p>
+    <h1>Advertise your show</h1>
+    <p class="lede">Posterday brings the UK’s art and design degree shows together in one place, so the people planning their summer of graduate shows can find yours. Every show is listed free. If you'd like your show to stand out, get in touch and we'll put together a placement that suits your dates and your audience.</p>
+    <nav class="jump"><a href="#options">Ways to stand out</a><a href="#how">How it works</a><a href="#contact">Contact us</a></nav>
+
+    <h2>Who you'll reach</h2>
+    <div class="insights">
+      <div class="insight"><b>Industry and employers.</b> Design studios, manufacturers and agencies scouting graduates for jobs and placements.<small>People who plan visits around the dates</small></div>
+      <div class="insight"><b>Press and curators.</b> Writers and selectors putting together their degree show round-ups and award shortlists.<small>Looking for the shows worth a trip</small></div>
+      <div class="insight"><b>Future students and families.</b> Visitors using degree shows to judge a course before they apply.<small>Many shows run alongside open days</small></div>
+    </div>
+
+    <h2 id="options">Ways to stand out</h2>
+    <p class="section-lede">Your standard listing stays free whatever you choose. Paid placements are always clearly marked as sponsored.</p>
+    <div class="tiers">
+      <div class="tier">
+        <span class="spons">Enhanced listing</span>
+        <h3>A richer card in the main list</h3>
+        <ul>
+          <li>Hero image and your logo</li>
+          <li>Up to 100 words about the show</li>
+          <li>Highlighted card, shown first in its month</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="spons">Featured show</span>
+        <h3>A spot at the top of Posterday</h3>
+        <ul>
+          <li>Everything in an enhanced listing</li>
+          <li>A place in the Featured shows strip on the home page</li>
+          <li>Up to 150 words and your own call to action, like "Book a visit"</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="spons">Season partner</span>
+        <h3>All your shows, all year</h3>
+        <ul>
+          <li>Every show your university runs, enhanced</li>
+          <li>Ideal for schools with several shows and postgraduate seasons</li>
+          <li>Tailored to your calendar</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="how">How it works</h2>
+    <div class="steps">
+      <div class="step"><b>1. Get in touch</b>Email us with your show, its dates and what you'd like to promote.</div>
+      <div class="step"><b>2. We agree the details</b>We'll suggest the right placement and timing, then confirm everything with you.</div>
+      <div class="step"><b>3. Send your content</b>Send an image, your logo and a short description, and we'll put it live.</div>
+    </div>
+
+    <section class="contact" id="contact">
+      <div>
+        <h2>Talk to us about your show</h2>
+        <p>Tell us which show you'd like to promote and when it runs. The busiest season is late May to early July, so it's worth getting in touch in spring.</p>
+      </div>
+      <div>
+        <div class="mail">hello@posterday.com</div>
+        <div class="btns">
+          <a class="btn solid" href="mailto:hello@posterday.com?subject=Advertising%20our%20show%20on%20Posterday">Email us</a>
+          <button class="btn" id="copy" type="button">Copy email address</button>
+        </div>
+        <div class="note" id="copied" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <h2>Not advertising?</h2>
+    <p class="section-lede">If your show is missing or a date is wrong, email the same address and we'll update your free listing.</p>
+  </section>
+
+  <footer class="wrap">
+    <p><a href="index.html">Back to all shows</a></p>
+  </footer>
+</main>
+<script>
+document.getElementById("copy").addEventListener("click", async () => {
+  const note = document.getElementById("copied");
+  try { await navigator.clipboard.writeText("hello@posterday.com"); note.textContent = "Copied to your clipboard."; }
+  catch (e) { note.textContent = "Couldn't copy. The address is hello@posterday.com"; }
+});
+</script>
+</body>
+</html>
