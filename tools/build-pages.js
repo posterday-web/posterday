@@ -73,7 +73,7 @@ const REGIONS = [...new Set(SHOWS.map(s => s.region))].sort();
 const byDate = (a, b) => (a.start || "9999").localeCompare(b.start || "9999") || a.name.localeCompare(b.name);
 
 // ---------- Shared page shell ----------
-function page({title, description, canonical, body, jsonld, ogType = "website"}) {
+function page({title, description, canonical, body, jsonld, ogType = "website", scripts = ""}) {
   const ld = (jsonld || []).map(o => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, "\\u003c")}</script>`).join("\n");
   return `<!DOCTYPE html>
 <html lang="en-GB">
@@ -100,7 +100,7 @@ function page({title, description, canonical, body, jsonld, ogType = "website"})
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=3">
+<link rel="stylesheet" href="/site.css?v=4">
 <link rel="stylesheet" href="/pages.css?v=1">
 ${ld}
 <!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
@@ -112,7 +112,7 @@ ${ld}
     <a class="brand" href="/">Posterday</a>
     <span class="divider"></span>
     <span class="tagline">UK art and design degree shows and project shows</span>
-    <nav><a href="/#shows">All shows</a><a href="/advertise.html">Advertise</a></nav>
+    <nav><a href="/#shows">All shows</a><a href="${scripts ? "#remind" : "/#remind"}">Get reminders</a><a href="/advertise.html">Advertise</a></nav>
   </div>
 </header>
 <main>
@@ -127,6 +127,7 @@ document.addEventListener("click", e=>{
   window.goatcounter.count({path: "show/" + a.dataset.show, title: a.dataset.show + " (" + a.dataset.where + ")", event: true});
 });
 </script>
+${scripts}
 </body>
 </html>
 `;
@@ -158,6 +159,32 @@ function miniCard(s) {
     <dl><dt>Where</dt><dd>${esc(s.city)}</dd></dl>
     <a class="link" href="${s.path}">Dates, venue and courses →</a>
   </article>`;
+}
+
+// The email sign-up and calendar subscribe box, as on the home page. remind.js makes it work.
+function signupSection() {
+  return `<div class="contact remind" id="remind">
+    <div>
+      <h2>Never miss a show</h2>
+      <p>Most dates are announced in spring. Leave your email and we'll tell you when they're out, with a note before the busy season starts. No spam, and you can unsubscribe at any time.</p>
+      <div class="subcal">
+        <b>Or add every show to your calendar.</b> New dates appear in it by themselves as we add them.
+        <div class="btns">
+          <a class="btn" id="subApple" href="#" data-subscribe="apple">Apple or Outlook</a>
+          <a class="btn" id="subGoogle" href="#" target="_blank" rel="noopener" data-subscribe="google">Google Calendar</a>
+          <button class="btn" type="button" id="subCopy" data-subscribe="copy">Copy calendar link</button>
+        </div>
+      </div>
+    </div>
+    <form id="signup" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="show" id="signupShow">
+      <p class="signup-for" id="signupFor" hidden></p>
+      <label>Your email<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <div class="btns"><button class="btn solid" type="submit">Remind me</button></div>
+      <div class="note" id="signupStatus" aria-live="polite"></div>
+    </form>
+  </div>`;
 }
 
 // ---------- One page per show ----------
@@ -217,9 +244,10 @@ function showPage(s) {
       </dl>
       <div class="subj">${s.subjects.map(k => `<a href="${subjectPath(k)}">${esc(SUBJECTS[k])}</a>`).join("")}</div>
       <div class="next"><b>${over ? nextYear + " guide" : "Usually"}:</b> ${esc(s.next)}</div>
-      ${s.url
+      <div class="actions">${s.url
         ? `<a class="link big" href="${esc(s.url)}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="show-page">Official page →</a>`
         : `<span class="none">Search "${esc(s.name)} ${esc(s.inst.split(",")[0])}" for this year's line-up</span>`}
+      <span data-remind-slot="${esc(s.name)}"></span></div>
     </div>
     <div class="about">
       <h2>About this show</h2>
@@ -228,10 +256,16 @@ function showPage(s) {
       <p>Most universities announce their dates in spring. Posterday updates this page when they do, but always check the official page before you travel.</p>
     </div>
   </div>
+  ${signupSection()}
   ${sameRegion.length ? `<h2>More shows in ${esc(s.region)}</h2><div class="grid">${sameRegion.map(miniCard).join("")}</div>
   <p class="more"><a href="${regionPath(s.region)}">All ${SHOWS.filter(o => o.region === s.region).length} shows in ${esc(s.region)} →</a></p>` : ""}
 </section>`;
-  return page({title, description, canonical: s.path, body, ogType: "article", jsonld: [eventJson(s), crumbLd].filter(Boolean)});
+  // "Add to calendar" and "Remind me" come from /remind.js, the same code the home page uses.
+  const data = {name: s.name, inst: s.inst, city: s.city, courses: s.courses, url: s.url, start: s.start, end: s.end};
+  const scripts = `<script>window.SHOWS = [${JSON.stringify(data).replace(/</g, "\\u003c")}];</script>
+<script src="/calendar.js"></script>
+<script src="/remind.js"></script>`;
+  return page({title, description, canonical: s.path, body, ogType: "article", jsonld: [eventJson(s), crumbLd].filter(Boolean), scripts});
 }
 
 // ---------- Region and subject pages ----------
