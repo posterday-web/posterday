@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css?v=3">
+<!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
+<script data-goatcounter="https://posterday.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <header class="topbar">
@@ -111,7 +113,7 @@ function featured(){
     <div class="hero" style="background:${heroBg(s.hue)}"><span class="pill">Featured</span><span class="mono">${esc(mono(s))}</span><span class="ph">Hero image</span></div>
     <div class="fbody"><div class="inst">${esc(s.inst)}</div><h4>${esc(s.name)}</h4><div class="dates">${esc(dateText(s))}</div>
     <div class="blurb">${esc(s.blurb)}</div>
-    <a class="cta" href="${s.url}" target="_blank" rel="noopener">${esc(s.cta||"Find out more")} →</a></div></article>`).join("") + (f.length===0 ? promo.replace('fcard promo','fcard promo wide') : f.length<3 ? promo : "");
+    <a class="cta" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="featured">${esc(s.cta||"Find out more")} →</a></div></article>`).join("") + (f.length===0 ? promo.replace('fcard promo','fcard promo wide') : f.length<3 ? promo : "");
 }
 function intro(){
   document.getElementById("meta").textContent = `${SHOWS.length} shows, updated ${UPDATED}`;
@@ -196,7 +198,7 @@ function card(s){
     <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
     <div class="subj">${s.subjects.map(k=>`<span class="${state.subject===k?"on":""}">${SUBJECTS[k]}</span>`).join("")}</div>
     <div class="next"><b>${isUpcoming(s)?"Usually":"2027 guide"}:</b> ${esc(s.next)}</div>
-    ${s.url?`<a class="link" href="${s.url}" target="_blank" rel="noopener">Official page →</a>`:`<span class="none">Search "Free Range Truman Brewery" for this year's line-up</span>`}
+    ${s.url?`<a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a>`:`<span class="none">Search "Free Range Truman Brewery" for this year's line-up</span>`}
   </article>`;
 }
 
@@ -210,7 +212,7 @@ function enhCard(s){
     <div class="blurb">${esc(s.blurb)}</div>
     <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
     <div class="subj">${s.subjects.map(k=>`<span class="${state.subject===k?"on":""}">${SUBJECTS[k]}</span>`).join("")}</div>
-    <a class="link" href="${s.url}" target="_blank" rel="noopener">Official page →</a></div>
+    <a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a></div>
   </article>`;
 }
 const rank = s => s.tier==="featured"?0:s.tier==="enhanced"?1:2;
@@ -236,6 +238,13 @@ function render(){
 }
 
 intro(); featured(); build(); render();
+
+// Count clicks on a show's link as an event, so the analytics dashboard shows which shows people open.
+document.addEventListener("click", e=>{
+  const a = e.target.closest("a[data-show]");
+  if(!a || !window.goatcounter || !window.goatcounter.count) return;
+  window.goatcounter.count({path: "show/" + a.dataset.show, title: a.dataset.show + " (" + a.dataset.where + ")", event: true});
+});
 </script>
 </body>
 </html>

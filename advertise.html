@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css?v=3">
+<!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
+<script data-goatcounter="https://posterday.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <header class="topbar">
@@ -120,7 +122,7 @@ form.addEventListener("submit", async (e) => {
   try {
     const r = await fetch("https://api.web3forms.com/submit", {method:"POST", headers:{"Content-Type":"application/json", "Accept":"application/json"}, body: JSON.stringify(data)});
     const j = await r.json();
-    if (j.success) { form.reset(); status.textContent = "Thanks, your message has been sent. We'll be in touch soon."; }
+    if (j.success) { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({path: "advertise-enquiry-sent", title: "Advertise enquiry sent", event: true}); form.reset(); status.textContent = "Thanks, your message has been sent. We'll be in touch soon."; }
     else { status.textContent = "Sorry, that didn't send. Please try again in a moment."; }
   } catch (err) { status.textContent = "Sorry, that didn't send. Please check your connection and try again."; }
   send.disabled = false;
