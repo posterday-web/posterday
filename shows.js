@@ -3,7 +3,7 @@
 // subjects: product, interiors, graphics, fashion, fineart, media, craft, performance
 // start/end: ISO dates of the 2026 (or 2026/27) show. Leave start null if not announced.
 // dates: optional free-text override for the date line.
-window.UPDATED = "19 Nov 2026";
+window.UPDATED = "20 Nov 2026";
 window.SHOWS = [
   // ---------- National showcases ----------
   {name:"New Designers", inst:"National graduate showcase (200+ courses)", type:"national", region:"London", city:"Business Design Centre, Islington, London N1",
@@ -173,6 +173,16 @@ window.SHOWS = [
    start:"2026-06-04", end:"2026-06-13", subjects:["graphics","fineart","fashion","media"], courses:"Illustration, Graphic Design, Fine Art, Fashion, Photography, Animation",
    next:"Early to mid June", url:"https://aru.ac.uk/arts-humanities-education-and-social-sciences/cambridge-school-of-art/degree-shows"},
 
+  {name:"Portsmouth CCI Graduate Showcase", inst:"University of Portsmouth", type:"degree", region:"South East", city:"Eldon Building, Portsmouth",
+   start:"2026-06-12", end:"2026-06-12", dates:"Fri 12 June 2026, 5–8pm", subjects:["graphics","fashion","media","interiors"], courses:"Graphic Design, Illustration, Photography, Fashion, Interior Design, Animation, Games, Film",
+   next:"Mid June, one evening", url:"https://www.port.ac.uk/cci-graduate-show"},
+  {name:"BA Art & Design Show", inst:"Oxford Brookes University", type:"degree", region:"South East", city:"Headington, Oxford",
+   start:"2026-05-09", end:"2026-05-17", subjects:["fineart","graphics","media"], courses:"Fine Art, Graphic Design, Photography. Private view Fri 8 May",
+   next:"Early to mid May", url:"https://www.brookes.ac.uk/about-brookes/events/2026/05/ba-art-design-show"},
+  {name:"The Ruskin Degree Show", inst:"Ruskin School of Art, University of Oxford", type:"degree", region:"South East", city:"128 Bullingdon Road and 54 Marston Street, Oxford OX4",
+   start:"2026-06-19", end:"2026-06-24", subjects:["fineart","media"], courses:"BFA and MFA Fine Art: painting, sculpture, installation, photography, printmaking, moving image",
+   next:"Mid to late June", url:"https://www.rsa.ox.ac.uk/news/detail/the-ruskin-degree-show-2026"},
+
   // ---------- South West ----------
   {name:"Falmouth Degree Shows", inst:"Falmouth University", type:"degree", region:"South West", city:"Penryn and Falmouth campuses, Cornwall",
    start:"2026-05-23", end:"2026-05-30", subjects:["product","interiors","graphics","fineart","media","fashion"], courses:"Sustainable Product Design, Interiors, Architecture, Graphic Design, Illustration, Fine Art, Photography, Film, Fashion & Textiles",
@@ -192,6 +202,10 @@ window.SHOWS = [
   {name:"Undergraduate Graduate Shows", inst:"Arts University Plymouth", type:"degree", region:"South West", city:"Tavistock Place, Plymouth",
    start:"2026-06-19", end:"2026-06-24", subjects:["graphics","fineart","fashion","craft","media","product"], courses:"Illustration, Graphic Design, Fine Art, Fashion, Craft, Photography, Animation, 3D Design",
    next:"Late June. MA show 20–30 Jul", url:"https://vasw.org.uk/whats-on/arts-university-plymouth-undergraduate-graduate-shows-2026"},
+
+  {name:"Degree Show 2026", inst:"University of Gloucestershire", type:"degree", region:"South West", city:"Park Campus, Cheltenham",
+   start:"2026-06-05", end:"2026-06-13", subjects:["fineart","graphics","media"], courses:"School of Arts, Culture and Environment graduates",
+   next:"Early to mid June", url:"https://www.glos.ac.uk/degree-show-2026/"},
 
   // ---------- Midlands ----------
   {name:"SDCA Degree Show", inst:"Loughborough University", type:"degree", region:"Midlands", city:"Design School, Loughborough",
@@ -227,6 +241,19 @@ window.SHOWS = [
   {name:"2026 Degree Show", inst:"Hereford College of Arts", type:"degree", region:"Midlands", city:"College Road Campus, Hereford",
    start:"2026-06-06", end:"2026-06-13", subjects:["graphics","fineart","craft","fashion"], courses:"Graphic & Media Design, Illustration, Fine Art, Contemporary Design Crafts, Textiles",
    next:"Early to mid June", url:"https://www.hca.ac.uk/events/2026-degree-show"},
+
+  {name:"The Degree Show: Made It", inst:"University of Derby", type:"degree", region:"Midlands", city:"Britannia Mill and Markeaton Street, Derby",
+   start:"2026-06-06", end:"2026-06-12", subjects:["fineart","fashion","interiors","media","performance"], courses:"Art & Design, Fashion, Interior Architecture, Photography, Film, Theatre",
+   next:"Early June", url:"https://www.derby.ac.uk/departments/school-of-humanities-law-creative-arts/creative-arts-exhibitions/degree-show-2026/"},
+  {name:"School of Creative Industries Degree Show", inst:"University of Wolverhampton", type:"degree", region:"Midlands", city:"George Wallis Building, Molineux Street, Wolverhampton WV1",
+   start:"2026-06-05", end:"2026-06-19", subjects:["fineart","graphics","media"], courses:"Fine Art, Graphic Design, Illustration, Photography, Animation, Game Design, Film & TV",
+   next:"Early to mid June. School moves to the Housman Building in 2027", url:"https://www.wlv.ac.uk/schools-and-institutes/faculty-of-arts-business-and-social-sciences/school-of-creative-industries/degree-show"},
+  {name:"School of Arts Degree Show", inst:"University of Worcester", type:"degree", region:"Midlands", city:"The Art House, Worcester",
+   start:"2026-05-22", end:"2026-05-27", subjects:["fineart","graphics","media"], courses:"Fine Art, Graphic Design, Illustration, Game Art, MA Creative Media",
+   next:"Late May", url:"https://www.worcester.ac.uk/events/school-of-arts-degree-show-2026"},
+  {name:"Degree Show 2026", inst:"University of Northampton", type:"degree", region:"Midlands", city:"Waterside Campus, University Drive, Northampton NN1",
+   start:"2026-06-18", end:"2026-06-23", subjects:["product","interiors","graphics","fashion","fineart","media"], courses:"Product Design, Interior Architecture, Graphic Communication, Illustration, Fashion, Footwear & Accessories, Fine Art, Photography. Launch and fashion show 18 Jun",
+   next:"Mid to late June", url:"https://www.northampton.ac.uk/undergraduate/final-year-degree-show/"},
 
   // ---------- North ----------
   {name:"Manchester School of Art Degree Show", inst:"Manchester Metropolitan University", type:"degree", region:"North", city:"Oxford Road, Manchester",
@@ -269,6 +296,25 @@ window.SHOWS = [
    start:"2026-05-23", end:"2026-06-06", subjects:["fineart"], courses:"BA Fine Art",
    next:"Late May to early June", url:"https://www.artrabbit.com/people/celinechoon/contributor?page=72"},
 
+  {name:"Art & Design Degree Shows", inst:"University of Sunderland", type:"degree", region:"North", city:"Priestman Building and National Glass Centre, Sunderland",
+   start:"2026-06-06", end:"2026-06-12", subjects:["fineart","fashion","graphics","media","craft"], courses:"Fine Art, Fashion, Graphic Design, Illustration, Animation & Games Art, Photography",
+   next:"Early to mid June", url:"https://www.sunderland.ac.uk/news/2026/degree-shows-2026-how-this-partially-sighted-sunderland-artist-is-painting-the-world-through-their-perspective"},
+  {name:"University of Lancashire Degree Show", inst:"University of Lancashire (formerly UCLan)", type:"degree", region:"North", city:"Hanover and Victoria Buildings, Preston PR1",
+   start:"2026-06-11", end:"2026-06-26", subjects:["fineart","graphics","fashion","interiors","media"], courses:"Fine Art, Photography, Graphic Design, Illustration, Fashion, Textile Design, Interior Design, Animation, Games Design, Architecture",
+   next:"Mid to late June", url:"https://degreeshow.uclan.ac.uk/faqs"},
+  {name:"University of Lancashire MA Degree Show", inst:"University of Lancashire (formerly UCLan)", type:"degree", region:"North", city:"Hanover and Victoria Buildings, Preston PR1",
+   start:"2026-09-04", end:"2026-09-20", subjects:["fineart","graphics","craft","media"], courses:"MA Fine Art, Graphic Design, Ceramics, Children's Book Illustration, Surface Pattern & Textiles, Animation, Games Design",
+   next:"Early to mid September", url:"https://www.creativelancashire.org/event/university-of-lancashire-ma-degree-show-2026"},
+  {name:"Made in Carlisle", inst:"University of Cumbria", type:"degree", region:"North", city:"Brampton Road campus, Carlisle",
+   start:"2026-06-01", end:"2026-06-06", subjects:["fineart","graphics","media"], courses:"Fine Art, Graphic Design, Illustration, Photography, Film & TV, Games Design, Wildlife Media",
+   next:"Early June", url:"https://news.cumbria.ac.uk/news/made-in-carlisle-artists-celebrated-at-university-degree-show"},
+  {name:"ExpoTees Creative", inst:"Teesside University", type:"degree", region:"North", city:"Digital Life Building, Middlesbrough TS1",
+   start:"2026-05-12", end:"2026-05-12", subjects:["media"], courses:"Concept Art, Games, Animation and Visual Effects",
+   next:"May. Computing and engineering strands run in March", url:"https://www.tees.ac.uk/schools/scedt/expotees/"},
+  {name:"Visual Arts Degree Show", inst:"Liverpool Hope University", type:"degree", region:"North", city:"Creative Campus, Shaw Street, Liverpool L6",
+   start:"2026-05-29", end:"2026-06-07", subjects:["fineart","graphics","fashion","media","performance"], courses:"Fine Art, Graphic Design, Photography, Fashion, Film, TV, Performing Arts",
+   next:"Late May to early June", url:"https://www.hope.ac.uk/degreeshow/"},
+
   // ---------- Scotland ----------
   {name:"DJCAD Undergraduate Degree Show", inst:"University of Dundee", type:"degree", region:"Scotland", city:"Perth Road, Dundee",
    start:"2026-05-23", end:"2026-05-31", subjects:["product","interiors","graphics","fineart","craft","media","fashion"], courses:"Product Design, Interior & Environmental Design, Graphic Design, Illustration, Fine Art, Jewellery, Textiles, Animation",
@@ -286,6 +332,25 @@ window.SHOWS = [
    start:"2026-06-05", end:"2026-06-14", subjects:["product","graphics","fineart","fashion","craft"], courses:"Product, Ceramics & Jewellery, Communication Design, Fashion & Textiles, Fine Art",
    next:"Early to mid June", url:"https://www.craftscotland.org/journal/article/degree-shows-2026"},
 
+  {name:"Edinburgh Napier Degree Show", inst:"Edinburgh Napier University", type:"degree", region:"Scotland", city:"Merchiston campus, 10 Colinton Road, Edinburgh",
+   start:"2026-05-29", end:"2026-06-05", subjects:["graphics","interiors","product","media","fineart"], courses:"Design and visual arts, undergraduate and postgraduate",
+   next:"Late May to early June", url:"https://www.napier.ac.uk/about-us/our-schools/school-of-arts-and-creative-industries/degree-show"},
+  {name:"School of Textiles & Design Degree Show", inst:"Heriot-Watt University", type:"degree", region:"Scotland", city:"High Mill, Scottish Borders Campus, Galashiels",
+   start:"2026-05-23", end:"2026-05-30", subjects:["fashion","interiors","graphics"], courses:"Fashion, Design for Textiles, Fashion Technology, Interior Architecture & Design, Communication Design. Fashion shows on opening day",
+   next:"Late May", url:"https://hw.ac.uk/about/our-schools/textiles-and-design/showcase"},
+  {name:"Heriot-Watt Masters Degree Show", inst:"Heriot-Watt University", type:"degree", region:"Scotland", city:"Scottish Borders Campus, Galashiels",
+   start:"2026-08-06", end:"2026-08-07", subjects:["fashion","interiors","graphics"], courses:"Postgraduate design, fashion and textiles",
+   next:"August", url:"https://hw.ac.uk/about/our-schools/textiles-and-design/showcase"},
+  {name:"Abertay Digital Graduate Show", inst:"Abertay University", type:"degree", region:"Scotland", city:"Kydd Building, Bell Street, Dundee",
+   start:"2026-05-14", end:"2026-05-16", subjects:["media"], courses:"Game Design, Computer Arts, games programming, animation, UI/UX, VR/AR",
+   next:"Mid May", url:"https://www.abertay.ac.uk/news/2026/abertay-digital-graduate-show-marks-20-years-with-biggest-ever-event/"},
+  {name:"Moray School of Art Degree Show", inst:"UHI Moray", type:"degree", region:"Scotland", city:"Moray Street Campus, Elgin IV30",
+   start:"2026-06-05", end:"2026-06-12", subjects:["fineart","media"], courses:"Fine Art: painting, sculpture, photography, textiles, animation, installation. Opening 4 Jun",
+   next:"Early to mid June", url:"https://www.moray.uhi.ac.uk/events/degree-show-and-student-exhibition.html"},
+  {name:"DJCAD Masters Show", inst:"University of Dundee", type:"degree", region:"Scotland", city:"13 Perth Road, Dundee",
+   start:"2026-08-22", end:"2026-08-30", subjects:["product","graphics","fineart","media"], courses:"Product Design, Communication Design, Fine Art, Animation & VFX, Medical Art, Design for Business, Curatorial Practice",
+   next:"Late August", url:"https://www.dundee.ac.uk/masters-showcase/2026"},
+
   // ---------- Wales & Northern Ireland ----------
   {name:"Swansea College of Art Summer Degree Shows", inst:"University of Wales Trinity Saint David", type:"degree", region:"Wales", city:"Swansea College of Art, De La Beche Street, Swansea",
    start:"2026-05-16", end:"2026-06-05", subjects:["graphics","fineart","media","craft","fashion","product"], courses:"Graphic Design, Illustration, Fine Art, Photography, Film, Design Crafts, Surface Pattern & Textiles, Automotive Design",
@@ -293,7 +358,22 @@ window.SHOWS = [
   {name:"CSAD Degree Show", inst:"Cardiff Metropolitan University", type:"degree", region:"Wales", city:"Llandaff Campus, Cardiff",
    start:null, end:null, dates:"Dates TBC", subjects:["product","interiors","graphics","fashion","fineart","craft","media"], courses:"Product Design, Interior Design, Graphic Communication, Illustration, Fashion, Textiles, Ceramics, Fine Art, Photography, Animation",
    next:"Not published yet. Check the CSAD page", url:"https://www.cardiffmet.ac.uk/school-of-art-and-design/csad-degree-show/"},
+  {name:"Art & Design Degree Show", inst:"Wrexham University", type:"degree", region:"Wales", city:"1 Eagles Meadow, Wrexham",
+   start:null, end:null, dates:"Dates TBC", subjects:["fineart","graphics","media"], courses:"Art & Design",
+   next:"Spring. Not dated yet on the Wrexham page", url:"https://wrexham.ac.uk/subject-area/art-degrees/art-and-design-degree-show"},
+  {name:"School of Art Masters Show", inst:"Wrexham University", type:"degree", region:"Wales", city:"School of Art, Regent Street, Wrexham",
+   start:null, end:null, dates:"Dates TBC", subjects:["fineart","media","graphics"], courses:"MA Photography, MA Painting, MA Art and MA Design Interdisciplinary Practice",
+   next:"Late August (2025 show ran to 29 Aug)", url:"https://wrexham.ac.uk/news/articles/wrexham-university-school-of-art-masters-show-open-for-public-viewing/"},
+  {name:"Creative Graduate Festival", inst:"University of South Wales", type:"degree", region:"Wales", city:"Venues across Cardiff",
+   start:null, end:null, dates:"Dates TBC", subjects:["fashion","media","performance"], courses:"Fashion, Film, Advertising, TV & Film Set Design, Games, Animation",
+   next:"Summer. Exhibitions and events in Cardiff plus an online showcase", url:"https://www.southwales.ac.uk/creative/creative-graduate-festival/"},
   {name:"Belfast School of Art Graduate Showcase", inst:"Ulster University", type:"degree", region:"Northern Ireland", city:"York Street, Belfast",
    start:"2026-06-06", end:"2026-06-21", subjects:["product","graphics","fineart","fashion","craft","media"], courses:"Product Design, Ceramics, Silversmithing & Jewellery, Graphic Design, Fine Art, Textiles & Fashion, Photography",
-   next:"Early to late June. Fashion show at the end of May", url:"https://www.ulster.ac.uk/news/2026/june/belfast-school-of-art-graduate-showcase-2026"}
+   next:"Early to late June. Fashion show at the end of May", url:"https://www.ulster.ac.uk/news/2026/june/belfast-school-of-art-graduate-showcase-2026"},
+  {name:"Prologue: Interim MFA Exhibition", inst:"Belfast School of Art, Ulster University", type:"degree", region:"Northern Ireland", city:"Art Gallery, Belfast campus, York Street, Belfast",
+   start:"2026-01-09", end:"2026-01-28", subjects:["fineart"], courses:"MFA Fine Art, shown in two parts",
+   next:"January", url:"https://www.ulster.ac.uk/ulsterpresents/whats-on/2025-26/prologue-interim-mfa-exhibition"},
+  {name:"Beneath The Surface: MFA Photography", inst:"Belfast School of Art, Ulster University", type:"degree", region:"Northern Ireland", city:"Belfast Exposed, 23 Donegall Street, Belfast",
+   start:"2026-06-04", end:"2026-07-23", subjects:["media"], courses:"MFA Photography. Part of Belfast Photo Festival",
+   next:"June to July, with Belfast Photo Festival", url:"https://www.belfastphotofestival.com/beneath-the-surface-ulster-university-mfa-photography-2026"}
 ];
