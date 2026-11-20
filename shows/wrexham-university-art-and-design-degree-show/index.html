@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=3">
+<link rel="stylesheet" href="/site.css?v=4">
 <link rel="stylesheet" href="/pages.css?v=1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All shows","item":"https://posterday.com/"},{"@type":"ListItem","position":2,"name":"Wales","item":"https://posterday.com/region/wales/"},{"@type":"ListItem","position":3,"name":"Wrexham University Art & Design Degree Show","item":"https://posterday.com/shows/wrexham-university-art-and-design-degree-show/"}]}</script>
 <!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
@@ -35,7 +35,7 @@
     <a class="brand" href="/">Posterday</a>
     <span class="divider"></span>
     <span class="tagline">UK art and design degree shows and project shows</span>
-    <nav><a href="/#shows">All shows</a><a href="/advertise.html">Advertise</a></nav>
+    <nav><a href="/#shows">All shows</a><a href="#remind">Get reminders</a><a href="/advertise.html">Advertise</a></nav>
   </div>
 </header>
 <main>
@@ -55,7 +55,8 @@
       </dl>
       <div class="subj"><a href="/subject/fine-art/">Fine Art</a><a href="/subject/graphics-and-illustration/">Graphics &amp; Illustration</a><a href="/subject/photography-film-and-animation/">Photography, Film &amp; Animation</a></div>
       <div class="next"><b>Usually:</b> Spring. Not dated yet on the Wrexham page</div>
-      <a class="link big" href="https://wrexham.ac.uk/subject-area/art-degrees/art-and-design-degree-show" target="_blank" rel="noopener" data-show="Art &amp; Design Degree Show" data-where="show-page">Official page →</a>
+      <div class="actions"><a class="link big" href="https://wrexham.ac.uk/subject-area/art-degrees/art-and-design-degree-show" target="_blank" rel="noopener" data-show="Art &amp; Design Degree Show" data-where="show-page">Official page →</a>
+      <span data-remind-slot="Art &amp; Design Degree Show"></span></div>
     </div>
     <div class="about">
       <h2>About this show</h2>
@@ -63,6 +64,28 @@
       <p>It covers Fine Art, Graphics &amp; Illustration, Photography and Film &amp; Animation, with work from these courses: Art &amp; Design.</p>
       <p>Most universities announce their dates in spring. Posterday updates this page when they do, but always check the official page before you travel.</p>
     </div>
+  </div>
+  <div class="contact remind" id="remind">
+    <div>
+      <h2>Never miss a show</h2>
+      <p>Most dates are announced in spring. Leave your email and we'll tell you when they're out, with a note before the busy season starts. No spam, and you can unsubscribe at any time.</p>
+      <div class="subcal">
+        <b>Or add every show to your calendar.</b> New dates appear in it by themselves as we add them.
+        <div class="btns">
+          <a class="btn" id="subApple" href="#" data-subscribe="apple">Apple or Outlook</a>
+          <a class="btn" id="subGoogle" href="#" target="_blank" rel="noopener" data-subscribe="google">Google Calendar</a>
+          <button class="btn" type="button" id="subCopy" data-subscribe="copy">Copy calendar link</button>
+        </div>
+      </div>
+    </div>
+    <form id="signup" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="show" id="signupShow">
+      <p class="signup-for" id="signupFor" hidden></p>
+      <label>Your email<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <div class="btns"><button class="btn solid" type="submit">Remind me</button></div>
+      <div class="note" id="signupStatus" aria-live="polite"></div>
+    </form>
   </div>
   <h2>More shows in Wales</h2><div class="grid"><article class="card">
     <div class="head"><div><h4><a class="title" href="/shows/swansea-college-of-art-summer-degree-shows-university-of-wales-trinity-saint-david/">Swansea College of Art Summer Degree Shows, University of Wales Trinity Saint David</a></h4><div class="inst">University of Wales Trinity Saint David</div></div>
@@ -106,5 +129,8 @@ document.addEventListener("click", e=>{
   window.goatcounter.count({path: "show/" + a.dataset.show, title: a.dataset.show + " (" + a.dataset.where + ")", event: true});
 });
 </script>
+<script>window.SHOWS = [{"name":"Art & Design Degree Show","inst":"Wrexham University","city":"1 Eagles Meadow, Wrexham","courses":"Art & Design","url":"https://wrexham.ac.uk/subject-area/art-degrees/art-and-design-degree-show","start":null,"end":null}];</script>
+<script src="/calendar.js"></script>
+<script src="/remind.js"></script>
 </body>
 </html>

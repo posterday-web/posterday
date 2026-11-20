@@ -35,8 +35,16 @@ const WEB3FORMS_KEY = "8aa5b675-4991-498a-a646-5b1167b2f08a";
     setTimeout(() => URL.revokeObjectURL(url), 2000);
   }
 
+  // Show pages have empty slots for these links, filled in here so "upcoming" is worked out on the day.
+  const today = new Date().toISOString().slice(0, 10);
+  document.querySelectorAll("[data-remind-slot]").forEach(el => {
+    const s = (window.SHOWS || []).find(x => x.name === el.dataset.remindSlot);
+    if (s) el.innerHTML = window.remindBits(s, !!s.start && (s.end || s.start) >= today);
+  });
+
   // ---- Sign-up form ----
   const form = document.getElementById("signup");
+  if (!form) return;
   const status = document.getElementById("signupStatus");
   const showField = document.getElementById("signupShow");
   const showNote = document.getElementById("signupFor");

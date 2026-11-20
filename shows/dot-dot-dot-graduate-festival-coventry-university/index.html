@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=3">
+<link rel="stylesheet" href="/site.css?v=4">
 <link rel="stylesheet" href="/pages.css?v=1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ExhibitionEvent","name":"DOT DOT DOT Graduate Festival, Coventry University","description":"Degree show from Coventry University. Product Design, Automotive & Transport Design, Graphic Design, Illustration, Fine Art, Fashion.","startDate":"2026-06-01","endDate":"2026-06-01","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Delia Derbyshire Building","address":{"@type":"PostalAddress","streetAddress":"Delia Derbyshire Building, Coventry","addressRegion":"Midlands","addressCountry":"GB"}},"organizer":{"@type":"Organization","name":"Coventry University","url":"https://www.coventry.ac.uk/covshowcase/"},"image":["https://posterday.com/img/og-image.png"],"url":"https://posterday.com/shows/dot-dot-dot-graduate-festival-coventry-university/"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All shows","item":"https://posterday.com/"},{"@type":"ListItem","position":2,"name":"Midlands","item":"https://posterday.com/region/midlands/"},{"@type":"ListItem","position":3,"name":"DOT DOT DOT Graduate Festival, Coventry University","item":"https://posterday.com/shows/dot-dot-dot-graduate-festival-coventry-university/"}]}</script>
@@ -36,7 +36,7 @@
     <a class="brand" href="/">Posterday</a>
     <span class="divider"></span>
     <span class="tagline">UK art and design degree shows and project shows</span>
-    <nav><a href="/#shows">All shows</a><a href="/advertise.html">Advertise</a></nav>
+    <nav><a href="/#shows">All shows</a><a href="#remind">Get reminders</a><a href="/advertise.html">Advertise</a></nav>
   </div>
 </header>
 <main>
@@ -56,7 +56,8 @@
       </dl>
       <div class="subj"><a href="/subject/product-and-furniture/">Product &amp; Furniture</a><a href="/subject/graphics-and-illustration/">Graphics &amp; Illustration</a><a href="/subject/fine-art/">Fine Art</a><a href="/subject/fashion-and-textiles/">Fashion &amp; Textiles</a><a href="/subject/photography-film-and-animation/">Photography, Film &amp; Animation</a></div>
       <div class="next"><b>2027 guide:</b> Spring to early summer. Check the calendar for the design week</div>
-      <a class="link big" href="https://www.coventry.ac.uk/covshowcase/" target="_blank" rel="noopener" data-show="DOT DOT DOT Graduate Festival" data-where="show-page">Official page →</a>
+      <div class="actions"><a class="link big" href="https://www.coventry.ac.uk/covshowcase/" target="_blank" rel="noopener" data-show="DOT DOT DOT Graduate Festival" data-where="show-page">Official page →</a>
+      <span data-remind-slot="DOT DOT DOT Graduate Festival"></span></div>
     </div>
     <div class="about">
       <h2>About this show</h2>
@@ -64,6 +65,28 @@
       <p>It covers Product &amp; Furniture, Graphics &amp; Illustration, Fine Art, Fashion &amp; Textiles, Photography and Film &amp; Animation, with work from these courses: Product Design, Automotive &amp; Transport Design, Graphic Design, Illustration, Fine Art, Fashion.</p>
       <p>Most universities announce their dates in spring. Posterday updates this page when they do, but always check the official page before you travel.</p>
     </div>
+  </div>
+  <div class="contact remind" id="remind">
+    <div>
+      <h2>Never miss a show</h2>
+      <p>Most dates are announced in spring. Leave your email and we'll tell you when they're out, with a note before the busy season starts. No spam, and you can unsubscribe at any time.</p>
+      <div class="subcal">
+        <b>Or add every show to your calendar.</b> New dates appear in it by themselves as we add them.
+        <div class="btns">
+          <a class="btn" id="subApple" href="#" data-subscribe="apple">Apple or Outlook</a>
+          <a class="btn" id="subGoogle" href="#" target="_blank" rel="noopener" data-subscribe="google">Google Calendar</a>
+          <button class="btn" type="button" id="subCopy" data-subscribe="copy">Copy calendar link</button>
+        </div>
+      </div>
+    </div>
+    <form id="signup" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="show" id="signupShow">
+      <p class="signup-for" id="signupFor" hidden></p>
+      <label>Your email<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <div class="btns"><button class="btn solid" type="submit">Remind me</button></div>
+      <div class="note" id="signupStatus" aria-live="polite"></div>
+    </form>
   </div>
   <h2>More shows in Midlands</h2><div class="grid"><article class="card">
     <div class="head"><div><h4><a class="title" href="/shows/grad-fest-animation-and-filmmaking-nottingham-trent-university/">Grad Fest: Animation &amp; Filmmaking, Nottingham Trent University</a></h4><div class="inst">Nottingham Trent University</div></div>
@@ -119,5 +142,8 @@ document.addEventListener("click", e=>{
   window.goatcounter.count({path: "show/" + a.dataset.show, title: a.dataset.show + " (" + a.dataset.where + ")", event: true});
 });
 </script>
+<script>window.SHOWS = [{"name":"DOT DOT DOT Graduate Festival","inst":"Coventry University","city":"Delia Derbyshire Building, Coventry","courses":"Product Design, Automotive & Transport Design, Graphic Design, Illustration, Fine Art, Fashion","url":"https://www.coventry.ac.uk/covshowcase/","start":"2026-06-01","end":null}];</script>
+<script src="/calendar.js"></script>
+<script src="/remind.js"></script>
 </body>
 </html>

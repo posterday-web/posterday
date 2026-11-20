@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=3">
+<link rel="stylesheet" href="/site.css?v=4">
 <link rel="stylesheet" href="/pages.css?v=1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ExhibitionEvent","name":"UCA Grad Show – Epsom","description":"Degree show from University for the Creative Arts. Fashion, Fashion Promotion, Creative Business. Catwalk on opening night.","startDate":"2026-06-10","endDate":"2026-06-24","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Ashley Road","address":{"@type":"PostalAddress","streetAddress":"Ashley Road, Epsom KT18","addressRegion":"South East","addressCountry":"GB"}},"organizer":{"@type":"Organization","name":"University for the Creative Arts","url":"https://ucreative.ac.uk/events/galleries/gradshow-2026-epsom/"},"image":["https://posterday.com/img/og-image.png"],"url":"https://posterday.com/shows/uca-grad-show-epsom/"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All shows","item":"https://posterday.com/"},{"@type":"ListItem","position":2,"name":"South East","item":"https://posterday.com/region/south-east/"},{"@type":"ListItem","position":3,"name":"UCA Grad Show – Epsom","item":"https://posterday.com/shows/uca-grad-show-epsom/"}]}</script>
@@ -36,7 +36,7 @@
     <a class="brand" href="/">Posterday</a>
     <span class="divider"></span>
     <span class="tagline">UK art and design degree shows and project shows</span>
-    <nav><a href="/#shows">All shows</a><a href="/advertise.html">Advertise</a></nav>
+    <nav><a href="/#shows">All shows</a><a href="#remind">Get reminders</a><a href="/advertise.html">Advertise</a></nav>
   </div>
 </header>
 <main>
@@ -56,7 +56,8 @@
       </dl>
       <div class="subj"><a href="/subject/fashion-and-textiles/">Fashion &amp; Textiles</a></div>
       <div class="next"><b>2027 guide:</b> Second week of June</div>
-      <a class="link big" href="https://ucreative.ac.uk/events/galleries/gradshow-2026-epsom/" target="_blank" rel="noopener" data-show="UCA Grad Show – Epsom" data-where="show-page">Official page →</a>
+      <div class="actions"><a class="link big" href="https://ucreative.ac.uk/events/galleries/gradshow-2026-epsom/" target="_blank" rel="noopener" data-show="UCA Grad Show – Epsom" data-where="show-page">Official page →</a>
+      <span data-remind-slot="UCA Grad Show – Epsom"></span></div>
     </div>
     <div class="about">
       <h2>About this show</h2>
@@ -64,6 +65,28 @@
       <p>It covers Fashion &amp; Textiles, with work from these courses: Fashion, Fashion Promotion, Creative Business. Catwalk on opening night.</p>
       <p>Most universities announce their dates in spring. Posterday updates this page when they do, but always check the official page before you travel.</p>
     </div>
+  </div>
+  <div class="contact remind" id="remind">
+    <div>
+      <h2>Never miss a show</h2>
+      <p>Most dates are announced in spring. Leave your email and we'll tell you when they're out, with a note before the busy season starts. No spam, and you can unsubscribe at any time.</p>
+      <div class="subcal">
+        <b>Or add every show to your calendar.</b> New dates appear in it by themselves as we add them.
+        <div class="btns">
+          <a class="btn" id="subApple" href="#" data-subscribe="apple">Apple or Outlook</a>
+          <a class="btn" id="subGoogle" href="#" target="_blank" rel="noopener" data-subscribe="google">Google Calendar</a>
+          <button class="btn" type="button" id="subCopy" data-subscribe="copy">Copy calendar link</button>
+        </div>
+      </div>
+    </div>
+    <form id="signup" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="show" id="signupShow">
+      <p class="signup-for" id="signupFor" hidden></p>
+      <label>Your email<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <div class="btns"><button class="btn solid" type="submit">Remind me</button></div>
+      <div class="note" id="signupStatus" aria-live="polite"></div>
+    </form>
   </div>
   <h2>More shows in South East</h2><div class="grid"><article class="card">
     <div class="head"><div><h4><a class="title" href="/shows/oxford-brookes-university-ba-art-and-design-show/">Oxford Brookes University BA Art &amp; Design Show</a></h4><div class="inst">Oxford Brookes University</div></div>
@@ -119,5 +142,8 @@ document.addEventListener("click", e=>{
   window.goatcounter.count({path: "show/" + a.dataset.show, title: a.dataset.show + " (" + a.dataset.where + ")", event: true});
 });
 </script>
+<script>window.SHOWS = [{"name":"UCA Grad Show – Epsom","inst":"University for the Creative Arts","city":"Ashley Road, Epsom KT18","courses":"Fashion, Fashion Promotion, Creative Business. Catwalk on opening night","url":"https://ucreative.ac.uk/events/galleries/gradshow-2026-epsom/","start":"2026-06-10","end":"2026-06-24"}];</script>
+<script src="/calendar.js"></script>
+<script src="/remind.js"></script>
 </body>
 </html>
