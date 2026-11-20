@@ -3,12 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posterday · UK art and design degree shows</title>
-<meta name="description" content="When and where the UK's art and design degree shows and final-year project shows happen: product, interiors, graphics, fashion, fine art, photography, film, craft and more.">
+<title>UK art and design degree shows 2027 · Posterday</title>
+<meta name="description" content="Every UK art and design degree show and graduate showcase in one place: dates, venues and courses for product, interiors, graphics, fashion, fine art, film, craft and more.">
+<link rel="canonical" href="https://posterday.com/">
+<meta property="og:site_name" content="Posterday">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UK art and design degree shows · Posterday">
+<meta property="og:description" content="Every UK art and design degree show and graduate showcase in one place: dates, venues and courses for product, interiors, graphics, fashion, fine art, film, craft and more.">
+<meta property="og:url" content="https://posterday.com/">
+<meta property="og:image" content="https://posterday.com/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Posterday: UK art and design degree shows">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://posterday.com/#website","name":"Posterday","url":"https://posterday.com/","description":"UK art and design degree shows, all in one place","inLanguage":"en-GB","publisher":{"@id":"https://posterday.com/#org"}},
+{"@type":"Organization","@id":"https://posterday.com/#org","name":"Posterday","url":"https://posterday.com/","logo":{"@type":"ImageObject","url":"https://posterday.com/img/logo.png","width":512,"height":512}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css?v=4">
+<link rel="stylesheet" href="pages.css?v=1">
 <!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
 <script data-goatcounter="https://posterday.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -101,14 +120,20 @@
     <p>Dates come from each university's or organiser's own pages and from event listings published in 2026. Most 2027 dates are announced in spring, so each show carries a 2027 guide based on when it usually runs. Always check the official link before you travel.</p>
     <p>Want more visitors at your show? <a href="advertise.html">Advertise with Posterday</a>.</p>
     <p>"Project show" means a final-year design or engineering project exhibition, usually with an industry night. Big multi-subject shows are tagged with every subject they include, so a filter shows any show where that subject is on display.</p>
+    <p class="browse-links"><b>Browse by region:</b> <a href="/region/london/">London</a> · <a href="/region/south-east/">South East</a> · <a href="/region/south-west/">South West</a> · <a href="/region/east/">East</a> · <a href="/region/midlands/">Midlands</a> · <a href="/region/north/">North</a> · <a href="/region/scotland/">Scotland</a> · <a href="/region/wales/">Wales</a> · <a href="/region/northern-ireland/">Northern Ireland</a></p>
+    <p class="browse-links"><b>Browse by subject:</b> <a href="/subject/product-and-furniture/">Product &amp; Furniture</a> · <a href="/subject/interiors-and-architecture/">Interiors &amp; Architecture</a> · <a href="/subject/graphics-and-illustration/">Graphics &amp; Illustration</a> · <a href="/subject/fashion-and-textiles/">Fashion &amp; Textiles</a> · <a href="/subject/fine-art/">Fine Art</a> · <a href="/subject/photography-film-and-animation/">Photography, Film &amp; Animation</a> · <a href="/subject/jewellery-ceramics-and-craft/">Jewellery, Ceramics &amp; Craft</a> · <a href="/subject/theatre-and-performance-design/">Theatre &amp; Performance Design</a></p>
   </footer>
 </main>
 
 <script src="shows.js"></script>
 <script src="calendar.js"></script>
 <script src="remind.js"></script>
+<script src="show-pages.js"></script>
 <script>
 const SHOWS = window.SHOWS, UPDATED = window.UPDATED;
+const PAGES = window.SHOW_PAGES || {};
+// Show name, linked to the show's own page (made by tools/build-pages.js) when it has one.
+const showTitle = s => PAGES[s.name] ? `<a class="title" href="${PAGES[s.name]}">${esc(s.name)}</a>` : esc(s.name);
 const TYPES = {degree:"Degree show", project:"Project show", national:"National showcase", london:"London / LDF show"};
 const TYPE_COL = {degree:"var(--c1)", project:"var(--c3)", national:"var(--c2)", london:"var(--c4)"};
 const SUBJECTS = {product:"Product & Furniture", interiors:"Interiors & Architecture", graphics:"Graphics & Illustration", fashion:"Fashion & Textiles", fineart:"Fine Art", media:"Photography, Film & Animation", craft:"Jewellery, Ceramics & Craft", performance:"Theatre & Performance Design"};
@@ -138,7 +163,7 @@ function featured(){
   const promo = `<article class="fcard promo"><div class="fbody"><span class="spons">Featured spot</span><h4>Your show could be here</h4><div class="blurb">Put your degree show in front of the people planning their summer of graduate shows: employers, recruiters, press and future students.</div><a class="cta" href="advertise.html">Advertise your show →</a></div></article>`;
   document.getElementById("featured").innerHTML = f.slice(0,3).map(s=>`<article class="fcard">
     <div class="hero" style="background:${heroBg(s.hue)}"><span class="pill">Featured</span><span class="mono">${esc(mono(s))}</span><span class="ph">Hero image</span></div>
-    <div class="fbody"><div class="inst">${esc(s.inst)}</div><h4>${esc(s.name)}</h4><div class="dates">${esc(dateText(s))}</div>
+    <div class="fbody"><div class="inst">${esc(s.inst)}</div><h4>${showTitle(s)}</h4><div class="dates">${esc(dateText(s))}</div>
     <div class="blurb">${esc(s.blurb)}</div>
     <a class="cta" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="featured">${esc(s.cta||"Find out more")} →</a></div></article>`).join("") + (f.length===0 ? promo.replace('fcard promo','fcard promo wide') : f.length<3 ? promo : "");
 }
@@ -219,7 +244,7 @@ function filtered(){
 function card(s){
   if(s.tier==="enhanced") return enhCard(s);
   return `<article class="card${s.tier==="featured"?" feat-pin":""}">${s.tier==="featured"?'<span class="spons">Featured · Sponsored</span>':""}
-    <div class="head"><div><h4>${esc(s.name)}${isOn(s)?'<span class="now">On now</span>':""}</h4><div class="inst">${esc(s.inst)}</div></div>
+    <div class="head"><div><h4>${showTitle(s)}${isOn(s)?'<span class="now">On now</span>':""}</h4><div class="inst">${esc(s.inst)}</div></div>
       <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span></div>
     <div class="dates">${esc(dateText(s))}</div>
     <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
@@ -234,7 +259,7 @@ function enhCard(s){
   return `<article class="card enh">
     <div class="ehero" style="background:${heroBg(s.hue)}"><span class="mono">${esc(mono(s))}</span><span class="pill">Sponsored</span></div>
     <div class="inner">
-    <div class="head"><div><h4>${esc(s.name)}${isOn(s)?'<span class="now">On now</span>':""}</h4><div class="inst">${esc(s.inst)}</div></div>
+    <div class="head"><div><h4>${showTitle(s)}${isOn(s)?'<span class="now">On now</span>':""}</h4><div class="inst">${esc(s.inst)}</div></div>
       <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span></div>
     <div class="dates">${esc(dateText(s))}</div>
     <div class="blurb">${esc(s.blurb)}</div>

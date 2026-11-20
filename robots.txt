@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://posterday.com/sitemap.xml
