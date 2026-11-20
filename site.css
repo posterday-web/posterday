@@ -185,3 +185,23 @@
   .tile-link:hover{background:#fff}
   .tile-link .l{color:var(--accent);font-weight:500}
   .live{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(60,89,86,.15);margin-right:10px;vertical-align:middle;position:relative;top:-3px}
+  /* Add to calendar and reminders */
+  .card .actions{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px}
+  .card .actions a.link,.card .actions .none{margin-top:0}
+  .addcal{position:relative;font-size:13px}
+  .addcal summary,.remindme{list-style:none;cursor:pointer;font:inherit;font-size:13px;color:var(--accent);background:none;border:0;padding:0 0 1px;border-bottom:.6px solid rgba(60,89,86,.4)}
+  .addcal summary::-webkit-details-marker{display:none}
+  .addcal summary::before{content:"+ "}
+  .addcal summary:hover,.remindme:hover{border-color:var(--accent)}
+  .calmenu{position:absolute;right:0;bottom:calc(100% + 6px);z-index:3;background:var(--surface);border:.6px solid var(--line);border-radius:4px;box-shadow:0 6px 24px rgba(0,0,0,.12);display:flex;flex-direction:column;min-width:210px;padding:4px}
+  .calmenu a{padding:7px 10px;text-decoration:none;border-radius:3px;white-space:nowrap}
+  .calmenu a:hover{background:var(--bg)}
+  .contact.remind{margin-top:56px}
+  .remind .subcal{margin-top:18px;font-size:13.5px;color:rgba(244,243,240,.78)}
+  .remind .subcal b{color:var(--bg);font-weight:500}
+  .remind .subcal .btns{margin-top:10px}
+  .signup-for{margin:0;font-size:13px;color:rgba(244,243,240,.85)}
+  .signup-for b{color:var(--bg);font-weight:500}
+  .signup-for button{font:inherit;font-size:12.5px;background:none;border:0;color:rgba(244,243,240,.7);border-bottom:.6px solid rgba(244,243,240,.4);padding:0;cursor:pointer;margin-left:4px}
+  #remind{scroll-margin-top:190px}
+  @media (max-width:900px){#remind{scroll-margin-top:290px}}
