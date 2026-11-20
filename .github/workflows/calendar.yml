@@ -1,0 +1,27 @@
+# Keeps calendar.ics (the calendar people subscribe to) in step with shows.js.
+# When shows.js changes on main, this rebuilds the calendar and commits it.
+name: Update calendar
+on:
+  push:
+    branches: [main]
+    paths: [shows.js, calendar.js, tools/build-calendar.js]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/build-calendar.js
+      - name: Commit calendar.ics if it changed
+        run: |
+          if git diff --quiet -- calendar.ics; then echo "No change"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add calendar.ics
+          git commit -m "Update calendar.ics from shows.js"
+          git push
