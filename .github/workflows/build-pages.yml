@@ -1,0 +1,40 @@
+# Rebuilds the show, region and subject pages and sitemap.xml from shows.js,
+# so Google always sees up-to-date pages. Runs when shows.js changes, once a week
+# (so "2026" pages switch to "2027" wording as shows finish), or by hand from the Actions tab.
+name: Build show pages
+
+on:
+  push:
+    branches: [main]
+    paths: [shows.js, tools/build-pages.js]
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tools/build-pages.js
+      - name: Commit any changes
+        run: |
+          git add -A shows region subject sitemap.xml show-pages.js
+          if git diff --cached --quiet; then
+            echo "Pages already up to date."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Rebuild show pages from shows.js"
+            git push
+          fi
