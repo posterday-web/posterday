@@ -340,11 +340,11 @@ function setView(v){
 function popup(group){
   return `<div class="pop">${group.map(s=>`<div class="pshow">
     <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span>
-    <b>${esc(s.name)}${isOn(s)?'<span class="now">On now</span>':""}</b>
+    <b>${showTitle(s)}${isOn(s)?'<span class="now">On now</span>':""}</b>
     <div class="inst">${esc(s.inst)}</div>
     <div class="pdate">${esc(s.start||s.dates ? dateText(s) : "Dates TBC")}</div>
     <div class="pwhere">${esc(s.city)}${near && s.pos ? " · "+distText(dist(s)) : ""}</div>
-    ${s.url?`<a href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="map">Official page →</a>`:""}
+    ${PAGES[s.name]?`<a href="${PAGES[s.name]}">Dates, venue and courses →</a>`:s.url?`<a href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="map">Official page →</a>`:""}
   </div>`).join("")}</div>`;
 }
 async function renderMap(items){
