@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css?v=3">
+<link rel="stylesheet" href="site.css?v=4">
 <link rel="stylesheet" href="pages.css?v=1">
 <!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
 <script data-goatcounter="https://posterday.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -37,7 +37,7 @@
     <a class="brand" href="#top">Posterday</a>
     <span class="divider"></span>
     <span class="tagline">UK art and design degree shows and project shows</span>
-    <nav><a href="#shows">All shows</a><a href="advertise.html">Advertise</a></nav>
+    <nav><a href="#shows">All shows</a><a href="#remind">Get reminders</a><a href="advertise.html">Advertise</a></nav>
   </div>
 </header>
 
@@ -91,6 +91,31 @@
 
   <section class="wrap" id="list"></section>
 
+  <section class="wrap">
+    <div class="contact remind" id="remind">
+      <div>
+        <h2>Never miss a show</h2>
+        <p>Most 2027 dates are announced in spring. Leave your email and we'll tell you when they're out, with a note before the busy season starts. No spam, and you can unsubscribe at any time.</p>
+        <div class="subcal">
+          <b>Or add every show to your calendar.</b> New dates appear in it by themselves as we add them.
+          <div class="btns">
+            <a class="btn" id="subApple" href="#" data-subscribe="apple">Apple or Outlook</a>
+            <a class="btn" id="subGoogle" href="#" target="_blank" rel="noopener" data-subscribe="google">Google Calendar</a>
+            <button class="btn" type="button" id="subCopy" data-subscribe="copy">Copy calendar link</button>
+          </div>
+        </div>
+      </div>
+      <form id="signup" novalidate>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="show" id="signupShow">
+        <p class="signup-for" id="signupFor" hidden></p>
+        <label>Your email<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+        <div class="btns"><button class="btn solid" type="submit">Remind me</button></div>
+        <div class="note" id="signupStatus" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
   <footer class="wrap">
     <p>Dates come from each university's or organiser's own pages and from event listings published in 2026. Most 2027 dates are announced in spring, so each show carries a 2027 guide based on when it usually runs. Always check the official link before you travel.</p>
     <p>Want more visitors at your show? <a href="advertise.html">Advertise with Posterday</a>.</p>
@@ -101,6 +126,8 @@
 </main>
 
 <script src="shows.js"></script>
+<script src="calendar.js"></script>
+<script src="remind.js"></script>
 <script src="show-pages.js"></script>
 <script>
 const SHOWS = window.SHOWS, UPDATED = window.UPDATED;
@@ -223,7 +250,8 @@ function card(s){
     <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
     <div class="subj">${s.subjects.map(k=>`<span class="${state.subject===k?"on":""}">${SUBJECTS[k]}</span>`).join("")}</div>
     <div class="next"><b>${isUpcoming(s)?"Usually":"2027 guide"}:</b> ${esc(s.next)}</div>
-    ${s.url?`<a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a>`:`<span class="none">Search "Free Range Truman Brewery" for this year's line-up</span>`}
+    <div class="actions">${s.url?`<a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a>`:`<span class="none">Search "Free Range Truman Brewery" for this year's line-up</span>`}
+    ${remindBits(s, isUpcoming(s))}</div>
   </article>`;
 }
 
@@ -237,7 +265,8 @@ function enhCard(s){
     <div class="blurb">${esc(s.blurb)}</div>
     <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
     <div class="subj">${s.subjects.map(k=>`<span class="${state.subject===k?"on":""}">${SUBJECTS[k]}</span>`).join("")}</div>
-    <a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a></div>
+    <div class="actions"><a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a>
+    ${remindBits(s, isUpcoming(s))}</div></div>
   </article>`;
 }
 const rank = s => s.tier==="featured"?0:s.tier==="enhanced"?1:2;

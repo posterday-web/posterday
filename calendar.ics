@@ -1,0 +1,1853 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Posterday//UK degree shows//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Posterday: UK degree shows
+X-WR-CALDESC:UK art and design degree shows and project shows from https:/
+ /posterday.com/
+X-WR-TIMEZONE:Europe/London
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:new-designers-2026-07-01@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260705
+SUMMARY:New Designers
+DESCRIPTION:National graduate showcase (200+ courses)\n\nCourses: Furnitur
+ e\, product\, interiors\, textiles\, ceramics\, jewellery\, illustration 
+ and more\n\nOfficial page: https://www.newdesigners.com/\n\nCheck the off
+ icial page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Business Design Centre\, Islington\, London N1
+URL:https://www.newdesigners.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:New Designers opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d-ad-new-blood-festival-2026-06-29@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260702
+SUMMARY:D&AD New Blood Festival
+DESCRIPTION:D&AD\, with 40+ exhibiting university courses\n\nCourses: Grap
+ hic design\, advertising\, illustration\, motion\, UX and portfolio revie
+ ws\n\nOfficial page: https://www.dandad.org/events/new-blood-festival-202
+ 6\n\nCheck the official page before you travel. Listed on Posterday: http
+ s://posterday.com/
+LOCATION:Protein Studios\, 31 New Inn Yard\, London EC2A
+URL:https://www.dandad.org/events/new-blood-festival-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:D&AD New Blood Festival opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:graduate-fashion-week-2026-06-15@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260619
+SUMMARY:Graduate Fashion Week
+DESCRIPTION:Graduate Fashion Foundation (30+ universities)\n\nCourses: Cat
+ walk shows\, exhibitions and showrooms from fashion\, textiles and fashio
+ n communication courses\n\nOfficial page: https://graduatefashionfoundati
+ on.com/\n\nCheck the official page before you travel. Listed on Posterday
+ : https://posterday.com/
+LOCATION:Truman Brewery\, Brick Lane\, London E1
+URL:https://graduatefashionfoundation.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Graduate Fashion Week opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:free-range-2026-07-01@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260801
+SUMMARY:Free Range
+DESCRIPTION:Graduate art & design shows\, Truman Brewery\n\nCourses: Mixed
+  art & design. Different universities each week\n\nCheck the official pag
+ e before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Truman Brewery\, Brick Lane\, London E1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Free Range opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:made-in-brunel-through-glass-2026-06-11@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260614
+SUMMARY:Made in Brunel: Through Glass
+DESCRIPTION:Brunel University of London\n\nCourses: Product Design Enginee
+ ring\, Industrial Design\, Design\n\nOfficial page: https://madeinbrunel.
+ com/\n\nCheck the official page before you travel. Listed on Posterday: h
+ ttps://posterday.com/
+LOCATION:Michael Sterling Building\, Uxbridge
+URL:https://madeinbrunel.com/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Made in Brunel: Through Glass opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kingston-school-of-art-degree-show-2026-06-06@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260613
+SUMMARY:Kingston School of Art Degree Show
+DESCRIPTION:Kingston University\n\nCourses: Product & Furniture Design\, I
+ nterior Design\, Graphic Design\, Illustration\, Fashion\, Fine Art\, Arc
+ hitecture\n\nOfficial page: https://www.kingston.ac.uk/about/events/kings
+ ton-school-of-art-degree-show-2026\n\nCheck the official page before you 
+ travel. Listed on Posterday: https://posterday.com/
+LOCATION:Knights Park\, Kingston upon Thames
+URL:https://www.kingston.ac.uk/about/events/kingston-school-of-art-degree-
+ show-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Kingston School of Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cross-section-ldf-2026-09-14@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260921
+SUMMARY:Cross Section (LDF)
+DESCRIPTION:Kingston Product & Furniture Design graduates\n\nCourses: Prod
+ uct & Furniture Design\n\nOfficial page: https://www.dezeen.com/?p=236425
+ 8\n\nCheck the official page before you travel. Listed on Posterday: http
+ s://posterday.com/
+LOCATION:Indra Gallery\, 20 East Road\, London N1
+URL:https://www.dezeen.com/?p=2364258
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cross Section (LDF) opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csm-ba-fashion-communication-show-2026-05-27@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260601
+SUMMARY:CSM BA Fashion Communication Show
+DESCRIPTION:Central Saint Martins\, UAL\n\nCourses: BA Fashion Communicati
+ on\, Graduate Diploma Fashion\n\nOfficial page: https://www.arts.ac.uk/co
+ lleges/central-saint-martins/whats-on/csm-shows\n\nCheck the official pag
+ e before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:1 Granary Square\, King's Cross\, London N1C
+URL:https://www.arts.ac.uk/colleges/central-saint-martins/whats-on/csm-sho
+ ws
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CSM BA Fashion Communication Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csm-shows-2026-06-18@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260622
+SUMMARY:CSM Shows
+DESCRIPTION:Central Saint Martins\, UAL\n\nCourses: Product\, Ceramic & In
+ dustrial Design\, Graphic Communication\, Jewellery\, Textiles\, Fine Art
+ \, Performance\n\nOfficial page: https://www.arts.ac.uk/whats-on/csm-show
+ s-2026\n\nCheck the official page before you travel. Listed on Posterday:
+  https://posterday.com/
+LOCATION:1 Granary Square\, King's Cross\, London N1C
+URL:https://www.arts.ac.uk/whats-on/csm-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CSM Shows opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csm-postgraduate-art-show-2026-07-01@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260706
+SUMMARY:CSM Postgraduate Art Show
+DESCRIPTION:Central Saint Martins\, UAL\n\nCourses: MA Fine Art\, MA Photo
+ graphy\, moving image and exhibition studies\n\nOfficial page: https://ww
+ w.arts.ac.uk/whats-on/csm-shows-2026-postgraduate-art\n\nCheck the offici
+ al page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:1 Granary Square\, King's Cross\, London N1C
+URL:https://www.arts.ac.uk/whats-on/csm-shows-2026-postgraduate-art
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CSM Postgraduate Art Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chelsea-undergraduate-show-2026-06-11@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260620
+SUMMARY:Chelsea Undergraduate Show
+DESCRIPTION:Chelsea College of Arts\, UAL\n\nCourses: Interior Design\, Pr
+ oduct & Furniture Design\, Graphic Design Communication\, Textiles\, Fine
+  Art\n\nOfficial page: https://www.arts.ac.uk/students/stories/ual-shows-
+ 2026\n\nCheck the official page before you travel. Listed on Posterday: h
+ ttps://posterday.com/
+LOCATION:16 John Islip Street\, London SW1P
+URL:https://www.arts.ac.uk/students/stories/ual-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chelsea Undergraduate Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chelsea-ma-textile-design-show-2026-11-23@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261129
+SUMMARY:Chelsea MA Textile Design Show
+DESCRIPTION:Chelsea College of Arts\, UAL\n\nCourses: MA Textile Design\n\
+ nOfficial page: https://www.arts.ac.uk/students/ual-shows\n\nCheck the of
+ ficial page before you travel. Listed on Posterday: https://posterday.com
+ /
+LOCATION:16 John Islip Street\, London SW1P
+URL:https://www.arts.ac.uk/students/ual-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chelsea MA Textile Design Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:camberwell-undergraduate-show-2026-06-12@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260618
+SUMMARY:Camberwell Undergraduate Show
+DESCRIPTION:Camberwell College of Arts\, UAL\n\nCourses: Illustration\, Gr
+ aphic Design\, Fine Art\, Photography\, 3D Design\n\nOfficial page: https
+ ://www.arts.ac.uk/students/stories/ual-shows-2026\n\nCheck the official p
+ age before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:45–65 Peckham Road\, London SE5
+URL:https://www.arts.ac.uk/students/stories/ual-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Camberwell Undergraduate Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:camberwell-chelsea-wimbledon-postgraduate-show-2026-06-29@posterday.co
+ m
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260705
+SUMMARY:Camberwell\, Chelsea & Wimbledon Postgraduate Show
+DESCRIPTION:UAL\n\nCourses: MA Illustration\, MA Graphic Design Communicat
+ ion\, MA Fine Art\, MA Interior & Spatial Design\, MA Designer Maker\n\nO
+ fficial page: https://artlyst.com/?p=196993\n\nCheck the official page be
+ fore you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Camberwell College of Arts\, 45–65 Peckham Road\, London SE5
+URL:https://artlyst.com/?p=196993
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Camberwell\, Chelsea & Wimbledon Postgraduate Show opens tomor
+ row
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wimbledon-undergraduate-show-2026-06-13@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260621
+SUMMARY:Wimbledon Undergraduate Show
+DESCRIPTION:Wimbledon College of Arts\, UAL\n\nCourses: Theatre & Screen d
+ esign\, Costume\, Technical Arts\, Fine Art\n\nOfficial page: https://www
+ .arts.ac.uk/colleges/wimbledon-college-of-arts/whats-on/wimbledon-shows-2
+ 025\n\nCheck the official page before you travel. Listed on Posterday: ht
+ tps://posterday.com/
+LOCATION:Merton Hall Road\, London SW19
+URL:https://www.arts.ac.uk/colleges/wimbledon-college-of-arts/whats-on/wim
+ bledon-shows-2025
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Wimbledon Undergraduate Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wimbledon-ma-theatre-performance-design-puppetry-2026-11-20@posterday.
+ com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261127
+SUMMARY:Wimbledon MA Theatre & Performance Design + Puppetry
+DESCRIPTION:Wimbledon College of Arts\, UAL\n\nCourses: MA Theatre and Per
+ formance Design\, MA Puppetry\n\nOfficial page: https://www.arts.ac.uk/co
+ lleges/wimbledon-college-of-arts/whats-on/wimbledon-shows\n\nCheck the of
+ ficial page before you travel. Listed on Posterday: https://posterday.com
+ /
+LOCATION:Merton Hall Road\, London SW19
+URL:https://www.arts.ac.uk/colleges/wimbledon-college-of-arts/whats-on/wim
+ bledon-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Wimbledon MA Theatre & Performance Design + Puppetry opens tom
+ orrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lcc-photography-show-2026-05-12@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260517
+SUMMARY:LCC Photography Show
+DESCRIPTION:London College of Communication\, UAL\n\nCourses: BA Photograp
+ hy courses\n\nOfficial page: https://www.arts.ac.uk/colleges/london-colle
+ ge-of-communication/whats-on/lcc-shows\n\nCheck the official page before 
+ you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Elephant and Castle\, London SE1
+URL:https://www.arts.ac.uk/colleges/london-college-of-communication/whats-
+ on/lcc-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LCC Photography Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lcc-design-show-2026-06-03@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260603
+DTEND;VALUE=DATE:20260607
+SUMMARY:LCC Design Show
+DESCRIPTION:London College of Communication\, UAL\n\nCourses: Graphic Desi
+ gn\, Illustration\, Interaction\, Spatial Design\n\nOfficial page: https:
+ //www.arts.ac.uk/colleges/london-college-of-communication/whats-on/lcc-sh
+ ows\n\nCheck the official page before you travel. Listed on Posterday: ht
+ tps://posterday.com/
+LOCATION:Elephant and Castle\, London SE1
+URL:https://www.arts.ac.uk/colleges/london-college-of-communication/whats-
+ on/lcc-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LCC Design Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lcc-screen-show-2026-06-17@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260621
+SUMMARY:LCC Screen Show
+DESCRIPTION:London College of Communication\, UAL\n\nCourses: Film\, Anima
+ tion\, Games\, Sound\n\nOfficial page: https://www.arts.ac.uk/whats-on/sh
+ ows-2026-screen-exhibition\n\nCheck the official page before you travel. 
+ Listed on Posterday: https://posterday.com/
+LOCATION:Elephant and Castle\, London SE1
+URL:https://www.arts.ac.uk/whats-on/shows-2026-screen-exhibition
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LCC Screen Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lcc-postgraduate-photography-show-2026-11-05@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261110
+SUMMARY:LCC Postgraduate Photography Show
+DESCRIPTION:London College of Communication\, UAL\n\nCourses: MA Photograp
+ hy\, MA Photojournalism & Documentary Photography\n\nOfficial page: https
+ ://www.arts.ac.uk/colleges/london-college-of-communication/whats-on/lcc-s
+ hows\n\nCheck the official page before you travel. Listed on Posterday: h
+ ttps://posterday.com/
+LOCATION:Elephant and Castle\, London SE1
+URL:https://www.arts.ac.uk/colleges/london-college-of-communication/whats-
+ on/lcc-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LCC Postgraduate Photography Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lcc-postgraduate-design-show-2026-11-19@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261124
+SUMMARY:LCC Postgraduate Design Show
+DESCRIPTION:London College of Communication\, UAL\n\nCourses: MA Graphic D
+ esign\, MA Design for Art Direction and more\n\nOfficial page: https://ww
+ w.arts.ac.uk/colleges/london-college-of-communication/whats-on/lcc-shows\
+ n\nCheck the official page before you travel. Listed on Posterday: https:
+ //posterday.com/
+LOCATION:Elephant and Castle\, London SE1
+URL:https://www.arts.ac.uk/colleges/london-college-of-communication/whats-
+ on/lcc-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LCC Postgraduate Design Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lcc-postgraduate-screen-show-2026-12-03@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261208
+SUMMARY:LCC Postgraduate Screen Show
+DESCRIPTION:London College of Communication\, UAL\n\nCourses: MA Documenta
+ ry Film\, MA Screenwriting\, MA Sound Arts\n\nOfficial page: https://www.
+ arts.ac.uk/colleges/london-college-of-communication/whats-on/lcc-shows\n\
+ nCheck the official page before you travel. Listed on Posterday: https://
+ posterday.com/
+LOCATION:Elephant and Castle\, London SE1
+URL:https://www.arts.ac.uk/colleges/london-college-of-communication/whats-
+ on/lcc-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LCC Postgraduate Screen Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lcf-undergraduate-exhibition-2026-07-13@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260713
+DTEND;VALUE=DATE:20260719
+SUMMARY:LCF Undergraduate Exhibition
+DESCRIPTION:London College of Fashion\, UAL\n\nCourses: Fashion Design\, T
+ extiles\, Styling\, Costume. Catwalks livestreamed 15–17 Jul\n\nOfficia
+ l page: https://www.flolondon.co.uk/all-posts/london-art-school-graduate-
+ degree-shows-2026\n\nCheck the official page before you travel. Listed on
+  Posterday: https://posterday.com/
+LOCATION:105 Carpenter's Road\, Stratford\, London E20
+URL:https://www.flolondon.co.uk/all-posts/london-art-school-graduate-degre
+ e-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:LCF Undergraduate Exhibition opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rca2026-school-of-arts-humanities-2026-06-18@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260622
+SUMMARY:RCA2026: School of Arts & Humanities
+DESCRIPTION:Royal College of Art\n\nCourses: Painting\, Sculpture\, Photog
+ raphy\, Print\, Jewellery & Metal\, Ceramics & Glass\, Textiles\n\nOffici
+ al page: https://www.artrabbit.com/events/rca2026\n\nCheck the official p
+ age before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Battersea campus\, 1 Hester Road\, London SW11
+URL:https://www.artrabbit.com/events/rca2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RCA2026: School of Arts & Humanities opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rca2026-school-of-architecture-2026-07-03@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260706
+SUMMARY:RCA2026: School of Architecture
+DESCRIPTION:Royal College of Art\n\nCourses: Architecture\, Interior Desig
+ n\, City Design\, Environmental Architecture\n\nOfficial page: https://ww
+ w.stirworld.com/reflect-rca2026-school-of-architecture-show\n\nCheck the 
+ official page before you travel. Listed on Posterday: https://posterday.c
+ om/
+LOCATION:Kensington campus\, Kensington Gore\, London SW7
+URL:https://www.stirworld.com/reflect-rca2026-school-of-architecture-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RCA2026: School of Architecture opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rca2026-festival-of-communication-2026-07-03@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260713
+SUMMARY:RCA2026: Festival of Communication
+DESCRIPTION:Royal College of Art\n\nCourses: Visual Communication\, Animat
+ ion\, Digital Direction\, Information Experience Design\n\nOfficial page:
+  https://www.rca.ac.uk/news-and-events/news/announcing-rca2026-festival-o
+ f-communication/\n\nCheck the official page before you travel. Listed on 
+ Posterday: https://posterday.com/
+LOCATION:White City campus\, London W12
+URL:https://www.rca.ac.uk/news-and-events/news/announcing-rca2026-festival
+ -of-communication/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RCA2026: Festival of Communication opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rca2026-school-of-design-expo-2026-07-16@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260720
+SUMMARY:RCA2026: School of Design EXPO
+DESCRIPTION:Royal College of Art\n\nCourses: Design Products\, Innovation 
+ Design Engineering\, Intelligent Mobility\, Service Design\, Textiles\, F
+ ashion\n\nOfficial page: https://www.rca.ac.uk/news-and-events/news/royal
+ -college-of-art-announces-rca2026/\n\nCheck the official page before you 
+ travel. Listed on Posterday: https://posterday.com/
+LOCATION:Battersea campus\, 1 Hester Road\, London SW11
+URL:https://www.rca.ac.uk/news-and-events/news/royal-college-of-art-announ
+ ces-rca2026/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RCA2026: School of Design EXPO opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ide-summer-show-2026-07-07@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260712
+SUMMARY:IDE Summer Show
+DESCRIPTION:Imperial College London × RCA\n\nCourses: Innovation Design E
+ ngineering (MA/MSc)\n\nOfficial page: https://www.imperial.ac.uk/events/2
+ 09677/ide-summer-show-2026/\n\nCheck the official page before you travel.
+  Listed on Posterday: https://posterday.com/
+LOCATION:Main Entrance\, South Kensington Campus
+URL:https://www.imperial.ac.uk/events/209677/ide-summer-show-2026/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IDE Summer Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:design-engineering-msc-show-2026-07-13@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260713
+DTEND;VALUE=DATE:20260718
+SUMMARY:Design Engineering MSc Show
+DESCRIPTION:Imperial Dyson School of Design Engineering\n\nCourses: Contex
+ tual Design Engineering MSc\, Cleantech Innovation MSc\n\nOfficial page: 
+ https://www.imperial.ac.uk/engineering/departments/design-engineering/new
+ s-events/previous-events/\n\nCheck the official page before you travel. L
+ isted on Posterday: https://posterday.com/
+LOCATION:Main Entrance\, South Kensington Campus
+URL:https://www.imperial.ac.uk/engineering/departments/design-engineering/
+ news-events/previous-events/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Design Engineering MSc Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dyson-school-park-royal-design-district-2026-09-11@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:Dyson School @ Park Royal Design District
+DESCRIPTION:Imperial Dyson School of Design Engineering\n\nCourses: Design
+  Engineering tour and exhibition\n\nOfficial page: https://www.imperial.a
+ c.uk/engineering/departments/design-engineering/news-events/previous-even
+ ts/\n\nCheck the official page before you travel. Listed on Posterday: ht
+ tps://posterday.com/
+LOCATION:Base One\, 1 Portal Way\, London
+URL:https://www.imperial.ac.uk/engineering/departments/design-engineering/
+ news-events/previous-events/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dyson School @ Park Royal Design District opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:annual-student-showcase-2026-06-04@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260607
+SUMMARY:Annual Student Showcase
+DESCRIPTION:Ravensbourne University London\n\nCourses: Product Design\, In
+ terior Design\, Graphic Design\, Fashion\, Animation\, Film\n\nOfficial p
+ age: https://www.ravensbourne.ac.uk/people-and-stories/degree-show\n\nChe
+ ck the official page before you travel. Listed on Posterday: https://post
+ erday.com/
+LOCATION:Greenwich Peninsula\, London SE10
+URL:https://www.ravensbourne.ac.uk/people-and-stories/degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Annual Student Showcase opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:slade-ba-bfa-degree-show-2026-05-22@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260529
+SUMMARY:Slade BA/BFA Degree Show
+DESCRIPTION:Slade School of Fine Art\, UCL\n\nCourses: Painting\, Sculptur
+ e\, Fine Art Media. MA/MFA show follows in June\n\nOfficial page: https:/
+ /www.ucl.ac.uk/slade/events/degreeshows\n\nCheck the official page before
+  you travel. Listed on Posterday: https://posterday.com/
+LOCATION:UCL\, Gower Street\, London WC1
+URL:https://www.ucl.ac.uk/slade/events/degreeshows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Slade BA/BFA Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:goldsmiths-undergraduate-art-degree-show-2026-06-18@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260623
+SUMMARY:Goldsmiths Undergraduate Art Degree Show
+DESCRIPTION:Goldsmiths\, University of London\n\nCourses: BA Fine Art and 
+ related courses\n\nOfficial page: https://londonhigher.ac.uk/?p=10286\n\n
+ Check the official page before you travel. Listed on Posterday: https://p
+ osterday.com/
+LOCATION:New Cross\, London SE14
+URL:https://londonhigher.ac.uk/?p=10286
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Goldsmiths Undergraduate Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:goldsmiths-ba-design-degree-show-2026-06-18@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260619
+SUMMARY:Goldsmiths BA Design Degree Show
+DESCRIPTION:Goldsmiths\, University of London\n\nCourses: BA Design\n\nOff
+ icial page: https://londonhigher.ac.uk/membereventtype/art-design/\n\nChe
+ ck the official page before you travel. Listed on Posterday: https://post
+ erday.com/
+LOCATION:New Cross\, London SE14
+URL:https://londonhigher.ac.uk/membereventtype/art-design/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Goldsmiths BA Design Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:goldsmiths-ba-media-degree-show-elapse-2026-06-18@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260623
+SUMMARY:Goldsmiths BA Media Degree Show (Elapse)
+DESCRIPTION:Goldsmiths\, University of London\n\nCourses: BA Media\, Commu
+ nications & Cultural Studies\n\nOfficial page: https://www.gold.ac.uk/cal
+ endar/?id=16060\n\nCheck the official page before you travel. Listed on P
+ osterday: https://posterday.com/
+LOCATION:Professor Stuart Hall Building\, New Cross\, London SE14
+URL:https://www.gold.ac.uk/calendar/?id=16060
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Goldsmiths BA Media Degree Show (Elapse) opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:goldsmiths-ma-children-s-book-illustration-2026-07-09@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260709
+DTEND;VALUE=DATE:20260713
+SUMMARY:Goldsmiths MA Children's Book Illustration
+DESCRIPTION:Goldsmiths\, University of London\n\nCourses: MA Children's Bo
+ ok Illustration\n\nOfficial page: https://www.gold.ac.uk/calendar/?id=161
+ 04\n\nCheck the official page before you travel. Listed on Posterday: htt
+ ps://posterday.com/
+LOCATION:Professor Stuart Hall Building\, New Cross\, London SE14
+URL:https://www.gold.ac.uk/calendar/?id=16104
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Goldsmiths MA Children's Book Illustration opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:goldsmiths-postgraduate-art-degree-show-2026-07-16@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260722
+SUMMARY:Goldsmiths Postgraduate Art Degree Show
+DESCRIPTION:Goldsmiths\, University of London\n\nCourses: MFA Fine Art\, M
+ A Artists' Film & Moving Image\, MA Art & Ecology\n\nOfficial page: https
+ ://londonhigher.ac.uk/?p=10286\n\nCheck the official page before you trav
+ el. Listed on Posterday: https://posterday.com/
+LOCATION:New Cross\, London SE14
+URL:https://londonhigher.ac.uk/?p=10286
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Goldsmiths Postgraduate Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:westminster-illustration-degree-show-2026-05-29@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260605
+SUMMARY:Westminster Illustration Degree Show
+DESCRIPTION:University of Westminster\n\nCourses: Illustration BA\n\nOffic
+ ial page: https://www.westminster.ac.uk/events/illustration-ba-hons-degre
+ e-show\n\nCheck the official page before you travel. Listed on Posterday:
+  https://posterday.com/
+LOCATION:London Gallery West\, Harrow Campus
+URL:https://www.westminster.ac.uk/events/illustration-ba-hons-degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Westminster Illustration Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:westminster-fine-art-mixed-media-show-2026-05-28@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260602
+SUMMARY:Westminster Fine Art Mixed Media Show
+DESCRIPTION:University of Westminster\n\nCourses: Fine Art Mixed Media BA\
+ n\nOfficial page: https://www.westminster.ac.uk/news/westminster-launches
+ -2026-degree-shows-celebrating-the-next-generation-of-creatives\n\nCheck 
+ the official page before you travel. Listed on Posterday: https://posterd
+ ay.com/
+LOCATION:Ambika P3\, Marylebone Road\, London NW1
+URL:https://www.westminster.ac.uk/news/westminster-launches-2026-degree-sh
+ ows-celebrating-the-next-generation-of-creatives
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Westminster Fine Art Mixed Media Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:westminster-creative-media-arts-show-2026-06-06@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260610
+SUMMARY:Westminster Creative Media Arts Show
+DESCRIPTION:University of Westminster\n\nCourses: Creative Media Arts BA\n
+ \nOfficial page: https://www.westminster.ac.uk/news/westminster-launches-
+ 2026-degree-shows-celebrating-the-next-generation-of-creatives\n\nCheck t
+ he official page before you travel. Listed on Posterday: https://posterda
+ y.com/
+LOCATION:Ambika P3\, Marylebone Road\, London NW1
+URL:https://www.westminster.ac.uk/news/westminster-launches-2026-degree-sh
+ ows-celebrating-the-next-generation-of-creatives
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Westminster Creative Media Arts Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:westminster-graphic-design-degree-show-2026-06-13@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260622
+SUMMARY:Westminster Graphic Design Degree Show
+DESCRIPTION:University of Westminster\n\nCourses: Graphic Design BA\n\nOff
+ icial page: https://www.westminster.ac.uk/events/graphic-design-ba-hons-d
+ egree-show\n\nCheck the official page before you travel. Listed on Poster
+ day: https://posterday.com/
+LOCATION:London Gallery West\, Harrow Campus
+URL:https://www.westminster.ac.uk/events/graphic-design-ba-hons-degree-sho
+ w
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Westminster Graphic Design Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:middlesex-ba-fine-art-degree-show-2026-05-07@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260515
+SUMMARY:Middlesex BA Fine Art Degree Show
+DESCRIPTION:Middlesex University\n\nCourses: BA Fine Art\n\nOfficial page:
+  https://www.artrabbit.com/organisations/middlesex-university?apage=2\n\n
+ Check the official page before you travel. Listed on Posterday: https://p
+ osterday.com/
+LOCATION:Hendon campus\, London NW4
+URL:https://www.artrabbit.com/organisations/middlesex-university?apage=2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Middlesex BA Fine Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:north-london-degree-show-2026-06-10@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260619
+SUMMARY:North London Degree Show
+DESCRIPTION:Middlesex University\n\nCourses: Graphic Design\, Illustration
+ \, Fashion\, Interiors\, Games\, Photography\, Film\, Product Design\n\nO
+ fficial page: https://www.mdx.ac.uk/study/the-degree-show/\n\nCheck the o
+ fficial page before you travel. Listed on Posterday: https://posterday.co
+ m/
+LOCATION:The Grove Building\, Hendon\, London NW4
+URL:https://www.mdx.ac.uk/study/the-degree-show/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:North London Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:school-of-art-architecture-design-summer-show-2026-06-24@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260630
+SUMMARY:School of Art\, Architecture & Design Summer Show
+DESCRIPTION:London Metropolitan University\n\nCourses: Furniture & Product
+  Design\, Interior Design\, Graphic Design\, Fine Art\, Fashion\, Jewelle
+ ry\n\nOfficial page: https://londonhigher.ac.uk/membereventtype/art-desig
+ n/\n\nCheck the official page before you travel. Listed on Posterday: htt
+ ps://posterday.com/
+LOCATION:Shoreditch Campus\, London E1
+URL:https://londonhigher.ac.uk/membereventtype/art-design/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:School of Art\, Architecture & Design Summer Show opens tomorr
+ ow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uca-grad-show-farnham-2026-06-09@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260625
+SUMMARY:UCA Grad Show – Farnham
+DESCRIPTION:University for the Creative Arts\n\nCourses: Graphic Design\, 
+ Illustration\, Fine Art\, Photography\, Animation\, Games\, Film\, Crafts
+ \, Product Design\n\nOfficial page: https://www.uca.ac.uk/events/gallerie
+ s/gradshow-2026-farnham/\n\nCheck the official page before you travel. Li
+ sted on Posterday: https://posterday.com/
+LOCATION:Falkner Road\, Farnham GU9
+URL:https://www.uca.ac.uk/events/galleries/gradshow-2026-farnham/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:UCA Grad Show – Farnham opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uca-grad-show-epsom-2026-06-10@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260625
+SUMMARY:UCA Grad Show – Epsom
+DESCRIPTION:University for the Creative Arts\n\nCourses: Fashion\, Fashion
+  Promotion\, Creative Business. Catwalk on opening night\n\nOfficial page
+ : https://ucreative.ac.uk/events/galleries/gradshow-2026-epsom/\n\nCheck 
+ the official page before you travel. Listed on Posterday: https://posterd
+ ay.com/
+LOCATION:Ashley Road\, Epsom KT18
+URL:https://ucreative.ac.uk/events/galleries/gradshow-2026-epsom/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:UCA Grad Show – Epsom opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uca-grad-show-canterbury-2026-06-11@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260625
+SUMMARY:UCA Grad Show – Canterbury
+DESCRIPTION:University for the Creative Arts\n\nCourses: Architecture\, In
+ terior Architecture\, Fine Art\, Graphic Design\n\nOfficial page: https:/
+ /ucreative.ac.uk/events/galleries/gradshow-2026-canterbury/\n\nCheck the 
+ official page before you travel. Listed on Posterday: https://posterday.c
+ om/
+LOCATION:New Dover Road\, Canterbury CT1
+URL:https://ucreative.ac.uk/events/galleries/gradshow-2026-canterbury/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:UCA Grad Show – Canterbury opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uca-postgrad-show-farnham-2026-09-03@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260915
+SUMMARY:UCA Postgrad Show – Farnham
+DESCRIPTION:University for the Creative Arts\n\nCourses: MA programmes acr
+ oss art\, design\, crafts and media\n\nOfficial page: https://www.amix.uc
+ a.ac.uk/events/galleries/pg-gradshow-2026-farnham/\n\nCheck the official 
+ page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Falkner Road\, Farnham GU9
+URL:https://www.amix.uca.ac.uk/events/galleries/pg-gradshow-2026-farnham/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:UCA Postgrad Show – Farnham opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:art-design-summer-show-2026-06-26@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260702
+SUMMARY:Art & Design Summer Show
+DESCRIPTION:Buckinghamshire New University\n\nCourses: Furniture Design\, 
+ Product & Furniture Design\, Fine Art\, Graphic Design\, Fashion\n\nOffic
+ ial page: https://www.bucks.ac.uk/news/emerging-creative-talent-showcased
+ -buckinghamshire-new-university-summer-show\n\nCheck the official page be
+ fore you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Brunel Engine Shed\, High Wycombe
+URL:https://www.bucks.ac.uk/news/emerging-creative-talent-showcased-buckin
+ ghamshire-new-university-summer-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Art & Design Summer Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:art-media-and-design-graduate-show-2026-05-30@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260608
+SUMMARY:Art\, Media and Design Graduate Show
+DESCRIPTION:University of Brighton\n\nCourses: Graphic Design\, Illustrati
+ on\, Fine Art\, Photography\, Fashion\, Textiles\, 3D Design & Craft\n\nO
+ fficial page: https://www.brighton.ac.uk/summer-shows/\n\nCheck the offic
+ ial page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Grand Parade\, City campus\, Brighton
+URL:https://www.brighton.ac.uk/summer-shows/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Art\, Media and Design Graduate Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:brighton-ma-show-2026-07-05@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260705
+DTEND;VALUE=DATE:20260713
+SUMMARY:Brighton MA Show
+DESCRIPTION:University of Brighton\n\nCourses: MA Fine Art\, Graphic Desig
+ n\, Photography\, Sequential Design/Illustration\n\nOfficial page: https:
+ //www.brighton.ac.uk/news/2026/postgraduate-artists-at-brighton-explore-m
+ emory-identity-and-healing-in-ma-show\n\nCheck the official page before y
+ ou travel. Listed on Posterday: https://posterday.com/
+LOCATION:Grand Parade\, City campus\, Brighton
+URL:https://www.brighton.ac.uk/news/2026/postgraduate-artists-at-brighton-
+ explore-memory-identity-and-healing-in-ma-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Brighton MA Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:winchester-school-of-art-ba-degree-show-2026-06-04@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260611
+SUMMARY:Winchester School of Art BA Degree Show
+DESCRIPTION:University of Southampton\n\nCourses: Fine Art\, Graphic Arts\
+ , Fashion & Textiles\, Games Design & Art\n\nOfficial page: https://www.s
+ outhampton.ac.uk/wsa/news/events/2026/03/winchester-school-of-art-ba-degr
+ ee-show-2026.page\n\nCheck the official page before you travel. Listed on
+  Posterday: https://posterday.com/
+LOCATION:Park Avenue\, Winchester
+URL:https://www.southampton.ac.uk/wsa/news/events/2026/03/winchester-schoo
+ l-of-art-ba-degree-show-2026.page
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Winchester School of Art BA Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:undergrad-festival-grad-fest-2026-06-12@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260626
+SUMMARY:Undergrad Festival (Grad Fest)
+DESCRIPTION:Norwich University of the Arts\n\nCourses: Graphic Design\, Il
+ lustration\, Fine Art\, Fashion\, Textiles\, Architecture\, Film\, Animat
+ ion\, Games\, Acting\n\nOfficial page: https://norwichuni.ac.uk/events/gr
+ ad-fest-2025/\n\nCheck the official page before you travel. Listed on Pos
+ terday: https://posterday.com/
+LOCATION:Campus buildings across central Norwich
+URL:https://norwichuni.ac.uk/events/grad-fest-2025/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Undergrad Festival (Grad Fest) opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cambridge-school-of-art-graduate-showcase-2026-06-04@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260614
+SUMMARY:Cambridge School of Art Graduate Showcase
+DESCRIPTION:Anglia Ruskin University\n\nCourses: Illustration\, Graphic De
+ sign\, Fine Art\, Fashion\, Photography\, Animation\n\nOfficial page: htt
+ ps://aru.ac.uk/arts-humanities-education-and-social-sciences/cambridge-sc
+ hool-of-art/degree-shows\n\nCheck the official page before you travel. Li
+ sted on Posterday: https://posterday.com/
+LOCATION:Ruskin Gallery and studios\, Cambridge
+URL:https://aru.ac.uk/arts-humanities-education-and-social-sciences/cambri
+ dge-school-of-art/degree-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cambridge School of Art Graduate Showcase opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:falmouth-degree-shows-2026-05-23@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260531
+SUMMARY:Falmouth Degree Shows
+DESCRIPTION:Falmouth University\n\nCourses: Sustainable Product Design\, I
+ nteriors\, Architecture\, Graphic Design\, Illustration\, Fine Art\, Phot
+ ography\, Film\, Fashion & Textiles\n\nOfficial page: https://www.falmout
+ h.ac.uk/degree-shows\n\nCheck the official page before you travel. Listed
+  on Posterday: https://posterday.com/
+LOCATION:Penryn and Falmouth campuses\, Cornwall
+URL:https://www.falmouth.ac.uk/degree-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Falmouth Degree Shows opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:falmouth-games-expo-2026-05-21@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260524
+SUMMARY:Falmouth Games Expo
+DESCRIPTION:Falmouth University\n\nCourses: Games Academy courses\n\nOffic
+ ial page: https://www.falmouth.ac.uk/events/school-film-television-degree
+ -show-2026\n\nCheck the official page before you travel. Listed on Poster
+ day: https://posterday.com/
+LOCATION:Penryn Campus\, Cornwall
+URL:https://www.falmouth.ac.uk/events/school-film-television-degree-show-2
+ 026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Falmouth Games Expo opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:showcase-2026-2026-06-05@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260611
+SUMMARY:Showcase 2026
+DESCRIPTION:UWE Bristol\n\nCourses: Product Design\, Graphic Design\, Illu
+ stration\, Fine Art\, Fashion\, Animation\, Photography\, Filmmaking\, Pe
+ rformance\n\nOfficial page: https://www.uwe.ac.uk/events/degree-show\n\nC
+ heck the official page before you travel. Listed on Posterday: https://po
+ sterday.com/
+LOCATION:Bower Ashton\, Arnolfini\, Spike Island and Frenchay\, Bristol
+URL:https://www.uwe.ac.uk/events/degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Showcase 2026 opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:undergraduate-degree-show-2026-06-06@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260614
+SUMMARY:Undergraduate Degree Show
+DESCRIPTION:Bath Spa University\n\nCourses: Product Design\, Interior Desi
+ gn\, Graphic Communication\, Fashion\, Textiles\, Fine Art\, Photography\
+ , Film\n\nOfficial page: https://bathspa.ac.uk/news-and-events/events/deg
+ ree-shows\n\nCheck the official page before you travel. Listed on Posterd
+ ay: https://posterday.com/
+LOCATION:Locksbrook Campus\, Bath
+URL:https://bathspa.ac.uk/news-and-events/events/degree-shows
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Undergraduate Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:undergraduate-summer-shows-2026-07-03@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260712
+SUMMARY:Undergraduate Summer Shows
+DESCRIPTION:Arts University Bournemouth\n\nCourses: Graphic Design\, Illus
+ tration\, Fine Art\, Fashion\, Interior Architecture\, Modelmaking\, Anim
+ ation\, Film\, Costume\n\nOfficial page: https://aub.ac.uk/latest/undergr
+ aduate-summer-shows-2026\n\nCheck the official page before you travel. Li
+ sted on Posterday: https://posterday.com/
+LOCATION:Wallisdown\, Poole
+URL:https://aub.ac.uk/latest/undergraduate-summer-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Undergraduate Summer Shows opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:undergraduate-graduate-shows-2026-06-19@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260625
+SUMMARY:Undergraduate Graduate Shows
+DESCRIPTION:Arts University Plymouth\n\nCourses: Illustration\, Graphic De
+ sign\, Fine Art\, Fashion\, Craft\, Photography\, Animation\, 3D Design\n
+ \nOfficial page: https://vasw.org.uk/whats-on/arts-university-plymouth-un
+ dergraduate-graduate-shows-2026\n\nCheck the official page before you tra
+ vel. Listed on Posterday: https://posterday.com/
+LOCATION:Tavistock Place\, Plymouth
+URL:https://vasw.org.uk/whats-on/arts-university-plymouth-undergraduate-gr
+ aduate-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Undergraduate Graduate Shows opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sdca-degree-show-2026-06-06@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260611
+SUMMARY:SDCA Degree Show
+DESCRIPTION:Loughborough University\n\nCourses: Industrial Design\, Produc
+ t Design & Technology\, Graphic Design\, Fashion\, Textile Design\, Fine 
+ Art\n\nOfficial page: https://www.lboro.ac.uk/news-events/events/sdca-deg
+ ree-show-2026.html\n\nCheck the official page before you travel. Listed o
+ n Posterday: https://posterday.com/
+LOCATION:Design School\, Loughborough
+URL:https://www.lboro.ac.uk/news-events/events/sdca-degree-show-2026.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SDCA Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:grad-fest-product-design-architecture-adbe-showcase-2026-05-29@posterd
+ ay.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260530
+SUMMARY:Grad Fest: Product Design & Architecture (ADBE Showcase)
+DESCRIPTION:Nottingham Trent University\n\nCourses: Product Design\, Furni
+ ture & Product Design\, Architecture\n\nOfficial page: https://www.ntu.ac
+ .uk/about-us/news/news-articles/2026/06/showcase-2026-celebrates-creativi
+ ty\,-skill-and-commitment-of-ntu-students\n\nCheck the official page befo
+ re you travel. Listed on Posterday: https://posterday.com/
+LOCATION:City Campus\, Nottingham
+URL:https://www.ntu.ac.uk/about-us/news/news-articles/2026/06/showcase-202
+ 6-celebrates-creativity,-skill-and-commitment-of-ntu-students
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grad Fest: Product Design & Architecture (ADBE Showcase) opens
+  tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:grad-fest-fashion-textiles-2026-05-16@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260523
+SUMMARY:Grad Fest: Fashion & Textiles
+DESCRIPTION:Nottingham Trent University\n\nCourses: Fashion\, Textile Desi
+ gn\, Knitwear\n\nOfficial page: https://www.ntu.ac.uk/about-us/events/eve
+ nts/2026/5/grad-fest-public-showcase-fashion\n\nCheck the official page b
+ efore you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Bonington Gallery\, Dryden Street\, Nottingham
+URL:https://www.ntu.ac.uk/about-us/events/events/2026/5/grad-fest-public-s
+ howcase-fashion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grad Fest: Fashion & Textiles opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:grad-fest-photography-2026-05-14@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260521
+SUMMARY:Grad Fest: Photography
+DESCRIPTION:Nottingham Trent University\n\nCourses: BA Photography\n\nOffi
+ cial page: https://www.ntu.ac.uk/about-us/events/events/2026/5/grad-fest-
+ public-exhibition-photography\n\nCheck the official page before you trave
+ l. Listed on Posterday: https://posterday.com/
+LOCATION:Surface Gallery\, Southwell Road\, Nottingham
+URL:https://www.ntu.ac.uk/about-us/events/events/2026/5/grad-fest-public-e
+ xhibition-photography
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grad Fest: Photography opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:grad-fest-animation-filmmaking-2026-05-11@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260511
+DTEND;VALUE=DATE:20260516
+SUMMARY:Grad Fest: Animation & Filmmaking
+DESCRIPTION:Nottingham Trent University\n\nCourses: Animation\, Filmmaking
+ \, Games Art (games show 13 May)\n\nOfficial page: https://www.ntu.ac.uk/
+ about-us/events/events/2026/5/grad-fest-public-exhibition-animation\n\nCh
+ eck the official page before you travel. Listed on Posterday: https://pos
+ terday.com/
+LOCATION:Design & Digital Arts Building\, Shakespeare Street\, Nottingham
+URL:https://www.ntu.ac.uk/about-us/events/events/2026/5/grad-fest-public-e
+ xhibition-animation
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grad Fest: Animation & Filmmaking opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:grad-fest-costume-theatre-design-2026-05-20@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260520
+DTEND;VALUE=DATE:20260521
+SUMMARY:Grad Fest: Costume & Theatre Design
+DESCRIPTION:Nottingham Trent University\n\nCourses: Costume Design & Const
+ ruction\, Design for Theatre & Live Performance\n\nOfficial page: https:/
+ /www.ntu.ac.uk/about-us/events/events/2026/5/grad-fest-public-exhibition-
+ costume-design-and-construction-and-design-for-theatre-and-live-performan
+ ce\n\nCheck the official page before you travel. Listed on Posterday: htt
+ ps://posterday.com/
+LOCATION:Nottingham Playhouse\, Wellington Circus
+URL:https://www.ntu.ac.uk/about-us/events/events/2026/5/grad-fest-public-e
+ xhibition-costume-design-and-construction-and-design-for-theatre-and-live
+ -performance
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Grad Fest: Costume & Theatre Design opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dot-dot-dot-graduate-festival-2026-06-01@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+SUMMARY:DOT DOT DOT Graduate Festival
+DESCRIPTION:Coventry University\n\nCourses: Product Design\, Automotive & 
+ Transport Design\, Graphic Design\, Illustration\, Fine Art\, Fashion\n\n
+ Official page: https://www.coventry.ac.uk/covshowcase/\n\nCheck the offic
+ ial page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Delia Derbyshire Building\, Coventry
+URL:https://www.coventry.ac.uk/covshowcase/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DOT DOT DOT Graduate Festival opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dmu-degree-show-2026-06-24@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260628
+SUMMARY:DMU Degree Show
+DESCRIPTION:De Montfort University\n\nCourses: Product Design\, Furniture\
+ , Design Engineering\, Interior Design\, Graphic Design\, Fashion\, Texti
+ les\, Fine Art\n\nOfficial page: https://www.dmu.ac.uk/arts-design-humani
+ ties/foc/degree-show.aspx\n\nCheck the official page before you travel. L
+ isted on Posterday: https://posterday.com/
+LOCATION:Bede Island\, Leicester
+URL:https://www.dmu.ac.uk/arts-design-humanities/foc/degree-show.aspx
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DMU Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:inspired-festival-2026-06-09@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260628
+SUMMARY:Inspired Festival
+DESCRIPTION:Birmingham City University\n\nCourses: Product & Furniture\, I
+ nterior Design\, Visual Communication\, Fashion\, Textiles\, Fine Art\, J
+ ewellery\n\nOfficial page: https://www.bcu.ac.uk/arts/inspired-festival\n
+ \nCheck the official page before you travel. Listed on Posterday: https:/
+ /posterday.com/
+LOCATION:Parkside\, Margaret Street and School of Jewellery\, Birmingham
+URL:https://www.bcu.ac.uk/arts/inspired-festival
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Inspired Festival opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gradex-creative-industries-degree-show-2026-05-29@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260607
+SUMMARY:GradEx Creative Industries Degree Show
+DESCRIPTION:Staffordshire University\n\nCourses: Graphic Design\, Illustra
+ tion\, Cartoon & Comic Arts\, Fine Art\, Fashion\, Textiles\, Animation\,
+  Photography\n\nOfficial page: https://www.staffslondon.ac.uk/events/degr
+ ee-show\n\nCheck the official page before you travel. Listed on Posterday
+ : https://posterday.com/
+LOCATION:Stoke-on-Trent campus
+URL:https://www.staffslondon.ac.uk/events/degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:GradEx Creative Industries Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-degree-show-2026-06-06@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260614
+SUMMARY:2026 Degree Show
+DESCRIPTION:Hereford College of Arts\n\nCourses: Graphic & Media Design\, 
+ Illustration\, Fine Art\, Contemporary Design Crafts\, Textiles\n\nOffici
+ al page: https://www.hca.ac.uk/events/2026-degree-show\n\nCheck the offic
+ ial page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:College Road Campus\, Hereford
+URL:https://www.hca.ac.uk/events/2026-degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:2026 Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:manchester-school-of-art-degree-show-2026-06-06@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260620
+SUMMARY:Manchester School of Art Degree Show
+DESCRIPTION:Manchester Metropolitan University\n\nCourses: Product Design 
+ & Craft\, Interior Design\, Graphic Design\, Illustration\, Fashion\, Fin
+ e Art\, Digital Arts\, Architecture\n\nOfficial page: https://degreeshow.
+ mmu.ac.uk/\n\nCheck the official page before you travel. Listed on Poster
+ day: https://posterday.com/
+LOCATION:Oxford Road\, Manchester
+URL:https://degreeshow.mmu.ac.uk/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Manchester School of Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:manchester-school-of-art-postgraduate-show-2026-09-29@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20261005
+SUMMARY:Manchester School of Art Postgraduate Show
+DESCRIPTION:Manchester Metropolitan University\n\nCourses: MA and MFA prog
+ rammes across art and design\n\nOfficial page: https://www.art.mmu.ac.uk/
+ mashow/\n\nCheck the official page before you travel. Listed on Posterday
+ : https://posterday.com/
+LOCATION:Oxford Road\, Manchester
+URL:https://www.art.mmu.ac.uk/mashow/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Manchester School of Art Postgraduate Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:salford-degree-show-2026-05-28@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+SUMMARY:Salford Degree Show
+DESCRIPTION:University of Salford\n\nCourses: Graphic Design\, Fine Art\, 
+ Fashion\, Interior Design\, Photography\, Animation\, Games\, Film\, TV &
+  Stage Design\n\nOfficial page: https://www.salford.ac.uk/salford-school-
+ of-arts-media-and-creative-technology/awards-and-celebrations/salford-deg
+ ree-show\n\nCheck the official page before you travel. Listed on Posterda
+ y: https://posterday.com/
+LOCATION:New Adelphi Building\, Salford
+URL:https://www.salford.ac.uk/salford-school-of-arts-media-and-creative-te
+ chnology/awards-and-celebrations/salford-degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salford Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:liverpool-school-of-art-and-creative-industries-degree-show-2026-05-21
+ @posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260606
+SUMMARY:Liverpool School of Art and Creative Industries Degree Show
+DESCRIPTION:Liverpool John Moores University\n\nCourses: Graphic Design & 
+ Illustration\, Fine Art\, Fashion\, Interior Architecture\, Film\n\nOffic
+ ial page: https://www.ljmu.ac.uk/about-us/events/2026/5/21/liverpool-scho
+ ol-of-art-and-creative-industries-degree-show-2026\n\nCheck the official 
+ page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:John Lennon Art and Design Building\, Liverpool
+URL:https://www.ljmu.ac.uk/about-us/events/2026/5/21/liverpool-school-of-a
+ rt-and-creative-industries-degree-show-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Liverpool School of Art and Creative Industries Degree Show op
+ ens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:product-design-show-summit-2026-05-12@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260516
+SUMMARY:Product Design Show & Summit
+DESCRIPTION:Liverpool John Moores University\n\nCourses: Product Design En
+ gineering. Industry summit on 14 May\n\nOfficial page: https://cd-prod.lj
+ mu.ac.uk/about-us/faculties/school-of-engineering/product-design-engineer
+ ing-student-projects\n\nCheck the official page before you travel. Listed
+  on Posterday: https://posterday.com/
+LOCATION:James Parsons Building\, Byrom Street\, Liverpool
+URL:https://cd-prod.ljmu.ac.uk/about-us/faculties/school-of-engineering/pr
+ oduct-design-engineering-student-projects
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Product Design Show & Summit opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:future-now-festival-of-creativity-2026-04-01@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260801
+SUMMARY:Future Now Festival of Creativity
+DESCRIPTION:Sheffield Hallam University\n\nCourses: Product Design\, Inter
+ ior Architecture\, Graphic Design\, Illustration\, Fashion\, Fine Art\, J
+ ewellery\, Animation\, Games\n\nOfficial page: https://gallery.shu.ac.uk/
+ event/future-now-2026/\n\nCheck the official page before you travel. List
+ ed on Posterday: https://posterday.com/
+LOCATION:Venues across Sheffield city centre
+URL:https://gallery.shu.ac.uk/event/future-now-2026/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Future Now Festival of Creativity opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bish-bash-bosh-2026-06-15@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260621
+SUMMARY:Bish Bash Bosh
+DESCRIPTION:Leeds Arts University\n\nCourses: Graphic Design\, Illustratio
+ n\, Fine Art\, Fashion\, Textiles\, Photography\, Animation\, Comics\n\nO
+ fficial page: https://leedsinspired.co.uk/events/bish-bash-bosh-leeds-art
+ s-university-degree-show-2026\n\nCheck the official page before you trave
+ l. Listed on Posterday: https://posterday.com/
+LOCATION:Blenheim Walk\, Leeds
+URL:https://leedsinspired.co.uk/events/bish-bash-bosh-leeds-arts-universit
+ y-degree-show-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Bish Bash Bosh opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hold-ba-fine-art-degree-show-2026-06-12@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260622
+SUMMARY:HOLD – BA Fine Art Degree Show
+DESCRIPTION:University of Leeds\n\nCourses: BA Fine Art. MA show in early 
+ September\n\nOfficial page: https://hold.leeds.ac.uk/about/\n\nCheck the 
+ official page before you travel. Listed on Posterday: https://posterday.c
+ om/
+LOCATION:School of Fine Art\, University Road\, Leeds
+URL:https://hold.leeds.ac.uk/about/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:HOLD – BA Fine Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:end-of-year-show-art-design-fashion-2026-06-05@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260615
+SUMMARY:End of Year Show: Art\, Design & Fashion
+DESCRIPTION:Leeds Beckett University\n\nCourses: Graphic Arts & Design\, F
+ ine Art\, Fashion\, Interior Architecture\n\nOfficial page: https://www.l
+ eedsbeckett.ac.uk/events/end-of-year-shows/art-design-fashion-2026-openin
+ g-night/\n\nCheck the official page before you travel. Listed on Posterda
+ y: https://posterday.com/
+LOCATION:Broadcasting Place\, Leeds
+URL:https://www.leedsbeckett.ac.uk/events/end-of-year-shows/art-design-fas
+ hion-2026-opening-night/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:End of Year Show: Art\, Design & Fashion opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:york-st-john-degree-show-2026-06-04@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260611
+SUMMARY:York St John Degree Show
+DESCRIPTION:York St John University\n\nCourses: Illustration\, Fine Art\, 
+ Photography\n\nOfficial page: https://aestheticamagazine.com/?p=600768\n\
+ nCheck the official page before you travel. Listed on Posterday: https://
+ posterday.com/
+LOCATION:Lord Mayor's Walk\, York
+URL:https://aestheticamagazine.com/?p=600768
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:York St John Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:reveal-3d-design-furniture-product-2026-06-19@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260703
+SUMMARY:REVEAL: 3D Design (Furniture & Product)
+DESCRIPTION:Northumbria University\n\nCourses: 3D Design (Furniture & Prod
+ uct)\, Design for Industry\, Interior Design\n\nOfficial page: https://co
+ rp.northumbria.ac.uk/about-us/news-events/events/2026/06/reveal-3d-design
+ ---furniture-and-product/\n\nCheck the official page before you travel. L
+ isted on Posterday: https://posterday.com/
+LOCATION:City Campus East\, Newcastle
+URL:https://corp.northumbria.ac.uk/about-us/news-events/events/2026/06/rev
+ eal-3d-design---furniture-and-product/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:REVEAL: 3D Design (Furniture & Product) opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:reveal-fashion-and-graphic-design-2026-06-25@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260625
+DTEND;VALUE=DATE:20260626
+SUMMARY:REVEAL: Fashion and Graphic Design
+DESCRIPTION:Northumbria University\n\nCourses: Fashion\, Fashion Communica
+ tion\, Graphic Design\n\nOfficial page: https://www.northumbria.ac.uk/abo
+ ut-us/news-events/events/2026/06/reveal-fashion-exhibition/\n\nCheck the 
+ official page before you travel. Listed on Posterday: https://posterday.c
+ om/
+LOCATION:City Campus East and Squires Workshops\, Newcastle
+URL:https://www.northumbria.ac.uk/about-us/news-events/events/2026/06/reve
+ al-fashion-exhibition/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:REVEAL: Fashion and Graphic Design opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ba-fine-art-degree-show-2026-05-23@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260607
+SUMMARY:BA Fine Art Degree Show
+DESCRIPTION:Newcastle University\n\nCourses: BA Fine Art\n\nOfficial page:
+  https://www.artrabbit.com/people/celinechoon/contributor?page=72\n\nChec
+ k the official page before you travel. Listed on Posterday: https://poste
+ rday.com/
+LOCATION:Hatton Gallery\, Newcastle upon Tyne
+URL:https://www.artrabbit.com/people/celinechoon/contributor?page=72
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BA Fine Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:djcad-undergraduate-degree-show-2026-05-23@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260601
+SUMMARY:DJCAD Undergraduate Degree Show
+DESCRIPTION:University of Dundee\n\nCourses: Product Design\, Interior & E
+ nvironmental Design\, Graphic Design\, Illustration\, Fine Art\, Jeweller
+ y\, Textiles\, Animation\n\nOfficial page: https://www.craftscotland.org/
+ journal/article/degree-shows-2026\n\nCheck the official page before you t
+ ravel. Listed on Posterday: https://posterday.com/
+LOCATION:Perth Road\, Dundee
+URL:https://www.craftscotland.org/journal/article/degree-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DJCAD Undergraduate Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gsa-degree-show-2026-05-29@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260608
+SUMMARY:GSA Degree Show
+DESCRIPTION:The Glasgow School of Art\n\nCourses: Product Design\, Interio
+ r Design\, Communication Design\, Fashion\, Textiles\, Silversmithing & J
+ ewellery\, Fine Art\, Architecture\n\nOfficial page: https://gsamediacent
+ re.co.uk/the-glasgow-school-of-art-degree-show-2026-opens-launching-a-new
+ -generation-of-creative-talent-to-boost-glasgows-creative-community-and-e
+ conomy/\n\nCheck the official page before you travel. Listed on Posterday
+ : https://posterday.com/
+LOCATION:Reid & Stow Buildings\, Glasgow
+URL:https://gsamediacentre.co.uk/the-glasgow-school-of-art-degree-show-202
+ 6-opens-launching-a-new-generation-of-creative-talent-to-boost-glasgows-c
+ reative-community-and-economy/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:GSA Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gsa-mfa-degree-show-2026-06-13@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260622
+SUMMARY:GSA MFA Degree Show
+DESCRIPTION:The Glasgow School of Art\n\nCourses: Master of Fine Art\n\nOf
+ ficial page: https://gsamediacentre.co.uk/the-glasgow-school-of-arts-pres
+ tigious-mfa-2026-opens-bold-new-works-from-fifty-one-international-artist
+ s-provide-glimpse-of-emerging-talents-of-the-future/\n\nCheck the officia
+ l page before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Stow Building\, Glasgow
+URL:https://gsamediacentre.co.uk/the-glasgow-school-of-arts-prestigious-mf
+ a-2026-opens-bold-new-works-from-fifty-one-international-artists-provide-
+ glimpse-of-emerging-talents-of-the-future/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:GSA MFA Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eca-graduate-show-2026-05-29@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260606
+SUMMARY:ECA Graduate Show
+DESCRIPTION:Edinburgh College of Art\n\nCourses: Product Design\, Interior
+  Design\, Graphic Design\, Illustration\, Fashion\, Textiles\, Jewellery\
+ , Fine Art\, Performance Costume\n\nOfficial page: https://www.eca.ed.ac.
+ uk/event/eca-graduate-show-2026\n\nCheck the official page before you tra
+ vel. Listed on Posterday: https://posterday.com/
+LOCATION:Lauriston Place\, Edinburgh
+URL:https://www.eca.ed.ac.uk/event/eca-graduate-show-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ECA Graduate Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gray-s-degree-show-2026-06-05@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260615
+SUMMARY:Gray's Degree Show
+DESCRIPTION:Gray's School of Art\, Robert Gordon University\n\nCourses: Pr
+ oduct\, Ceramics & Jewellery\, Communication Design\, Fashion & Textiles\
+ , Fine Art\n\nOfficial page: https://www.craftscotland.org/journal/articl
+ e/degree-shows-2026\n\nCheck the official page before you travel. Listed 
+ on Posterday: https://posterday.com/
+LOCATION:Garthdee\, Aberdeen
+URL:https://www.craftscotland.org/journal/article/degree-shows-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Gray's Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:swansea-college-of-art-summer-degree-shows-2026-05-16@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260606
+SUMMARY:Swansea College of Art Summer Degree Shows
+DESCRIPTION:University of Wales Trinity Saint David\n\nCourses: Graphic De
+ sign\, Illustration\, Fine Art\, Photography\, Film\, Design Crafts\, Sur
+ face Pattern & Textiles\, Automotive Design\n\nOfficial page: https://www
+ .uwtsd.ac.uk/events/swansea-college-art-summer-degree-shows-2026\n\nCheck
+  the official page before you travel. Listed on Posterday: https://poster
+ day.com/
+LOCATION:Swansea College of Art\, De La Beche Street\, Swansea
+URL:https://www.uwtsd.ac.uk/events/swansea-college-art-summer-degree-shows
+ -2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Swansea College of Art Summer Degree Shows opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:belfast-school-of-art-graduate-showcase-2026-06-06@posterday.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260622
+SUMMARY:Belfast School of Art Graduate Showcase
+DESCRIPTION:Ulster University\n\nCourses: Product Design\, Ceramics\, Silv
+ ersmithing & Jewellery\, Graphic Design\, Fine Art\, Textiles & Fashion\,
+  Photography\n\nOfficial page: https://www.ulster.ac.uk/news/2026/june/be
+ lfast-school-of-art-graduate-showcase-2026\n\nCheck the official page bef
+ ore you travel. Listed on Posterday: https://posterday.com/
+LOCATION:York Street\, Belfast
+URL:https://www.ulster.ac.uk/news/2026/june/belfast-school-of-art-graduate
+ -showcase-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Belfast School of Art Graduate Showcase opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

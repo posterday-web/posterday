@@ -56,12 +56,16 @@
   <url><loc>https://posterday.com/shows/winchester-school-of-art-ba-degree-show-university-of-southampton/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/norwich-university-of-the-arts-undergrad-festival-grad-fest/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/cambridge-school-of-art-graduate-showcase-anglia-ruskin-university/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/portsmouth-cci-graduate-showcase/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/oxford-brookes-university-ba-art-and-design-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/the-ruskin-degree-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/falmouth-degree-shows/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/falmouth-games-expo/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/uwe-bristol-showcase/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/bath-spa-university-undergraduate-degree-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/arts-university-bournemouth-undergraduate-summer-shows/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/arts-university-plymouth-undergraduate-graduate-shows/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/university-of-gloucestershire-degree-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/sdca-degree-show-loughborough-university/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/grad-fest-product-design-and-architecture-adbe-showcase-nottingham-trent-university/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/grad-fest-fashion-and-textiles-nottingham-trent-university/</loc><priority>0.8</priority></url>
@@ -73,6 +77,10 @@
   <url><loc>https://posterday.com/shows/inspired-festival-birmingham-city-university/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/gradex-creative-industries-degree-show-staffordshire-university/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/hereford-college-of-arts-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/the-degree-show-made-it-university-of-derby/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/university-of-wolverhampton-school-of-creative-industries-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/university-of-worcester-school-of-arts-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/university-of-northampton-degree-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/manchester-school-of-art-degree-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/manchester-school-of-art-postgraduate-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/salford-degree-show/</loc><priority>0.8</priority></url>
@@ -86,14 +94,31 @@
   <url><loc>https://posterday.com/shows/reveal-3d-design-furniture-and-product-northumbria-university/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/reveal-fashion-and-graphic-design-northumbria-university/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/newcastle-university-ba-fine-art-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/university-of-sunderland-art-and-design-degree-shows/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/university-of-lancashire-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/university-of-lancashire-ma-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/made-in-carlisle-university-of-cumbria/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/expotees-creative-teesside-university/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/visual-arts-degree-show-liverpool-hope-university/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/djcad-undergraduate-degree-show-university-of-dundee/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/gsa-degree-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/gsa-mfa-degree-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/eca-graduate-show/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/grays-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/edinburgh-napier-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/heriot-watt-university-school-of-textiles-and-design-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/heriot-watt-masters-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/abertay-digital-graduate-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/moray-school-of-art-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/djcad-masters-show-university-of-dundee/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/swansea-college-of-art-summer-degree-shows-university-of-wales-trinity-saint-david/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/csad-degree-show-cardiff-metropolitan-university/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/wrexham-university-art-and-design-degree-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/wrexham-university-school-of-art-masters-show/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/creative-graduate-festival-university-of-south-wales/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/shows/belfast-school-of-art-graduate-showcase-ulster-university/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/prologue-interim-mfa-exhibition-belfast-school-of-art/</loc><priority>0.8</priority></url>
+  <url><loc>https://posterday.com/shows/beneath-the-surface-mfa-photography-belfast-school-of-art/</loc><priority>0.8</priority></url>
   <url><loc>https://posterday.com/region/east/</loc><priority>0.7</priority></url>
   <url><loc>https://posterday.com/region/london/</loc><priority>0.7</priority></url>
   <url><loc>https://posterday.com/region/midlands/</loc><priority>0.7</priority></url>
