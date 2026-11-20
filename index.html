@@ -84,12 +84,27 @@
       <select id="subject" aria-label="Subject"></select>
       <div class="seg" id="typeSeg"></div>
       <select id="region" aria-label="Region"></select>
+      <div class="near" id="near">
+        <button class="nearbtn" id="nearBtn" type="button" aria-expanded="false" aria-controls="nearPanel" aria-pressed="false">Shows near me</button>
+        <div class="nearpanel" id="nearPanel" hidden>
+          <button class="locate" id="locate" type="button">Use my location</button>
+          <form id="nearForm" class="nearform"><input id="nearQ" type="text" placeholder="or a postcode or town" aria-label="Postcode or town" autocomplete="postal-code"><button type="submit">Go</button></form>
+          <label class="radius">Within <select id="radius"><option value="all">any distance</option><option value="10">10 miles</option><option value="25">25 miles</option><option value="50">50 miles</option><option value="100">100 miles</option></select></label>
+          <p class="nearmsg" id="nearMsg" aria-live="polite"></p>
+          <button class="clear" id="nearClear" type="button" hidden>Stop sorting by distance</button>
+        </div>
+      </div>
+      <div class="seg view" id="viewSeg"><button data-v="list" aria-pressed="true">List</button><button data-v="map" aria-pressed="false">Map</button></div>
       <button class="clear" id="clear" hidden>Clear filters</button>
       <span class="count" id="count"></span>
     </div>
   </div>
 
   <section class="wrap" id="list"></section>
+  <section class="wrap mapview" id="mapView" hidden>
+    <div id="map" role="region" aria-label="Map of shows"></div>
+    <p class="mapnote" id="mapNote"></p>
+  </section>
 
   <section class="wrap">
     <div class="contact remind" id="remind">
@@ -126,6 +141,7 @@
 </main>
 
 <script src="shows.js"></script>
+<script src="places.js"></script>
 <script src="calendar.js"></script>
 <script src="remind.js"></script>
 <script src="show-pages.js"></script>
@@ -147,8 +163,22 @@ const esc = t => String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const TODAY = new Date().toISOString().slice(0,10);
 const isUpcoming = s => s.start && (s.end||s.start) >= TODAY;
 const isOn = s => s.start && s.start <= TODAY && (s.end||s.start) >= TODAY;
+SHOWS.forEach(s=>{ s.pos = window.placeShow(s); });
 
-let state = {q:"", type:"all", region:"all", month:"all", subject:"all", onNow:false};
+const FRESH = () => ({q:"", type:"all", region:"all", month:"all", subject:"all", onNow:false, radius:"all"});
+let state = FRESH();
+let view = location.hash==="#map" ? "map" : "list";
+let near = null; // {lat, lng, label} once the visitor shares a location or types a postcode/town
+
+// Distance in miles between two [lat, lng] points.
+function miles(a, b){
+  const r = x => x*Math.PI/180, dLat = r(b[0]-a[0]), dLng = r(b[1]-a[1]);
+  const h = Math.sin(dLat/2)**2 + Math.cos(r(a[0]))*Math.cos(r(b[0]))*Math.sin(dLng/2)**2;
+  return 3958.8*2*Math.asin(Math.sqrt(h));
+}
+const dist = s => near && s.pos ? miles([near.lat, near.lng], s.pos) : null;
+const distText = d => d < 1 ? "under a mile away" : Math.round(d)+(Math.round(d)===1?" mile away":" miles away");
+function track(path, title){ if(window.goatcounter && window.goatcounter.count) window.goatcounter.count({path, title, event:true}); }
 
 function dateText(s){
   if(s.dates) return s.dates;
@@ -169,7 +199,7 @@ function featured(){
 }
 function intro(){
   document.getElementById("meta").textContent = `${SHOWS.length} shows, updated ${UPDATED}`;
-  document.getElementById("jump").innerHTML = MONTHS.map(m=>`<a href="#m-${m}">${MONTH_NAMES[m]}</a>`).join("") + `<a href="#shows">All shows</a>`;
+  document.getElementById("jump").innerHTML = MONTHS.map(m=>`<a href="#m-${m}">${MONTH_NAMES[m]}</a>`).join("") + `<a href="#shows">All shows</a><a href="#map">Map of shows</a>`;
   const june = SHOWS.filter(s=>monthKey(s)==="Jun").length;
   const insts = new Set(SHOWS.map(s=>s.inst.split(",")[0].replace(/ ×.*$/,""))).size;
   const up = SHOWS.filter(isUpcoming).length;
@@ -214,7 +244,9 @@ function build(){
   ss.innerHTML = `<option value="all">All subjects</option>`+Object.entries(SUBJECTS).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
   ss.onchange = e=>{state.subject=e.target.value; render();};
   document.getElementById("q").oninput = e=>{state.q=e.target.value.toLowerCase(); render();};
-  document.getElementById("clear").onclick = ()=>{state={q:"",type:"all",region:"all",month:"all",subject:"all",onNow:false}; document.getElementById("q").value=""; syncControls(); render();};
+  document.getElementById("clear").onclick = ()=>{state=FRESH(); document.getElementById("q").value=""; syncControls(); render();};
+  document.querySelectorAll("#viewSeg button").forEach(b=>b.onclick=()=>setView(b.dataset.v));
+  buildNear();
   document.getElementById("subjectBars").classList.add("cols");
   const on = document.getElementById("onNow"), nOn = SHOWS.filter(isOn).length;
   on.innerHTML = `<i></i>On now <span>${nOn}</span>`;
@@ -227,6 +259,136 @@ function syncControls(){
   document.getElementById("region").value = state.region;
   document.getElementById("subject").value = state.subject;
   document.getElementById("onNow").setAttribute("aria-pressed", state.onNow);
+  document.getElementById("radius").value = state.radius;
+  document.querySelectorAll("#viewSeg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.v===view));
+  const nb = document.getElementById("nearBtn");
+  nb.textContent = near ? "Near "+near.label+(state.radius!=="all"?" · "+state.radius+" mi":"") : "Shows near me";
+  nb.setAttribute("aria-pressed", !!near);
+  document.getElementById("nearClear").hidden = !near;
+}
+
+// ---------- Shows near me ----------
+function buildNear(){
+  const btn = document.getElementById("nearBtn"), panel = document.getElementById("nearPanel"), msg = document.getElementById("nearMsg");
+  const open = v => { panel.hidden = !v; btn.setAttribute("aria-expanded", v); };
+  btn.onclick = e => { e.stopPropagation(); open(panel.hidden); };
+  document.addEventListener("click", e => { if(!panel.hidden && !e.target.closest("#near")) open(false); });
+  document.addEventListener("keydown", e => { if(e.key==="Escape" && !panel.hidden){ open(false); btn.focus(); } });
+  const setNear = (lat, lng, label) => {
+    near = {lat, lng, label}; msg.textContent = "Sorted by distance from "+label+".";
+    syncControls(); render();
+  };
+  document.getElementById("locate").onclick = () => {
+    if(!navigator.geolocation){ msg.textContent = "Your browser can't share your location. Try a postcode or town."; return; }
+    msg.textContent = "Finding you…";
+    navigator.geolocation.getCurrentPosition(
+      p => { setNear(p.coords.latitude, p.coords.longitude, "you"); track("near/location", "Shows near me: location"); },
+      () => { msg.textContent = "Couldn't get your location. Try a postcode or town instead."; },
+      {timeout:10000, maximumAge:600000});
+  };
+  document.getElementById("nearForm").onsubmit = async e => {
+    e.preventDefault();
+    const q = document.getElementById("nearQ").value.trim();
+    if(!q) return;
+    msg.textContent = "Looking up "+q+"…";
+    try{
+      const hit = await lookup(q);
+      if(!hit){ msg.textContent = "Couldn't find "+q+". Try a full UK postcode or a nearby town."; return; }
+      setNear(hit[0], hit[1], hit[2]); track("near/search", "Shows near me: search");
+    }catch(err){ msg.textContent = "Couldn't look that up just now. Try again, or use your location."; }
+  };
+  document.getElementById("radius").onchange = e => { state.radius = e.target.value; syncControls(); render(); };
+  document.getElementById("nearClear").onclick = () => { near = null; state.radius = "all"; msg.textContent = ""; syncControls(); render(); open(false); };
+}
+
+// Turns a postcode or place name into [lat, lng, label], using the free postcodes.io service.
+async function lookup(q){
+  const t = (window.TOWNS||[]).find(([n])=>n.toLowerCase()===q.toLowerCase());
+  if(t) return [t[1], t[2], t[0]];
+  const api = "https://api.postcodes.io";
+  const get = async u => { const r = await fetch(api+u); if(r.status===404) return null; if(!r.ok) throw new Error(r.status); return (await r.json()).result; };
+  const pc = q.replace(/\s+/g,"").toUpperCase();
+  if(/^[A-Z]{1,2}\d[A-Z\d]?\d[A-Z]{2}$/.test(pc)){
+    const r = await get("/postcodes/"+encodeURIComponent(pc));
+    return r ? [r.latitude, r.longitude, r.postcode] : null;
+  }
+  if(/^[A-Z]{1,2}\d[A-Z\d]?$/.test(pc)){
+    const r = await get("/outcodes/"+encodeURIComponent(pc));
+    if(r && r.latitude!=null) return [r.latitude, r.longitude, r.outcode];
+  }
+  const r = await get("/places?limit=1&q="+encodeURIComponent(q));
+  return r && r.length ? [r[0].latitude, r[0].longitude, r[0].name_1] : null;
+}
+
+// ---------- Map ----------
+let leaflet = null, map = null, layer = null, lastFit = "";
+function loadLeaflet(){
+  if(leaflet) return leaflet;
+  leaflet = new Promise((ok, fail) => {
+    const css = document.createElement("link"); css.rel = "stylesheet"; css.href = "lib/leaflet/leaflet.css"; document.head.appendChild(css);
+    const js = document.createElement("script"); js.src = "lib/leaflet/leaflet.js"; js.onload = () => ok(window.L); js.onerror = fail; document.head.appendChild(js);
+  });
+  return leaflet;
+}
+function setView(v){
+  if(v===view) return;
+  view = v;
+  history.replaceState(null, "", v==="map" ? "#map" : location.pathname+location.search);
+  if(v==="map") track("map", "Opened the map");
+  syncControls(); render();
+}
+function popup(group){
+  return `<div class="pop">${group.map(s=>`<div class="pshow">
+    <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span>
+    <b>${esc(s.name)}${isOn(s)?'<span class="now">On now</span>':""}</b>
+    <div class="inst">${esc(s.inst)}</div>
+    <div class="pdate">${esc(s.start||s.dates ? dateText(s) : "Dates TBC")}</div>
+    <div class="pwhere">${esc(s.city)}${near && s.pos ? " · "+distText(dist(s)) : ""}</div>
+    ${s.url?`<a href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="map">Official page →</a>`:""}
+  </div>`).join("")}</div>`;
+}
+async function renderMap(items){
+  const note = document.getElementById("mapNote");
+  let L;
+  try{ L = await loadLeaflet(); }catch(e){ note.textContent = "The map couldn't load. Check your connection and reload the page."; return; }
+  if(view!=="map") return;
+  if(!map){
+    map = L.map("map", {scrollWheelZoom:false, zoomSnap:.5}).setView([54.5, -3], 5.5);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:18, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+    map.on("focus", () => map.scrollWheelZoom.enable());
+    map.on("blur", () => map.scrollWheelZoom.disable());
+    layer = L.layerGroup().addTo(map);
+  }
+  map.invalidateSize();
+  layer.clearLayers();
+  const groups = new Map();
+  items.forEach(s => { if(!s.pos) return; const k = s.pos.join(","); if(!groups.has(k)) groups.set(k, []); groups.get(k).push(s); });
+  const pts = [];
+  groups.forEach(g => {
+    g.sort((a,b)=>(a.start||"9999").localeCompare(b.start||"9999"));
+    const types = new Set(g.map(s=>s.type));
+    const col = types.size===1 ? TYPE_COL[g[0].type] : "var(--ink)";
+    const live = g.some(isOn);
+    const icon = L.divIcon({className:"pin"+(live?" pin-live":""), html:`<span style="background:${col}">${g.length>1?g.length:""}</span>`, iconSize:[24,24], iconAnchor:[12,12], popupAnchor:[0,-10]});
+    L.marker(g[0].pos, {icon, title:g.map(s=>s.name).join(", "), keyboard:true}).bindPopup(popup(g), {maxWidth:300, maxHeight:320}).addTo(layer);
+    pts.push(g[0].pos);
+  });
+  if(near){
+    L.marker([near.lat, near.lng], {icon:L.divIcon({className:"you", html:"<span></span>", iconSize:[16,16], iconAnchor:[8,8]}), zIndexOffset:1000, keyboard:false}).bindTooltip(near.label==="you"?"You are here":near.label).addTo(layer);
+    if(state.radius!=="all") L.circle([near.lat, near.lng], {radius:state.radius*1609.34, color:"#3c5956", weight:1, fillOpacity:.05, interactive:false}).addTo(layer);
+    pts.push([near.lat, near.lng]);
+  }
+  const key = pts.map(p=>p.join(",")).sort().join("|") + "|" + state.radius;
+  if(key!==lastFit){
+    lastFit = key;
+    if(near && state.radius!=="all") map.fitBounds(L.latLng(near.lat, near.lng).toBounds(state.radius*1609.34*2), {padding:[20,20]});
+    else if(pts.length>1) map.fitBounds(pts, {padding:[30,30], maxZoom:13});
+    else if(pts.length===1) map.setView(pts[0], 12);
+  }
+  const off = items.filter(s=>!s.pos);
+  const shown = items.length - off.length;
+  note.innerHTML = `${shown} show${shown===1?"":"s"} at ${groups.size} place${groups.size===1?"":"s"}. A number on a pin means several shows at the same venue. Click a pin for dates and links.`
+    + (off.length ? ` Not on the map yet: ${off.map(s=>esc(s.name)).join(", ")}.` : "");
 }
 
 function filtered(){
@@ -236,6 +398,7 @@ function filtered(){
     if(state.subject!=="all" && !s.subjects.includes(state.subject)) return false;
     if(state.onNow && !isOn(s)) return false;
     if(state.month!=="all" && monthKey(s)!==state.month) return false;
+    if(near && state.radius!=="all"){ const d = dist(s); if(d===null || d > +state.radius) return false; }
     if(state.q){ const hay=(s.name+" "+s.inst+" "+s.city+" "+s.courses+" "+s.region+" "+s.subjects.map(k=>SUBJECTS[k]).join(" ")).toLowerCase(); if(!hay.includes(state.q)) return false; }
     return true;
   });
@@ -247,7 +410,7 @@ function card(s){
     <div class="head"><div><h4>${showTitle(s)}${isOn(s)?'<span class="now">On now</span>':""}</h4><div class="inst">${esc(s.inst)}</div></div>
       <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span></div>
     <div class="dates">${esc(dateText(s))}</div>
-    <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
+    <dl><dt>Where</dt><dd>${esc(s.city)}${whereExtra(s)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
     <div class="subj">${s.subjects.map(k=>`<span class="${state.subject===k?"on":""}">${SUBJECTS[k]}</span>`).join("")}</div>
     <div class="next"><b>${isUpcoming(s)?"Usually":"2027 guide"}:</b> ${esc(s.next)}</div>
     <div class="actions">${s.url?`<a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a>`:`<span class="none">Search "Free Range Truman Brewery" for this year's line-up</span>`}
@@ -255,6 +418,7 @@ function card(s){
   </article>`;
 }
 
+const whereExtra = s => { const d = dist(s); return d===null ? "" : `<span class="dist">${distText(d)}</span>`; };
 function enhCard(s){
   return `<article class="card enh">
     <div class="ehero" style="background:${heroBg(s.hue)}"><span class="mono">${esc(mono(s))}</span><span class="pill">Sponsored</span></div>
@@ -263,7 +427,7 @@ function enhCard(s){
       <span class="tag"><i style="background:${TYPE_COL[s.type]}"></i>${TYPES[s.type]}</span></div>
     <div class="dates">${esc(dateText(s))}</div>
     <div class="blurb">${esc(s.blurb)}</div>
-    <dl><dt>Where</dt><dd>${esc(s.city)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
+    <dl><dt>Where</dt><dd>${esc(s.city)}${whereExtra(s)}</dd><dt>Courses</dt><dd>${esc(s.courses)}</dd></dl>
     <div class="subj">${s.subjects.map(k=>`<span class="${state.subject===k?"on":""}">${SUBJECTS[k]}</span>`).join("")}</div>
     <div class="actions"><a class="link" href="${s.url}" target="_blank" rel="noopener" data-show="${esc(s.name)}" data-where="list">Official page →</a>
     ${remindBits(s, isUpcoming(s))}</div></div>
@@ -278,11 +442,14 @@ function render(){
   bars(document.getElementById("regionBars"), regions, "region");
 
   const mi = s => s.start ? MK.indexOf(monthKey(s)) : 99;
-  const items = filtered().sort((a,b)=> mi(a)-mi(b) || rank(a)-rank(b) || (a.start||"9999").localeCompare(b.start||"9999"));
-  const active = state.q||state.type!=="all"||state.region!=="all"||state.month!=="all"||state.subject!=="all"||state.onNow;
+  const dd = s => { const d = dist(s); return d===null ? 1e9 : d; };
+  const items = filtered().sort((a,b)=> mi(a)-mi(b) || (near ? dd(a)-dd(b) : 0) || rank(a)-rank(b) || (a.start||"9999").localeCompare(b.start||"9999"));
+  const active = state.q||state.type!=="all"||state.region!=="all"||state.month!=="all"||state.subject!=="all"||state.onNow||state.radius!=="all";
   document.getElementById("clear").hidden = !active;
   document.getElementById("count").textContent = `${items.length} of ${SHOWS.length} shows`;
-  const list = document.getElementById("list");
+  const list = document.getElementById("list"), mv = document.getElementById("mapView");
+  list.hidden = view==="map"; mv.hidden = view!=="map";
+  if(view==="map"){ renderMap(items); return; }
   if(!items.length){ list.innerHTML = `<div class="empty">No shows match. Try clearing a filter.</div>`; return; }
   const groups = {};
   items.forEach(s=>{(groups[monthKey(s)] ||= []).push(s);});
@@ -291,7 +458,14 @@ function render(){
   ).join("");
 }
 
-intro(); featured(); build(); render();
+intro(); featured(); build(); syncControls(); render();
+
+// "#map" links (for example from the month list at the top) open the map view.
+window.addEventListener("hashchange", () => {
+  if(location.hash==="#map"){ setView("map"); document.getElementById("shows").scrollIntoView(); }
+  else if(location.hash.startsWith("#m-") && view==="map"){ setView("list"); const el = document.querySelector(location.hash); if(el) el.scrollIntoView(); }
+});
+if(view==="map") requestAnimationFrame(()=>document.getElementById("shows").scrollIntoView());
 
 // Count clicks on a show's link as an event, so the analytics dashboard shows which shows people open.
 document.addEventListener("click", e=>{
