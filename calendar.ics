@@ -11,7 +11,7 @@ REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:new-designers-2026-07-01@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260701
 DTEND;VALUE=DATE:20260705
 SUMMARY:New Designers
@@ -30,7 +30,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d-ad-new-blood-festival-2026-06-29@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260629
 DTEND;VALUE=DATE:20260702
 SUMMARY:D&AD New Blood Festival
@@ -50,7 +50,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:graduate-fashion-week-2026-06-15@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260619
 SUMMARY:Graduate Fashion Week
@@ -70,7 +70,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:free-range-2026-07-01@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260701
 DTEND;VALUE=DATE:20260801
 SUMMARY:Free Range
@@ -87,7 +87,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:made-in-brunel-through-glass-2026-06-11@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260611
 DTEND;VALUE=DATE:20260614
 SUMMARY:Made in Brunel: Through Glass
@@ -106,7 +106,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kingston-school-of-art-degree-show-2026-06-06@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260606
 DTEND;VALUE=DATE:20260613
 SUMMARY:Kingston School of Art Degree Show
@@ -127,7 +127,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cross-section-ldf-2026-09-14@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260921
 SUMMARY:Cross Section (LDF)
@@ -146,7 +146,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:csm-ba-fashion-communication-show-2026-05-27@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260527
 DTEND;VALUE=DATE:20260601
 SUMMARY:CSM BA Fashion Communication Show
@@ -166,7 +166,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:csm-shows-2026-06-18@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260622
 SUMMARY:CSM Shows
@@ -186,7 +186,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:csm-postgraduate-art-show-2026-07-01@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260701
 DTEND;VALUE=DATE:20260706
 SUMMARY:CSM Postgraduate Art Show
@@ -205,7 +205,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:chelsea-undergraduate-show-2026-06-11@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260611
 DTEND;VALUE=DATE:20260620
 SUMMARY:Chelsea Undergraduate Show
@@ -225,7 +225,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:chelsea-ma-textile-design-show-2026-11-23@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261129
 SUMMARY:Chelsea MA Textile Design Show
@@ -244,7 +244,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:camberwell-undergraduate-show-2026-06-12@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260618
 SUMMARY:Camberwell Undergraduate Show
@@ -264,7 +264,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:camberwell-chelsea-wimbledon-postgraduate-show-2026-06-29@posterday.co
  m
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260629
 DTEND;VALUE=DATE:20260705
 SUMMARY:Camberwell\, Chelsea & Wimbledon Postgraduate Show
@@ -284,7 +284,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wimbledon-undergraduate-show-2026-06-13@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260613
 DTEND;VALUE=DATE:20260621
 SUMMARY:Wimbledon Undergraduate Show
@@ -306,7 +306,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wimbledon-ma-theatre-performance-design-puppetry-2026-11-20@posterday.
  com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261127
 SUMMARY:Wimbledon MA Theatre & Performance Design + Puppetry
@@ -328,7 +328,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lcc-photography-show-2026-05-12@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260512
 DTEND;VALUE=DATE:20260517
 SUMMARY:LCC Photography Show
@@ -348,7 +348,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lcc-design-show-2026-06-03@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260603
 DTEND;VALUE=DATE:20260607
 SUMMARY:LCC Design Show
@@ -369,7 +369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lcc-screen-show-2026-06-17@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260617
 DTEND;VALUE=DATE:20260621
 SUMMARY:LCC Screen Show
@@ -388,7 +388,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lcc-postgraduate-photography-show-2026-11-05@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261110
 SUMMARY:LCC Postgraduate Photography Show
@@ -409,7 +409,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lcc-postgraduate-design-show-2026-11-19@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261124
 SUMMARY:LCC Postgraduate Design Show
@@ -430,7 +430,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lcc-postgraduate-screen-show-2026-12-03@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261208
 SUMMARY:LCC Postgraduate Screen Show
@@ -451,7 +451,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lcf-undergraduate-exhibition-2026-07-13@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260713
 DTEND;VALUE=DATE:20260719
 SUMMARY:LCF Undergraduate Exhibition
@@ -472,7 +472,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:rca2026-school-of-arts-humanities-2026-06-18@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260622
 SUMMARY:RCA2026: School of Arts & Humanities
@@ -491,7 +491,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:rca2026-school-of-architecture-2026-07-03@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260706
 SUMMARY:RCA2026: School of Architecture
@@ -511,7 +511,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:rca2026-festival-of-communication-2026-07-03@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260713
 SUMMARY:RCA2026: Festival of Communication
@@ -532,7 +532,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:rca2026-school-of-design-expo-2026-07-16@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260716
 DTEND;VALUE=DATE:20260720
 SUMMARY:RCA2026: School of Design EXPO
@@ -553,7 +553,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ide-summer-show-2026-07-07@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260707
 DTEND;VALUE=DATE:20260712
 SUMMARY:IDE Summer Show
@@ -572,7 +572,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:design-engineering-msc-show-2026-07-13@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260713
 DTEND;VALUE=DATE:20260718
 SUMMARY:Design Engineering MSc Show
@@ -593,7 +593,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dyson-school-park-royal-design-district-2026-09-11@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260913
 SUMMARY:Dyson School @ Park Royal Design District
@@ -614,7 +614,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:annual-student-showcase-2026-06-04@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260604
 DTEND;VALUE=DATE:20260607
 SUMMARY:Annual Student Showcase
@@ -634,7 +634,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:slade-ba-bfa-degree-show-2026-05-22@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260522
 DTEND;VALUE=DATE:20260529
 SUMMARY:Slade BA/BFA Degree Show
@@ -653,7 +653,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:goldsmiths-undergraduate-art-degree-show-2026-06-18@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260623
 SUMMARY:Goldsmiths Undergraduate Art Degree Show
@@ -672,7 +672,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:goldsmiths-ba-design-degree-show-2026-06-18@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260619
 SUMMARY:Goldsmiths BA Design Degree Show
@@ -691,7 +691,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:goldsmiths-ba-media-degree-show-elapse-2026-06-18@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260623
 SUMMARY:Goldsmiths BA Media Degree Show (Elapse)
@@ -710,7 +710,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:goldsmiths-ma-children-s-book-illustration-2026-07-09@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260709
 DTEND;VALUE=DATE:20260713
 SUMMARY:Goldsmiths MA Children's Book Illustration
@@ -729,7 +729,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:goldsmiths-postgraduate-art-degree-show-2026-07-16@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260716
 DTEND;VALUE=DATE:20260722
 SUMMARY:Goldsmiths Postgraduate Art Degree Show
@@ -748,7 +748,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:westminster-illustration-degree-show-2026-05-29@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260529
 DTEND;VALUE=DATE:20260605
 SUMMARY:Westminster Illustration Degree Show
@@ -767,7 +767,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:westminster-fine-art-mixed-media-show-2026-05-28@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260602
 SUMMARY:Westminster Fine Art Mixed Media Show
@@ -788,7 +788,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:westminster-creative-media-arts-show-2026-06-06@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260606
 DTEND;VALUE=DATE:20260610
 SUMMARY:Westminster Creative Media Arts Show
@@ -809,7 +809,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:westminster-graphic-design-degree-show-2026-06-13@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260613
 DTEND;VALUE=DATE:20260622
 SUMMARY:Westminster Graphic Design Degree Show
@@ -829,7 +829,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:middlesex-ba-fine-art-degree-show-2026-05-07@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260507
 DTEND;VALUE=DATE:20260515
 SUMMARY:Middlesex BA Fine Art Degree Show
@@ -848,7 +848,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:north-london-degree-show-2026-06-10@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260610
 DTEND;VALUE=DATE:20260619
 SUMMARY:North London Degree Show
@@ -868,7 +868,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:school-of-art-architecture-design-summer-show-2026-06-24@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260624
 DTEND;VALUE=DATE:20260630
 SUMMARY:School of Art\, Architecture & Design Summer Show
@@ -889,7 +889,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:uca-grad-show-farnham-2026-06-09@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260609
 DTEND;VALUE=DATE:20260625
 SUMMARY:UCA Grad Show – Farnham
@@ -909,7 +909,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:uca-grad-show-epsom-2026-06-10@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260610
 DTEND;VALUE=DATE:20260625
 SUMMARY:UCA Grad Show – Epsom
@@ -929,7 +929,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:uca-grad-show-canterbury-2026-06-11@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260611
 DTEND;VALUE=DATE:20260625
 SUMMARY:UCA Grad Show – Canterbury
@@ -949,7 +949,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:uca-postgrad-show-farnham-2026-09-03@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260915
 SUMMARY:UCA Postgrad Show – Farnham
@@ -968,7 +968,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:art-design-summer-show-2026-06-26@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260626
 DTEND;VALUE=DATE:20260702
 SUMMARY:Art & Design Summer Show
@@ -989,7 +989,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:art-media-and-design-graduate-show-2026-05-30@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260530
 DTEND;VALUE=DATE:20260608
 SUMMARY:Art\, Media and Design Graduate Show
@@ -1008,7 +1008,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:brighton-ma-show-2026-07-05@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260705
 DTEND;VALUE=DATE:20260713
 SUMMARY:Brighton MA Show
@@ -1029,7 +1029,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:winchester-school-of-art-ba-degree-show-2026-06-04@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260604
 DTEND;VALUE=DATE:20260611
 SUMMARY:Winchester School of Art BA Degree Show
@@ -1050,7 +1050,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:undergrad-festival-grad-fest-2026-06-12@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260626
 SUMMARY:Undergrad Festival (Grad Fest)
@@ -1070,7 +1070,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cambridge-school-of-art-graduate-showcase-2026-06-04@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260604
 DTEND;VALUE=DATE:20260614
 SUMMARY:Cambridge School of Art Graduate Showcase
@@ -1090,8 +1090,69 @@ TRIGGER:-PT15H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:portsmouth-cci-graduate-showcase-2026-06-12@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
+SUMMARY:Portsmouth CCI Graduate Showcase
+DESCRIPTION:University of Portsmouth\n\nCourses: Graphic Design\, Illustra
+ tion\, Photography\, Fashion\, Interior Design\, Animation\, Games\, Film
+ \n\nOfficial page: https://www.port.ac.uk/cci-graduate-show\n\nCheck the 
+ official page before you travel. Listed on Posterday: https://posterday.c
+ om/
+LOCATION:Eldon Building\, Portsmouth
+URL:https://www.port.ac.uk/cci-graduate-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Portsmouth CCI Graduate Showcase opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ba-art-design-show-2026-05-09@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260509
+DTEND;VALUE=DATE:20260518
+SUMMARY:BA Art & Design Show
+DESCRIPTION:Oxford Brookes University\n\nCourses: Fine Art\, Graphic Desig
+ n\, Photography. Private view Fri 8 May\n\nOfficial page: https://www.bro
+ okes.ac.uk/about-brookes/events/2026/05/ba-art-design-show\n\nCheck the o
+ fficial page before you travel. Listed on Posterday: https://posterday.co
+ m/
+LOCATION:Headington\, Oxford
+URL:https://www.brookes.ac.uk/about-brookes/events/2026/05/ba-art-design-s
+ how
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BA Art & Design Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:the-ruskin-degree-show-2026-06-19@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260625
+SUMMARY:The Ruskin Degree Show
+DESCRIPTION:Ruskin School of Art\, University of Oxford\n\nCourses: BFA an
+ d MFA Fine Art: painting\, sculpture\, installation\, photography\, print
+ making\, moving image\n\nOfficial page: https://www.rsa.ox.ac.uk/news/det
+ ail/the-ruskin-degree-show-2026\n\nCheck the official page before you tra
+ vel. Listed on Posterday: https://posterday.com/
+LOCATION:128 Bullingdon Road and 54 Marston Street\, Oxford OX4
+URL:https://www.rsa.ox.ac.uk/news/detail/the-ruskin-degree-show-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:The Ruskin Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:falmouth-degree-shows-2026-05-23@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260523
 DTEND;VALUE=DATE:20260531
 SUMMARY:Falmouth Degree Shows
@@ -1111,7 +1172,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:falmouth-games-expo-2026-05-21@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260524
 SUMMARY:Falmouth Games Expo
@@ -1131,7 +1192,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:showcase-2026-2026-06-05@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260605
 DTEND;VALUE=DATE:20260611
 SUMMARY:Showcase 2026
@@ -1151,7 +1212,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:undergraduate-degree-show-2026-06-06@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260606
 DTEND;VALUE=DATE:20260614
 SUMMARY:Undergraduate Degree Show
@@ -1171,7 +1232,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:undergraduate-summer-shows-2026-07-03@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260712
 SUMMARY:Undergraduate Summer Shows
@@ -1191,7 +1252,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:undergraduate-graduate-shows-2026-06-19@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260619
 DTEND;VALUE=DATE:20260625
 SUMMARY:Undergraduate Graduate Shows
@@ -1211,8 +1272,27 @@ TRIGGER:-PT15H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:degree-show-2026-2026-06-05@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260614
+SUMMARY:Degree Show 2026
+DESCRIPTION:University of Gloucestershire\n\nCourses: School of Arts\, Cul
+ ture and Environment graduates\n\nOfficial page: https://www.glos.ac.uk/d
+ egree-show-2026/\n\nCheck the official page before you travel. Listed on 
+ Posterday: https://posterday.com/
+LOCATION:Park Campus\, Cheltenham
+URL:https://www.glos.ac.uk/degree-show-2026/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Degree Show 2026 opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:sdca-degree-show-2026-06-06@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260606
 DTEND;VALUE=DATE:20260611
 SUMMARY:SDCA Degree Show
@@ -1233,7 +1313,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:grad-fest-product-design-architecture-adbe-showcase-2026-05-29@posterd
  ay.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260529
 DTEND;VALUE=DATE:20260530
 SUMMARY:Grad Fest: Product Design & Architecture (ADBE Showcase)
@@ -1255,7 +1335,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:grad-fest-fashion-textiles-2026-05-16@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260516
 DTEND;VALUE=DATE:20260523
 SUMMARY:Grad Fest: Fashion & Textiles
@@ -1275,7 +1355,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:grad-fest-photography-2026-05-14@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260521
 SUMMARY:Grad Fest: Photography
@@ -1295,7 +1375,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:grad-fest-animation-filmmaking-2026-05-11@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260511
 DTEND;VALUE=DATE:20260516
 SUMMARY:Grad Fest: Animation & Filmmaking
@@ -1316,7 +1396,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:grad-fest-costume-theatre-design-2026-05-20@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260520
 DTEND;VALUE=DATE:20260521
 SUMMARY:Grad Fest: Costume & Theatre Design
@@ -1339,7 +1419,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dot-dot-dot-graduate-festival-2026-06-01@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260602
 SUMMARY:DOT DOT DOT Graduate Festival
@@ -1358,7 +1438,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dmu-degree-show-2026-06-24@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260624
 DTEND;VALUE=DATE:20260628
 SUMMARY:DMU Degree Show
@@ -1378,7 +1458,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:inspired-festival-2026-06-09@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260609
 DTEND;VALUE=DATE:20260628
 SUMMARY:Inspired Festival
@@ -1398,7 +1478,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gradex-creative-industries-degree-show-2026-05-29@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260529
 DTEND;VALUE=DATE:20260607
 SUMMARY:GradEx Creative Industries Degree Show
@@ -1418,7 +1498,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-degree-show-2026-06-06@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260606
 DTEND;VALUE=DATE:20260614
 SUMMARY:2026 Degree Show
@@ -1436,8 +1516,92 @@ TRIGGER:-PT15H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:the-degree-show-made-it-2026-06-06@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260613
+SUMMARY:The Degree Show: Made It
+DESCRIPTION:University of Derby\n\nCourses: Art & Design\, Fashion\, Inter
+ ior Architecture\, Photography\, Film\, Theatre\n\nOfficial page: https:/
+ /www.derby.ac.uk/departments/school-of-humanities-law-creative-arts/creat
+ ive-arts-exhibitions/degree-show-2026/\n\nCheck the official page before 
+ you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Britannia Mill and Markeaton Street\, Derby
+URL:https://www.derby.ac.uk/departments/school-of-humanities-law-creative-
+ arts/creative-arts-exhibitions/degree-show-2026/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:The Degree Show: Made It opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:school-of-creative-industries-degree-show-2026-06-05@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260620
+SUMMARY:School of Creative Industries Degree Show
+DESCRIPTION:University of Wolverhampton\n\nCourses: Fine Art\, Graphic Des
+ ign\, Illustration\, Photography\, Animation\, Game Design\, Film & TV\n\
+ nOfficial page: https://www.wlv.ac.uk/schools-and-institutes/faculty-of-a
+ rts-business-and-social-sciences/school-of-creative-industries/degree-sho
+ w\n\nCheck the official page before you travel. Listed on Posterday: http
+ s://posterday.com/
+LOCATION:George Wallis Building\, Molineux Street\, Wolverhampton WV1
+URL:https://www.wlv.ac.uk/schools-and-institutes/faculty-of-arts-business-
+ and-social-sciences/school-of-creative-industries/degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:School of Creative Industries Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:school-of-arts-degree-show-2026-05-22@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260528
+SUMMARY:School of Arts Degree Show
+DESCRIPTION:University of Worcester\n\nCourses: Fine Art\, Graphic Design\
+ , Illustration\, Game Art\, MA Creative Media\n\nOfficial page: https://w
+ ww.worcester.ac.uk/events/school-of-arts-degree-show-2026\n\nCheck the of
+ ficial page before you travel. Listed on Posterday: https://posterday.com
+ /
+LOCATION:The Art House\, Worcester
+URL:https://www.worcester.ac.uk/events/school-of-arts-degree-show-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:School of Arts Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:degree-show-2026-2026-06-18@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260624
+SUMMARY:Degree Show 2026
+DESCRIPTION:University of Northampton\n\nCourses: Product Design\, Interio
+ r Architecture\, Graphic Communication\, Illustration\, Fashion\, Footwea
+ r & Accessories\, Fine Art\, Photography. Launch and fashion show 18 Jun\
+ n\nOfficial page: https://www.northampton.ac.uk/undergraduate/final-year-
+ degree-show/\n\nCheck the official page before you travel. Listed on Post
+ erday: https://posterday.com/
+LOCATION:Waterside Campus\, University Drive\, Northampton NN1
+URL:https://www.northampton.ac.uk/undergraduate/final-year-degree-show/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Degree Show 2026 opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:manchester-school-of-art-degree-show-2026-06-06@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260606
 DTEND;VALUE=DATE:20260620
 SUMMARY:Manchester School of Art Degree Show
@@ -1457,7 +1621,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:manchester-school-of-art-postgraduate-show-2026-09-29@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20261005
 SUMMARY:Manchester School of Art Postgraduate Show
@@ -1476,7 +1640,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:salford-degree-show-2026-05-28@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260529
 SUMMARY:Salford Degree Show
@@ -1499,7 +1663,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:liverpool-school-of-art-and-creative-industries-degree-show-2026-05-21
  @posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260606
 SUMMARY:Liverpool School of Art and Creative Industries Degree Show
@@ -1521,7 +1685,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:product-design-show-summit-2026-05-12@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260512
 DTEND;VALUE=DATE:20260516
 SUMMARY:Product Design Show & Summit
@@ -1542,7 +1706,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:future-now-festival-of-creativity-2026-04-01@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260401
 DTEND;VALUE=DATE:20260801
 SUMMARY:Future Now Festival of Creativity
@@ -1562,7 +1726,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bish-bash-bosh-2026-06-15@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260621
 SUMMARY:Bish Bash Bosh
@@ -1583,7 +1747,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hold-ba-fine-art-degree-show-2026-06-12@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260622
 SUMMARY:HOLD – BA Fine Art Degree Show
@@ -1602,7 +1766,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:end-of-year-show-art-design-fashion-2026-06-05@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260605
 DTEND;VALUE=DATE:20260615
 SUMMARY:End of Year Show: Art\, Design & Fashion
@@ -1623,7 +1787,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:york-st-john-degree-show-2026-06-04@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260604
 DTEND;VALUE=DATE:20260611
 SUMMARY:York St John Degree Show
@@ -1642,7 +1806,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:reveal-3d-design-furniture-product-2026-06-19@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260619
 DTEND;VALUE=DATE:20260703
 SUMMARY:REVEAL: 3D Design (Furniture & Product)
@@ -1663,7 +1827,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:reveal-fashion-and-graphic-design-2026-06-25@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260625
 DTEND;VALUE=DATE:20260626
 SUMMARY:REVEAL: Fashion and Graphic Design
@@ -1684,7 +1848,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ba-fine-art-degree-show-2026-05-23@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260523
 DTEND;VALUE=DATE:20260607
 SUMMARY:BA Fine Art Degree Show
@@ -1702,8 +1866,132 @@ TRIGGER:-PT15H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:art-design-degree-shows-2026-06-06@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260613
+SUMMARY:Art & Design Degree Shows
+DESCRIPTION:University of Sunderland\n\nCourses: Fine Art\, Fashion\, Grap
+ hic Design\, Illustration\, Animation & Games Art\, Photography\n\nOffici
+ al page: https://www.sunderland.ac.uk/news/2026/degree-shows-2026-how-thi
+ s-partially-sighted-sunderland-artist-is-painting-the-world-through-their
+ -perspective\n\nCheck the official page before you travel. Listed on Post
+ erday: https://posterday.com/
+LOCATION:Priestman Building and National Glass Centre\, Sunderland
+URL:https://www.sunderland.ac.uk/news/2026/degree-shows-2026-how-this-part
+ ially-sighted-sunderland-artist-is-painting-the-world-through-their-persp
+ ective
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Art & Design Degree Shows opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:university-of-lancashire-degree-show-2026-06-11@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260627
+SUMMARY:University of Lancashire Degree Show
+DESCRIPTION:University of Lancashire (formerly UCLan)\n\nCourses: Fine Art
+ \, Photography\, Graphic Design\, Illustration\, Fashion\, Textile Design
+ \, Interior Design\, Animation\, Games Design\, Architecture\n\nOfficial 
+ page: https://degreeshow.uclan.ac.uk/faqs\n\nCheck the official page befo
+ re you travel. Listed on Posterday: https://posterday.com/
+LOCATION:Hanover and Victoria Buildings\, Preston PR1
+URL:https://degreeshow.uclan.ac.uk/faqs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:University of Lancashire Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:university-of-lancashire-ma-degree-show-2026-09-04@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260921
+SUMMARY:University of Lancashire MA Degree Show
+DESCRIPTION:University of Lancashire (formerly UCLan)\n\nCourses: MA Fine 
+ Art\, Graphic Design\, Ceramics\, Children's Book Illustration\, Surface 
+ Pattern & Textiles\, Animation\, Games Design\n\nOfficial page: https://w
+ ww.creativelancashire.org/event/university-of-lancashire-ma-degree-show-2
+ 026\n\nCheck the official page before you travel. Listed on Posterday: ht
+ tps://posterday.com/
+LOCATION:Hanover and Victoria Buildings\, Preston PR1
+URL:https://www.creativelancashire.org/event/university-of-lancashire-ma-d
+ egree-show-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:University of Lancashire MA Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:made-in-carlisle-2026-06-01@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260607
+SUMMARY:Made in Carlisle
+DESCRIPTION:University of Cumbria\n\nCourses: Fine Art\, Graphic Design\, 
+ Illustration\, Photography\, Film & TV\, Games Design\, Wildlife Media\n\
+ nOfficial page: https://news.cumbria.ac.uk/news/made-in-carlisle-artists-
+ celebrated-at-university-degree-show\n\nCheck the official page before yo
+ u travel. Listed on Posterday: https://posterday.com/
+LOCATION:Brampton Road campus\, Carlisle
+URL:https://news.cumbria.ac.uk/news/made-in-carlisle-artists-celebrated-at
+ -university-degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Made in Carlisle opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:expotees-creative-2026-05-12@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260513
+SUMMARY:ExpoTees Creative
+DESCRIPTION:Teesside University\n\nCourses: Concept Art\, Games\, Animatio
+ n and Visual Effects\n\nOfficial page: https://www.tees.ac.uk/schools/sce
+ dt/expotees/\n\nCheck the official page before you travel. Listed on Post
+ erday: https://posterday.com/
+LOCATION:Digital Life Building\, Middlesbrough TS1
+URL:https://www.tees.ac.uk/schools/scedt/expotees/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ExpoTees Creative opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:visual-arts-degree-show-2026-05-29@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260608
+SUMMARY:Visual Arts Degree Show
+DESCRIPTION:Liverpool Hope University\n\nCourses: Fine Art\, Graphic Desig
+ n\, Photography\, Fashion\, Film\, TV\, Performing Arts\n\nOfficial page:
+  https://www.hope.ac.uk/degreeshow/\n\nCheck the official page before you
+  travel. Listed on Posterday: https://posterday.com/
+LOCATION:Creative Campus\, Shaw Street\, Liverpool L6
+URL:https://www.hope.ac.uk/degreeshow/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Visual Arts Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:djcad-undergraduate-degree-show-2026-05-23@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260523
 DTEND;VALUE=DATE:20260601
 SUMMARY:DJCAD Undergraduate Degree Show
@@ -1723,7 +2011,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gsa-degree-show-2026-05-29@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260529
 DTEND;VALUE=DATE:20260608
 SUMMARY:GSA Degree Show
@@ -1747,7 +2035,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gsa-mfa-degree-show-2026-06-13@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260613
 DTEND;VALUE=DATE:20260622
 SUMMARY:GSA MFA Degree Show
@@ -1769,7 +2057,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:eca-graduate-show-2026-05-29@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260529
 DTEND;VALUE=DATE:20260606
 SUMMARY:ECA Graduate Show
@@ -1789,7 +2077,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gray-s-degree-show-2026-06-05@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260605
 DTEND;VALUE=DATE:20260615
 SUMMARY:Gray's Degree Show
@@ -1808,8 +2096,130 @@ TRIGGER:-PT15H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:edinburgh-napier-degree-show-2026-05-29@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260606
+SUMMARY:Edinburgh Napier Degree Show
+DESCRIPTION:Edinburgh Napier University\n\nCourses: Design and visual arts
+ \, undergraduate and postgraduate\n\nOfficial page: https://www.napier.ac
+ .uk/about-us/our-schools/school-of-arts-and-creative-industries/degree-sh
+ ow\n\nCheck the official page before you travel. Listed on Posterday: htt
+ ps://posterday.com/
+LOCATION:Merchiston campus\, 10 Colinton Road\, Edinburgh
+URL:https://www.napier.ac.uk/about-us/our-schools/school-of-arts-and-creat
+ ive-industries/degree-show
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Edinburgh Napier Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:school-of-textiles-design-degree-show-2026-05-23@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260531
+SUMMARY:School of Textiles & Design Degree Show
+DESCRIPTION:Heriot-Watt University\n\nCourses: Fashion\, Design for Textil
+ es\, Fashion Technology\, Interior Architecture & Design\, Communication 
+ Design. Fashion shows on opening day\n\nOfficial page: https://hw.ac.uk/a
+ bout/our-schools/textiles-and-design/showcase\n\nCheck the official page 
+ before you travel. Listed on Posterday: https://posterday.com/
+LOCATION:High Mill\, Scottish Borders Campus\, Galashiels
+URL:https://hw.ac.uk/about/our-schools/textiles-and-design/showcase
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:School of Textiles & Design Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:heriot-watt-masters-degree-show-2026-08-06@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260808
+SUMMARY:Heriot-Watt Masters Degree Show
+DESCRIPTION:Heriot-Watt University\n\nCourses: Postgraduate design\, fashi
+ on and textiles\n\nOfficial page: https://hw.ac.uk/about/our-schools/text
+ iles-and-design/showcase\n\nCheck the official page before you travel. Li
+ sted on Posterday: https://posterday.com/
+LOCATION:Scottish Borders Campus\, Galashiels
+URL:https://hw.ac.uk/about/our-schools/textiles-and-design/showcase
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heriot-Watt Masters Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:abertay-digital-graduate-show-2026-05-14@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260517
+SUMMARY:Abertay Digital Graduate Show
+DESCRIPTION:Abertay University\n\nCourses: Game Design\, Computer Arts\, g
+ ames programming\, animation\, UI/UX\, VR/AR\n\nOfficial page: https://ww
+ w.abertay.ac.uk/news/2026/abertay-digital-graduate-show-marks-20-years-wi
+ th-biggest-ever-event/\n\nCheck the official page before you travel. List
+ ed on Posterday: https://posterday.com/
+LOCATION:Kydd Building\, Bell Street\, Dundee
+URL:https://www.abertay.ac.uk/news/2026/abertay-digital-graduate-show-mark
+ s-20-years-with-biggest-ever-event/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Abertay Digital Graduate Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:moray-school-of-art-degree-show-2026-06-05@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260613
+SUMMARY:Moray School of Art Degree Show
+DESCRIPTION:UHI Moray\n\nCourses: Fine Art: painting\, sculpture\, photogr
+ aphy\, textiles\, animation\, installation. Opening 4 Jun\n\nOfficial pag
+ e: https://www.moray.uhi.ac.uk/events/degree-show-and-student-exhibition.
+ html\n\nCheck the official page before you travel. Listed on Posterday: h
+ ttps://posterday.com/
+LOCATION:Moray Street Campus\, Elgin IV30
+URL:https://www.moray.uhi.ac.uk/events/degree-show-and-student-exhibition.
+ html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Moray School of Art Degree Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:djcad-masters-show-2026-08-22@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260831
+SUMMARY:DJCAD Masters Show
+DESCRIPTION:University of Dundee\n\nCourses: Product Design\, Communicatio
+ n Design\, Fine Art\, Animation & VFX\, Medical Art\, Design for Business
+ \, Curatorial Practice\n\nOfficial page: https://www.dundee.ac.uk/masters
+ -showcase/2026\n\nCheck the official page before you travel. Listed on Po
+ sterday: https://posterday.com/
+LOCATION:13 Perth Road\, Dundee
+URL:https://www.dundee.ac.uk/masters-showcase/2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DJCAD Masters Show opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:swansea-college-of-art-summer-degree-shows-2026-05-16@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260516
 DTEND;VALUE=DATE:20260606
 SUMMARY:Swansea College of Art Summer Degree Shows
@@ -1831,7 +2241,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:belfast-school-of-art-graduate-showcase-2026-06-06@posterday.com
-DTSTAMP:20261119T000000Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20260606
 DTEND;VALUE=DATE:20260622
 SUMMARY:Belfast School of Art Graduate Showcase
@@ -1847,6 +2257,48 @@ TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Belfast School of Art Graduate Showcase opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prologue-interim-mfa-exhibition-2026-01-09@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260109
+DTEND;VALUE=DATE:20260129
+SUMMARY:Prologue: Interim MFA Exhibition
+DESCRIPTION:Belfast School of Art\, Ulster University\n\nCourses: MFA Fine
+  Art\, shown in two parts\n\nOfficial page: https://www.ulster.ac.uk/ulst
+ erpresents/whats-on/2025-26/prologue-interim-mfa-exhibition\n\nCheck the 
+ official page before you travel. Listed on Posterday: https://posterday.c
+ om/
+LOCATION:Art Gallery\, Belfast campus\, York Street\, Belfast
+URL:https://www.ulster.ac.uk/ulsterpresents/whats-on/2025-26/prologue-inte
+ rim-mfa-exhibition
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prologue: Interim MFA Exhibition opens tomorrow
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:beneath-the-surface-mfa-photography-2026-06-04@posterday.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260724
+SUMMARY:Beneath The Surface: MFA Photography
+DESCRIPTION:Belfast School of Art\, Ulster University\n\nCourses: MFA Phot
+ ography. Part of Belfast Photo Festival\n\nOfficial page: https://www.bel
+ fastphotofestival.com/beneath-the-surface-ulster-university-mfa-photograp
+ hy-2026\n\nCheck the official page before you travel. Listed on Posterday
+ : https://posterday.com/
+LOCATION:Belfast Exposed\, 23 Donegall Street\, Belfast
+URL:https://www.belfastphotofestival.com/beneath-the-surface-ulster-univer
+ sity-mfa-photography-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Beneath The Surface: MFA Photography opens tomorrow
 TRIGGER:-PT15H
 END:VALARM
 END:VEVENT
