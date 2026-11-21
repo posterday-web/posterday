@@ -50,18 +50,29 @@ function save() {
   fs.writeFileSync(STATE, JSON.stringify(sorted, null, 1) + "\n");
 }
 
+// When the key is set, check it works every run, so a wrong or expired key shows up as a failed run
+// (GitHub emails a warning) instead of being found out only when dates need sending.
+async function checkKey() {
+  if (!KEY || DRY) return;
+  const r = await fetch("https://api.kit.com/v4/account", {headers: {"Accept": "application/json", "X-Kit-Api-Key": KEY}});
+  if (!r.ok) { console.error("The Kit API key didn't work (" + r.status + "). Replace the KIT_API_KEY secret with a new key from Kit."); process.exit(1); }
+  console.log("Kit API key works.");
+}
+
+(async () => {
+await checkKey();
 if (!told) {
   // First run: remember today's dates without emailing anyone about them.
   save();
   console.log("Started announced.json with " + Object.keys(now).length + " shows. Nothing sent.");
-  process.exit(0);
+  return;
 }
 
 const fresh = SHOWS
   .filter(s => s.start && (s.end || s.start) >= TODAY && told[s.name] !== key(s))
   .sort((a, b) => a.start.localeCompare(b.start));
 
-if (!fresh.length) { save(); console.log("No new dates."); process.exit(0); }
+if (!fresh.length) { save(); console.log("No new dates."); return; }
 
 const moved = s => told[s.name] && told[s.name].split("/")[0].slice(0, 4) === s.start.slice(0, 4);
 const subject = fresh.length === 1
@@ -79,8 +90,10 @@ ${esc(dateText(s))} · ${esc(s.city)}</p>`;
 <p><a href="${SITE}/">See every UK degree show on Posterday</a></p>`;
 
 console.log("Subject: " + subject + "\n\n" + content + "\n");
+await send(subject, preview, content);
+})().catch(e => { console.error(e); process.exit(1); });
 
-async function send() {
+async function send(subject, preview, content) {
   if (DRY) { console.log("Dry run: nothing sent, announced.json unchanged."); return; }
   if (!KEY) { console.log("No KIT_API_KEY secret yet, so nothing sent. Dates are marked as told."); save(); return; }
   const r = await fetch("https://api.kit.com/v4/broadcasts", {
@@ -105,4 +118,3 @@ async function send() {
   console.log("Kit scheduled the email: " + text.slice(0, 300));
   save();
 }
-send().catch(e => { console.error(e); process.exit(1); });
