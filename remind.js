@@ -4,7 +4,7 @@
 // ---- Email sign-up settings ----
 // Sign-ups go to the free email service Kit (kit.com). Put the number of your Kit form here,
 // e.g. "1234567". Until it is set, sign-ups are emailed to you through Web3Forms instead, so none are lost.
-const KIT_FORM_ID = "";
+const KIT_FORM_ID = "10222755";
 const WEB3FORMS_KEY = "8aa5b675-4991-498a-a646-5b1167b2f08a";
 
 (function () {
@@ -93,7 +93,6 @@ const WEB3FORMS_KEY = "8aa5b675-4991-498a-a646-5b1167b2f08a";
     try {
       if (KIT_FORM_ID) {
         const body = new URLSearchParams({email_address: email});
-        if (show) body.append("fields[show]", show);
         // Kit doesn't let other sites read its reply, so a sent request counts as done.
         await fetch("https://app.kit.com/forms/" + KIT_FORM_ID + "/subscriptions", {method: "POST", mode: "no-cors", body});
         done("Nearly there. Check your inbox and click the link to confirm.");
