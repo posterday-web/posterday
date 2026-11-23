@@ -100,7 +100,7 @@ function page({title, description, canonical, body, jsonld, ogType = "website", 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=4">
+<link rel="stylesheet" href="/site.css?v=5">
 <link rel="stylesheet" href="/pages.css?v=1">
 ${ld}
 <!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
@@ -109,7 +109,7 @@ ${ld}
 <body>
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="/">Posterday</a>
+    <a class="brand" href="/"><img src="/img/logo.svg" alt="Posterday" width="134" height="24"></a>
     <span class="divider"></span>
     <span class="tagline">UK art and design degree shows and project shows</span>
     <nav><a href="/#shows">All shows</a><a href="${scripts ? "#remind" : "/#remind"}">Get reminders</a><a href="/advertise.html">Advertise</a></nav>
