@@ -79,7 +79,8 @@ const subject = fresh.length === 1
   ? `${fresh[0].name}: ${dateText(fresh[0])}`
   : `New degree show dates: ${fresh.slice(0, 2).map(s => s.name).join(", ")}${fresh.length > 2 ? ` and ${fresh.length - 2} more` : ""}`;
 const preview = `${fresh.length} show${fresh.length === 1 ? " has" : "s have"} new dates on Posterday.`;
-const content = `<p>${fresh.length === 1 ? "A show you can now plan for:" : "These shows have just announced their dates:"}</p>
+const content = `<p><a href="${SITE}/"><img src="${SITE}/img/logo-email.png" alt="Posterday" width="240" style="display:block;width:240px;max-width:100%;height:auto;border:0"></a></p>
+<p>${fresh.length === 1 ? "A show you can now plan for:" : "These shows have just announced their dates:"}</p>
 ${fresh.map(s => {
   const href = SITE + (PAGES[s.name] || "/");
   return `<p><strong><a href="${esc(href)}">${esc(s.name)}</a></strong>${moved(s) ? " (dates changed)" : ""}<br>
