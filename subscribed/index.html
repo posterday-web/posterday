@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're on the list · Posterday</title>
+<meta name="description" content="You're signed up for Posterday's degree show date emails.">
+<!-- Only people who have just confirmed their email land here, so keep it out of Google. -->
+<meta name="robots" content="noindex">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css?v=4">
+<link rel="stylesheet" href="/pages.css?v=1">
+<style>
+  .done{padding-top:56px}
+  .done .tick{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;font-size:22px;margin-bottom:18px}
+  .done h1{font-size:44px}
+  .done .lede{max-width:560px;font-size:16px;line-height:24px}
+  .next-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+  .next-steps a{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:.6px solid var(--line);border-radius:4px;padding:16px 18px;text-decoration:none;transition:background .15s}
+  .next-steps a:hover{background:#fff}
+  .next-steps b{font-weight:500}
+  .next-steps span{font-size:13px;color:var(--muted)}
+  @media (max-width:800px){.next-steps{grid-template-columns:1fr}.done h1{font-size:34px}}
+</style>
+<!-- Private view analytics (GoatCounter). The dashboard is at https://posterday.goatcounter.com and needs a login. -->
+<script data-goatcounter="https://posterday.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Posterday</a>
+    <span class="divider"></span>
+    <span class="tagline">UK art and design degree shows and project shows</span>
+    <nav><a href="/#shows">All shows</a><a href="/advertise.html">Advertise</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap intro done">
+    <div class="tick" aria-hidden="true">✓</div>
+    <p class="meta">Email confirmed</p>
+    <h1>You're on the list</h1>
+    <p class="lede">Thanks for confirming. We'll email you as soon as new UK degree show dates are announced. Most universities publish theirs in spring, so the first emails usually arrive then. Each one lists the new dates with a link to the show, and you can unsubscribe at any time.</p>
+
+    <div class="next-steps">
+      <a href="/#shows"><b>Browse every show →</b><span>All the UK's art and design degree shows, by month, subject and region.</span></a>
+      <a href="/#map"><b>See the map →</b><span>Find the shows nearest to you.</span></a>
+      <a href="webcal://posterday.com/calendar.ics" data-subscribe="apple"><b>Add every show to your calendar →</b><span>New dates appear in it by themselves. Works with Apple and Outlook.</span></a>
+    </div>
+    <p class="note" style="margin-top:14px">Using Google Calendar? <a href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fposterday.com%2Fcalendar.ics" target="_blank" rel="noopener" data-subscribe="google">Add it to Google Calendar instead</a>.</p>
+
+    <div id="soon" hidden>
+      <h2>Coming up</h2>
+      <div class="grid" id="soonList"></div>
+    </div>
+  </section>
+
+  <footer class="wrap" style="margin-top:64px">
+    <p>Posterday lists the UK's art and design degree shows and project shows in one place, all year round. <a href="/">Back to all shows</a>.</p>
+  </footer>
+</main>
+
+<script src="/shows.js"></script>
+<script src="/show-pages.js"></script>
+<script>
+// Show the next few shows still to come, each linking to its Posterday page.
+(function(){
+  const MK = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const fmt = d => parseInt(d.slice(8,10),10)+" "+MK[parseInt(d.slice(5,7),10)-1];
+  const esc = t => String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const dateText = s => s.dates || ((s.end && s.end!==s.start) ? fmt(s.start)+" – "+fmt(s.end)+" "+s.end.slice(0,4) : fmt(s.start)+" "+s.start.slice(0,4));
+  const today = new Date().toISOString().slice(0,10);
+  const pages = window.SHOW_PAGES || {};
+  const soon = (window.SHOWS||[]).filter(s=>s.start && (s.end||s.start)>=today).sort((a,b)=>a.start.localeCompare(b.start)).slice(0,3);
+  if(!soon.length) return;
+  document.getElementById("soonList").innerHTML = soon.map(s=>`<article class="card">
+    <div><h4><a class="title" href="${pages[s.name]||"/"}">${esc(s.name)}</a></h4><div class="inst">${esc(s.inst)}</div></div>
+    <div class="dates">${esc(dateText(s))}</div>
+    <dl><dt>Where</dt><dd>${esc(s.city)}</dd></dl>
+    <a class="link" href="${pages[s.name]||"/"}">Dates, venue and courses →</a>
+  </article>`).join("");
+  document.getElementById("soon").hidden = false;
+})();
+document.addEventListener("click", e=>{
+  const a = e.target.closest("[data-subscribe]");
+  if(a && window.goatcounter && window.goatcounter.count) window.goatcounter.count({path:"calendar-subscribe/"+a.dataset.subscribe, title:"Subscribed to calendar ("+a.dataset.subscribe+", confirmation page)", event:true});
+});
+</script>
+</body>
+</html>
